@@ -1,0 +1,257 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaVideoEditorEffectsSDK
+import AVFoundation
+import BanubaSDKServicing
+import BanubaUtilities
+@_exported import BanubaVideoEditorEffectsSDK
+import CoreMedia
+import Foundation
+import GLKit
+import OpenGLES
+import QuartzCore
+import Swift
+import UIKit
+import VideoEditor
+@_inheritsConvenienceInitializers public class GlitchEffectDrawer2 : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class DVCamEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class SoulEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class GifEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init(sequence: BanubaVideoEditorEffectsSDK.ImagesSequence)
+  required public init()
+  public func createRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class FlashEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class BanubaMaskDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Transition2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
+  public var renderer: BanubaVideoEditorEffectsSDK.EffectRenderer? {
+    get
+  }
+  required public init()
+  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, allSources: [CoreVideo.CVPixelBuffer], sampleTime: CoreMedia.CMTime, effect: VideoEditor.EditorCompositionEffectProtocol)
+  @objc deinit
+}
+public typealias VideoEditorEffectInfo = (id: Swift.UInt, image: UIKit.UIImage, relativeScreenPoints: BanubaVideoEditorEffectsSDK.ImagePoints, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
+public enum EffectApplicatorType {
+  case gif
+  case text
+  public static func == (a: BanubaVideoEditorEffectsSDK.EffectApplicatorType, b: BanubaVideoEditorEffectsSDK.EffectApplicatorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class EffectApplicator {
+  public init(editor: VideoEditor.VideoEditorServicing)
+  public func applyEffectType(_ type: BanubaVideoEditorEffectsSDK.EffectApplicatorType, effectInfo: BanubaVideoEditorEffectsSDK.VideoEditorEffectInfo)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ColorEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EffectsFactory {
+  public static func cathodeEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func polaroidEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func soulEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func zoomEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func flashEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func raveEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func acidEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func tvFoamEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func vhsEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func colorEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func glitchEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func gifEffectRenderer(sequence: BanubaVideoEditorEffectsSDK.ImagesSequence) -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func textEffectRenderer(imageInfo: BanubaVideoEditorEffectsSDK.ImageEffectInfo) -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func glitch2EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func glitch3EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func transition1EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func transition2EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func transition3EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func transition4EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func zoom2EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func kaleidoscopeEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func dslrkaleidoscopeEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func lumiereEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func dvcamEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func vhs2EffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func starsEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func heatmapEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func pixelationDynamicEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func pixelationStaticEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  public static func maskEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Zoom2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class StarsEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class KaleidoscopeEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class BanubaMaskRenderer : BanubaVideoEditorEffectsSDK.EffectGLRenderer {
+  public static var postprocessServicing: BanubaSDKServicing.SDKMaskPostprocessServicing?
+  override public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, allSources: [CoreVideo.CVPixelBuffer], sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String)
+  @objc deinit
+  public static func destroy()
+  required public init()
+}
+@_inheritsConvenienceInitializers public class Transition3EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+public enum EditorEffectKey : Swift.String {
+  case name
+  case type
+  case renderer
+  case path
+  case id
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class EditorEffectModelBuilder {
+  public init()
+  public func gifModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
+  public func textModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
+  public func makeModels(configs: [[BanubaVideoEditorEffectsSDK.EditorEffectKey : Any]], startId: Swift.UInt) -> [VideoEditor.VideoEditorFilterModel]
+  public func makeModel(config: [BanubaVideoEditorEffectsSDK.EditorEffectKey : Any], id: Swift.UInt) -> VideoEditor.VideoEditorFilterModel
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class PixelationDynamicEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class RotateEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init(rotation: VideoEditor.AssetRotation)
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ZoomEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class TVFoamEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Transition4EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Glitch3EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class PixelationStaticEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class PolaroidEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class VHS2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class DSLRKaleidoscopeEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+public protocol ImagesSequence {
+  var relativeScreenPoints: BanubaVideoEditorEffectsSDK.ImagePoints { get }
+  func getImage(at time: Foundation.TimeInterval) -> CoreGraphics.CGImage
+}
+@_inheritsConvenienceInitializers public class GlitchEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class LumiereEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CathodeEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Glitch2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+public struct ImagePoints {
+  public init(leftTop: CoreGraphics.CGPoint, rightTop: CoreGraphics.CGPoint, leftBottom: CoreGraphics.CGPoint, rightBottom: CoreGraphics.CGPoint)
+  public var leftTop: CoreGraphics.CGPoint
+  public var rightTop: CoreGraphics.CGPoint
+  public var leftBottom: CoreGraphics.CGPoint
+  public var rightBottom: CoreGraphics.CGPoint
+  public func applying(_ t: CoreGraphics.CGAffineTransform) -> BanubaVideoEditorEffectsSDK.ImagePoints
+}
+public class ImageEffectInfo {
+  final public let image: CoreGraphics.CGImage
+  final public let imagePoints: BanubaVideoEditorEffectsSDK.ImagePoints
+  public init(image: CoreGraphics.CGImage, imagePoints: BanubaVideoEditorEffectsSDK.ImagePoints)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class Transition1EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+public protocol EffectRenderer {
+  func render(in pixelBuffer: CoreVideo.CVPixelBuffer, allSources: [CoreVideo.CVPixelBuffer], sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String)
+}
+public class EffectGLRenderer : BanubaVideoEditorEffectsSDK.EffectRenderer {
+  required public init()
+  @objc deinit
+  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, allSources: [CoreVideo.CVPixelBuffer], sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String)
+}
+@_inheritsConvenienceInitializers public class HeatmapEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class VHSEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class TextEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init(imageInfo: BanubaVideoEditorEffectsSDK.ImageEffectInfo)
+  required public init()
+  public func createRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class RaveEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class AcidWhipEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
+  required public init()
+  @objc deinit
+}
