@@ -103,6 +103,14 @@ public class EffectApplicator {
   public static func maskEffectRenderer() -> BanubaVideoEditorEffectsSDK.EffectRenderer
   @objc deinit
 }
+public class TransformEffectApplicator {
+  public var editor: VideoEditor.VideoEditorService {
+    get
+  }
+  public init(editor: VideoEditor.VideoEditorService)
+  public func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers public class Zoom2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
   @objc deinit
@@ -220,6 +228,13 @@ public class ImageEffectInfo {
   final public let imagePoints: BanubaVideoEditorEffectsSDK.ImagePoints
   public init(image: CoreGraphics.CGImage, imagePoints: BanubaVideoEditorEffectsSDK.ImagePoints)
   @objc deinit
+}
+public struct EffectIDs {
+  public static var colorEffectStartId: Swift.UInt
+  public static var maskEffectStartId: Swift.UInt
+  public static var internalEffectStartId: Swift.UInt
+  public static var visualEffectStartId: Swift.UInt
+  public static var transformEffectId: Swift.UInt
 }
 @_inheritsConvenienceInitializers public class Transition1EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
