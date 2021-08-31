@@ -51,7 +51,24 @@ public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
   public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, allSources: [CoreVideo.CVPixelBuffer], sampleTime: CoreMedia.CMTime, effect: VideoEditor.EditorCompositionEffectProtocol)
   @objc deinit
 }
-public typealias VideoEditorEffectInfo = (id: Swift.UInt, image: UIKit.UIImage, relativeScreenPoints: BanubaVideoEditorEffectsSDK.ImagePoints, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
+public struct VideoEditorEffectInfo {
+  public var id: Swift.UInt {
+    get
+  }
+  public var image: UIKit.UIImage {
+    get
+  }
+  public var relativeScreenPoints: BanubaVideoEditorEffectsSDK.ImagePoints {
+    get
+  }
+  public var start: CoreMedia.CMTime {
+    get
+  }
+  public var end: CoreMedia.CMTime {
+    get
+  }
+  public init(id: Swift.UInt, image: UIKit.UIImage, relativeScreenPoints: BanubaVideoEditorEffectsSDK.ImagePoints, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
+}
 public enum EffectApplicatorType {
   case gif
   case text
@@ -117,6 +134,11 @@ public class TransformEffectApplicator {
 }
 @_inheritsConvenienceInitializers public class StarsEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
+  @objc deinit
+}
+public class WatermarkApplicator : VideoEditor.WatermarkApplicatorServicing {
+  public init(videoSize: CoreGraphics.CGSize)
+  public func watermarkVideoEditorFilterModel(configuration: VideoEditor.WatermarkConfiguration) -> VideoEditor.VideoEditorFilterModel
   @objc deinit
 }
 @_inheritsConvenienceInitializers public class KaleidoscopeEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
