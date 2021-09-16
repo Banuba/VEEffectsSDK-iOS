@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BanubaVideoEditorEffectsSDK-Swift.h</key>
 		<data>
-		zYspJnG7bHhH/mElG+x1srQ5rwY=
+		rPWqXDE0UhOajIAU25t3BW2GV/o=
 		</data>
 		<key>Headers/BanubaVideoEditorEffectsSDK.h</key>
 		<data>
@@ -26,39 +26,43 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ivrl2KjJC0tHHnO2erBL+AdjTug=
+		wNC7Ue38ctEHlPqSyw1+YaDtaYY=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		ivrl2KjJC0tHHnO2erBL+AdjTug=
+		wNC7Ue38ctEHlPqSyw1+YaDtaYY=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		HK3iwfe756sjfEv3KsPQUiSNMnA=
+		/xfquuviIIZw10HQNvxTmjrK10s=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		eVxzDLiHQwYh/C311ln/aRGh7fo=
+		CWf4Em25g4ao3kny4zbBoU6BiDc=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rQVDRcErF/UXP9uvBpH84TidJyg=
+		7Nc/YLoBMU8ghjWdsVfaDaKQ6hc=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		HK3iwfe756sjfEv3KsPQUiSNMnA=
+		/xfquuviIIZw10HQNvxTmjrK10s=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		eVxzDLiHQwYh/C311ln/aRGh7fo=
+		CWf4Em25g4ao3kny4zbBoU6BiDc=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		rQVDRcErF/UXP9uvBpH84TidJyg=
+		7Nc/YLoBMU8ghjWdsVfaDaKQ6hc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		atOpVfT6XeWYcpesZY2FbPGmdqs=
+		</data>
+		<key>default.metallib</key>
+		<data>
+		iXfWO8m5nAwAVwXUSHKp36Y6ebo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jPxAL+AGH694xpPlsFqgA2PHm5AexXiar25zp3yFwWE=
+			Qu3c+AP+jvaHJCxgRnSGnGVU1yiW6G+oiaERY0uXNAs=
 			</data>
 		</dict>
 		<key>Headers/BanubaVideoEditorEffectsSDK.h</key>
@@ -95,56 +99,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpcZCKyGTreevUtozFHynGXtzFNKiRU3omzkIYPFk/U=
+			Sb9p1aUPcklspJ4CTRkh78gRQzm1SlaSqO+FWkEFTjE=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpcZCKyGTreevUtozFHynGXtzFNKiRU3omzkIYPFk/U=
+			Sb9p1aUPcklspJ4CTRkh78gRQzm1SlaSqO+FWkEFTjE=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8CSQ9luYF2m9ApzdwFnt4CXFatfgs6f5UNsRte7bMtA=
+			wFVrK6X4K9N5TLD3AmP8NqfrSVzNxDAUQcT2WfakPTA=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNon8Q4KE/QYzUCC8YhcR/zFfJa7bKtKUgcYG9tfiyo=
+			uYL/1o3ngwV0YrYxu0mr8quxb8HZThCrd8ESad9QtOk=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VixJ/0d+LBYFhE6XUI66e/IZeznrvl9yxlyJIXoS/sM=
+			t7ouq5zfD+tqdirvTBlliJd0jSqR6pNzNNffiPZBvhU=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8CSQ9luYF2m9ApzdwFnt4CXFatfgs6f5UNsRte7bMtA=
+			wFVrK6X4K9N5TLD3AmP8NqfrSVzNxDAUQcT2WfakPTA=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNon8Q4KE/QYzUCC8YhcR/zFfJa7bKtKUgcYG9tfiyo=
+			uYL/1o3ngwV0YrYxu0mr8quxb8HZThCrd8ESad9QtOk=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VixJ/0d+LBYFhE6XUI66e/IZeznrvl9yxlyJIXoS/sM=
+			t7ouq5zfD+tqdirvTBlliJd0jSqR6pNzNNffiPZBvhU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			KH6pBurVRL/ZSJA024bs2VrKOHkQMIUh0GeEJ1hrr1k=
+			</data>
+		</dict>
+		<key>default.metallib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0RGiF7Pk9k30ik/6mNvzORozlImmHtuElw1xD9nIYAQ=
 			</data>
 		</dict>
 	</dict>
