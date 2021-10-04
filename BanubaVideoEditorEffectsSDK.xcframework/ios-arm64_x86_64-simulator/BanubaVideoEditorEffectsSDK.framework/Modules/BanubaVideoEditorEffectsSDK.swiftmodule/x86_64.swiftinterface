@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaVideoEditorEffectsSDK
 import AVFoundation
 import BanubaLicenseServicingSDK
@@ -15,6 +15,7 @@ import QuartzCore
 import Swift
 import UIKit
 import VideoEditor
+import _Concurrency
 @_inheritsConvenienceInitializers public class GlitchEffectDrawer2 : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
   @objc deinit
@@ -64,19 +65,19 @@ public class EffectApplicator : BanubaVideoEditorEffectsSDK.EffectsApplicatorSer
   required public init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: BanubaVideoEditorEffectsSDK.EffectsHolderServicing)
   @objc deinit
 }
-extension EffectApplicator {
+extension BanubaVideoEditorEffectsSDK.EffectApplicator {
   public func applyVisualEffectApplicatorType(_ type: BanubaVideoEditorEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
 }
-extension EffectApplicator {
+extension BanubaVideoEditorEffectsSDK.EffectApplicator {
   public func applySpeedEffectType(_ type: BanubaVideoEditorEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
 }
-extension EffectApplicator {
+extension BanubaVideoEditorEffectsSDK.EffectApplicator {
   public func applyOverlayEffectType(_ type: BanubaVideoEditorEffectsSDK.OverlayEffectApplicatorType, effectInfo: BanubaVideoEditorEffectsSDK.VideoEditorEffectInfo)
 }
-extension EffectApplicator {
+extension BanubaVideoEditorEffectsSDK.EffectApplicator {
   public func applyColorEffect(name: Swift.String, lutUrl: Foundation.URL, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
 }
-extension EffectApplicator {
+extension BanubaVideoEditorEffectsSDK.EffectApplicator {
   public func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation)
 }
 @_inheritsConvenienceInitializers public class ColorEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
@@ -214,7 +215,6 @@ public protocol EffectsHolderServicing : AnyObject {
   public var visualEffectsConfig: [[BanubaVideoEditorEffectsSDK.EditorEffectKey : Any]] {
     get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers public class LumiereEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
@@ -267,9 +267,8 @@ public class EffectGLRenderer : BanubaVideoEditorEffectsSDK.EffectRenderer {
   @objc public var isActive: Swift.Bool
   public init(file url: Foundation.URL)
   @objc deinit
-  @objc override dynamic public init()
 }
-extension CameraLutStage : BanubaSDKServicing.RenderEffect {
+extension BanubaVideoEditorEffectsSDK.CameraLutStage : BanubaSDKServicing.RenderEffect {
   @objc dynamic public var isLoaded: Swift.Bool {
     @objc get
   }
@@ -323,7 +322,7 @@ public enum OverlayEffectApplicatorType {
     get
   }
 }
-public enum VisualEffectApplicatorType : Swift.String {
+public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case acid
   case cathode
   case dslrKaleidoscope
@@ -352,16 +351,24 @@ public enum VisualEffectApplicatorType : Swift.String {
   case zoom
   case zoom2
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [BanubaVideoEditorEffectsSDK.VisualEffectApplicatorType]
   public typealias RawValue = Swift.String
+  public static var allCases: [BanubaVideoEditorEffectsSDK.VisualEffectApplicatorType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
 }
-public enum SpeedEffectType : Swift.String {
+public enum SpeedEffectType : Swift.String, Swift.CaseIterable {
   case slowmo
   case rapid
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [BanubaVideoEditorEffectsSDK.SpeedEffectType]
   public typealias RawValue = Swift.String
+  public static var allCases: [BanubaVideoEditorEffectsSDK.SpeedEffectType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
