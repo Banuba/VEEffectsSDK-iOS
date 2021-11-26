@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaVideoEditorEffectsSDK
 import AVFoundation
 import BanubaLicenseServicingSDK
@@ -225,6 +225,13 @@ public protocol EffectsHolderServicing : AnyObject {
   required public init()
   @objc deinit
 }
+public protocol TransformEffectsSDKServicing {
+  var effectsApplicator: BanubaVideoEditorEffectsSDK.EffectsApplicatorServicing { get }
+}
+public protocol EffectsSDKServicing : BanubaVideoEditorEffectsSDK.TransformEffectsSDKServicing {
+  var watermarkApplicator: VideoEditor.WatermarkApplicatorServicing { get }
+  var effectsConfigHolder: BanubaVideoEditorEffectsSDK.EffectsHolderServicing { get }
+}
 @_inheritsConvenienceInitializers public class Glitch2EffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
   @objc deinit
@@ -376,6 +383,14 @@ public enum SpeedEffectType : Swift.String, Swift.CaseIterable {
 @_inheritsConvenienceInitializers public class VHSEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init()
   @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MetalHelper {
+  public static var shared: BanubaVideoEditorEffectsSDK.MetalHelper
+  @objc deinit
+}
+extension BanubaVideoEditorEffectsSDK.MetalHelper {
+  public func prepareCacheIfNeeded()
+  public func clearCache()
 }
 @_inheritsConvenienceInitializers public class TextEffectDrawer : BanubaVideoEditorEffectsSDK.VideoEditorEffectDrawer {
   required public init(imageInfo: BanubaVideoEditorEffectsSDK.ImageEffectInfo)
