@@ -22,15 +22,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		niY9awFnmIExIyHI1V3ZO5m9zeg=
+		eLBvMGpdzNZcqcw7mW8gurKsiGw=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		cDOdPfRgPl0xhoO4IdyGUMpzNcA=
+		YmvvqB35VRiCpmZZz7W11PW/T+w=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		cDOdPfRgPl0xhoO4IdyGUMpzNcA=
+		YmvvqB35VRiCpmZZz7W11PW/T+w=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gz31kU2bWmt9vok5TCfoZWO660U=
+		xRlvVGYLVvOAnJ/PWPc21d6w3SA=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		gz31kU2bWmt9vok5TCfoZWO660U=
+		xRlvVGYLVvOAnJ/PWPc21d6w3SA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		XsxgZbTBmUjpJkSv2znzAIUzczA=
+		KyQkFzD1j4MqfQHPTJ6CBinwrms=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y4Fovwl2UehRB0pD15+MZGs7/DUEslj0Rp1zvWfGAkI=
+			W/rJWvo/O3hPIQOmy2vTxb9Fclz1Ve/3OSGkiuen42E=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y4Fovwl2UehRB0pD15+MZGs7/DUEslj0Rp1zvWfGAkI=
+			W/rJWvo/O3hPIQOmy2vTxb9Fclz1Ve/3OSGkiuen42E=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsbbZRXZZypcP8gdxB9WqwqXOFud1B+Nj+LzvEB57zI=
+			xP8K6tWLHpYRyVi0cgKnX496FiE52zZOdGFGvG4CK44=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsbbZRXZZypcP8gdxB9WqwqXOFud1B+Nj+LzvEB57zI=
+			xP8K6tWLHpYRyVi0cgKnX496FiE52zZOdGFGvG4CK44=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5O08+/uUCVyYZL79U3BUDBUskkAwynnRL1zokz0316s=
+			asp3Xy+m/gniNBs4gdVvNuH8tChXZBXFW5rW83WTWyo=
 			</data>
 		</dict>
 	</dict>
