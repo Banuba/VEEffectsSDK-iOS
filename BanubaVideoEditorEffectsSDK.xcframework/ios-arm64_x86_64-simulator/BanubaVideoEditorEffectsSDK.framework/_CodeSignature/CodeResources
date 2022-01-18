@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AssetHelper.h</key>
 		<data>
-		h7PJS8wj5IqnczGD613SPKBe93I=
+		1h0Mb2Ie3KVZKaKqblKncJG/AJY=
 		</data>
 		<key>Headers/BNBValuesAnimator.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BanubaVideoEditorEffectsSDK-Swift.h</key>
 		<data>
-		N9hcrFtHJdITQjFcA852prOxTWI=
+		H/aR7DayWZ/xlWft+CsGFnMTszw=
 		</data>
 		<key>Headers/BanubaVideoEditorEffectsSDK.h</key>
 		<data>
@@ -22,71 +22,71 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/sTQggAd7i5VtwAf5yhwlsv2AuA=
+		oG+Shhfp6lZHrvsiCBai68JZiFM=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vW8cGTFBvohHq1g6lj5hTfWhVqo=
+		MW7Gr+Tq/OFD1C98c6HXTuBNeWw=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		vW8cGTFBvohHq1g6lj5hTfWhVqo=
+		MW7Gr+Tq/OFD1C98c6HXTuBNeWw=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		RtpftlfYgc+MZk29/Wlk9K7jfUQ=
+		hp9g1btruOLGbpHnB1y/5hbgoW4=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		RtpftlfYgc+MZk29/Wlk9K7jfUQ=
+		hp9g1btruOLGbpHnB1y/5hbgoW4=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		SxuHH64QVVTlvyfVRB+uHwmk+XU=
+		0i4sO9038DuQl1HLmqD87GFQwYQ=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TaBF78gUj6xwhi5o+3jme6FabvE=
+		Td2j4SjmKBudwdkE2WsdAEklqH8=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g0KtWcEB7F+47nZEXmipGMgJ7mo=
+		a1nrDRMoV807hfXedCnUUtZo0bU=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		SxuHH64QVVTlvyfVRB+uHwmk+XU=
+		0i4sO9038DuQl1HLmqD87GFQwYQ=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		TaBF78gUj6xwhi5o+3jme6FabvE=
+		Td2j4SjmKBudwdkE2WsdAEklqH8=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		g0KtWcEB7F+47nZEXmipGMgJ7mo=
+		a1nrDRMoV807hfXedCnUUtZo0bU=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XV8c40QDVGDn3khgbLGrbslyHtg=
+		41Syb6O/sALm/BwKkTPecrOSAOI=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WtzY4r00ZTWPdC8dqNb0uE41lwc=
+		OGailJaB17c/CgStSDyVdhfLgCo=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0qOofAv7ZyIRJJiKbzuYTfX4spw=
+		X1UKlQ9f5QeGEV32fiORT3eBhfk=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		XV8c40QDVGDn3khgbLGrbslyHtg=
+		41Syb6O/sALm/BwKkTPecrOSAOI=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		WtzY4r00ZTWPdC8dqNb0uE41lwc=
+		OGailJaB17c/CgStSDyVdhfLgCo=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		0qOofAv7ZyIRJJiKbzuYTfX4spw=
+		X1UKlQ9f5QeGEV32fiORT3eBhfk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		Wc36OPeH+WkHMUEwm0auzdXINHY=
+		qk3EZMecs6oYi2Xr5+Dt+i/T0KM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lnKITsBZDF+mAdV+JItr5lW+k5ixS6vkqbNtxuKFXzo=
+			3Cup7QuJT+lCuRTKig6oYozk7muVM89vWmoctPdQAyA=
 			</data>
 		</dict>
 		<key>Headers/BNBValuesAnimator.h</key>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PcvVVJt7Oc69N40o1NqyNF5W/n0CTklsxxURTvfi95M=
+			cJIRQ/nBnxjwPJmFGBsOumevAWpe5BMgjqx7klpVp4g=
 			</data>
 		</dict>
 		<key>Headers/BanubaVideoEditorEffectsSDK.h</key>
@@ -131,112 +131,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nr5uhnXSLWXMH81AnuNjwf34TAjXm5XqZ1f7NH9xzLA=
+			Pkb+M0G8ojpNVY9k33ks5SEp5/LqxzvIEgS1jZkq0zs=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nr5uhnXSLWXMH81AnuNjwf34TAjXm5XqZ1f7NH9xzLA=
+			Pkb+M0G8ojpNVY9k33ks5SEp5/LqxzvIEgS1jZkq0zs=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			drbzHTvjHiIUY49oxPMIcWVsAAiWAhmfi5jBpND/t+A=
+			0u0qJcWoqZ2TO08+qWRLbqD01VnxdGLz7SshRfovFLw=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			drbzHTvjHiIUY49oxPMIcWVsAAiWAhmfi5jBpND/t+A=
+			0u0qJcWoqZ2TO08+qWRLbqD01VnxdGLz7SshRfovFLw=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+yvjNNvKJxE3vNhQbF6denc4iaccMbEG1LF5RUf3xlA=
+			xrmxQZYiSj+wCQlExEWwuRTChGqjrg1KC4bASFHzB6U=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rgk3OKJQZoM8t/NwOxUiCXis/0rnL8NU23ALMVVJ6rA=
+			FIQfW3JhDTD1wOgXjtL0lZ1elWn3AiiapYy1W7FrYGE=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQC5AmnlBlLuNXskMfuYupjujBZe2C4bx7BFjpNuHB8=
+			Y2K0mz9UVtb6g6czdPGqwjHh76jEVs/7RBq96OWr1Wc=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+yvjNNvKJxE3vNhQbF6denc4iaccMbEG1LF5RUf3xlA=
+			xrmxQZYiSj+wCQlExEWwuRTChGqjrg1KC4bASFHzB6U=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rgk3OKJQZoM8t/NwOxUiCXis/0rnL8NU23ALMVVJ6rA=
+			FIQfW3JhDTD1wOgXjtL0lZ1elWn3AiiapYy1W7FrYGE=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQC5AmnlBlLuNXskMfuYupjujBZe2C4bx7BFjpNuHB8=
+			Y2K0mz9UVtb6g6czdPGqwjHh76jEVs/7RBq96OWr1Wc=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bGTTUA+iaWisEVTiIihSXSYp3P+hD7lIWSvGUbKAEA=
+			Ub8HJ+lXcvbZjIhFXnxLYuBfgJFr3DkvXcQWVqqlHIo=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ybIpj3Zsrt10qTCa7IBeNqoQeVQOHRDaowk3u52sJ0=
+			a7aU0XzSxOnws1XCc/1t8gW435LH3ghk0CiRHqmm9xc=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NAM3ADy/d/gosfE8j6OQ+/MYcdCJxbsLcDC/GObfmF4=
+			6dj1Ao+iCle8mjP+WBWvCzJNvRqTvMWNsRvq1Jw9iSU=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bGTTUA+iaWisEVTiIihSXSYp3P+hD7lIWSvGUbKAEA=
+			Ub8HJ+lXcvbZjIhFXnxLYuBfgJFr3DkvXcQWVqqlHIo=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ybIpj3Zsrt10qTCa7IBeNqoQeVQOHRDaowk3u52sJ0=
+			a7aU0XzSxOnws1XCc/1t8gW435LH3ghk0CiRHqmm9xc=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NAM3ADy/d/gosfE8j6OQ+/MYcdCJxbsLcDC/GObfmF4=
+			6dj1Ao+iCle8mjP+WBWvCzJNvRqTvMWNsRvq1Jw9iSU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -250,7 +250,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JHA/vRysxSCFDXEZzGHx7HjeIPYRhx4iqUm/05qWEDg=
+			s/lcfHsHZWtj+fV/GMSHSpKYuGAjXirjCy/Ih8nu72M=
 			</data>
 		</dict>
 	</dict>
