@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		HjdUTudEEogfnBBwVeUhisQDWwk=
+		MI7Gp4tORBgidt/VnW98l2vJy/E=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		HjdUTudEEogfnBBwVeUhisQDWwk=
+		MI7Gp4tORBgidt/VnW98l2vJy/E=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		V8ZAwI06SeKVDR/PI+9fVwdSvqs=
+		way3uGc8VP7lKWIBc3RsD/2TwBE=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		V8ZAwI06SeKVDR/PI+9fVwdSvqs=
+		way3uGc8VP7lKWIBc3RsD/2TwBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		kc5d+kSPLZFSBHzp4Cjvh19Cxa4=
+		rNHyDpVXN2FtxQNCx0E5jQsY53g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SF8kFc6erW+IKfGHT5qraDyYWl+ydn5JKWEDoPlwmac=
+			2KbdU4oKR2KogOxJWAe3IVFYYcPH/1twrfFaL+9ua9k=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SF8kFc6erW+IKfGHT5qraDyYWl+ydn5JKWEDoPlwmac=
+			2KbdU4oKR2KogOxJWAe3IVFYYcPH/1twrfFaL+9ua9k=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LH/Lmuih/nYe1CbNkj8hEzG2462nGVzVr6DB2fPlKzk=
+			VAVFkltCxNfxWvyn4xpfvjgFXaGkcQ3si/PvXueEI/k=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LH/Lmuih/nYe1CbNkj8hEzG2462nGVzVr6DB2fPlKzk=
+			VAVFkltCxNfxWvyn4xpfvjgFXaGkcQ3si/PvXueEI/k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9+mmCSVHq0rejqlNb+EPke8iSSrhUlOuw9pnruv9vSQ=
+			JZBOND7Q6qYQH3vgB+OYych2S91jO49a+4316Ax+hHY=
 			</data>
 		</dict>
 	</dict>

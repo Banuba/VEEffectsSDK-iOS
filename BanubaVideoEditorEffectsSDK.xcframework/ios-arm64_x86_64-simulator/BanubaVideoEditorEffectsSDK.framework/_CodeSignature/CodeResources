@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		MW7Gr+Tq/OFD1C98c6HXTuBNeWw=
+		iZPH3mSEz+zIZOmBcYxNAmWw4sg=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		MW7Gr+Tq/OFD1C98c6HXTuBNeWw=
+		iZPH3mSEz+zIZOmBcYxNAmWw4sg=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hp9g1btruOLGbpHnB1y/5hbgoW4=
+		MIuKmgeHw/2pEQKwm+mTFSP1Djk=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		hp9g1btruOLGbpHnB1y/5hbgoW4=
+		MIuKmgeHw/2pEQKwm+mTFSP1Djk=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		a1nrDRMoV807hfXedCnUUtZo0bU=
+		9GaQjLMVG+BB3YuK+C3xEk9tvP4=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		a1nrDRMoV807hfXedCnUUtZo0bU=
+		9GaQjLMVG+BB3YuK+C3xEk9tvP4=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		X1UKlQ9f5QeGEV32fiORT3eBhfk=
+		oultoFIL170Eyt3sFQ0kyd03hbs=
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		X1UKlQ9f5QeGEV32fiORT3eBhfk=
+		oultoFIL170Eyt3sFQ0kyd03hbs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		qk3EZMecs6oYi2Xr5+Dt+i/T0KM=
+		4RaTAaS/hug6as/KGO/d2wlZJAc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,28 +131,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pkb+M0G8ojpNVY9k33ks5SEp5/LqxzvIEgS1jZkq0zs=
+			GXpy1SXjDjzlvgyH7Lt+ytA9JozN6qwRQNzCdzYD8Ws=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pkb+M0G8ojpNVY9k33ks5SEp5/LqxzvIEgS1jZkq0zs=
+			GXpy1SXjDjzlvgyH7Lt+ytA9JozN6qwRQNzCdzYD8Ws=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0u0qJcWoqZ2TO08+qWRLbqD01VnxdGLz7SshRfovFLw=
+			EFptOvwowbMXWmtUpr9+S38kEd+zVfgfj915DN/RLHo=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0u0qJcWoqZ2TO08+qWRLbqD01VnxdGLz7SshRfovFLw=
+			EFptOvwowbMXWmtUpr9+S38kEd+zVfgfj915DN/RLHo=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2K0mz9UVtb6g6czdPGqwjHh76jEVs/7RBq96OWr1Wc=
+			7EBYYcnFV8PlJZNqzEtiwztkPCdqpVSBNeHu0IQNXfQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -194,7 +194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y2K0mz9UVtb6g6czdPGqwjHh76jEVs/7RBq96OWr1Wc=
+			7EBYYcnFV8PlJZNqzEtiwztkPCdqpVSBNeHu0IQNXfQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6dj1Ao+iCle8mjP+WBWvCzJNvRqTvMWNsRvq1Jw9iSU=
+			arSqgzsJW9dPI2CEp4To32XDf3jvRPA4EiulU0yHnN4=
 			</data>
 		</dict>
 		<key>Modules/BanubaVideoEditorEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6dj1Ao+iCle8mjP+WBWvCzJNvRqTvMWNsRvq1Jw9iSU=
+			arSqgzsJW9dPI2CEp4To32XDf3jvRPA4EiulU0yHnN4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -250,7 +250,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s/lcfHsHZWtj+fV/GMSHSpKYuGAjXirjCy/Ih8nu72M=
+			Ja7VQvk59p8rPVFolieXqXl7p1wjNW9tdqe/SULGvmI=
 			</data>
 		</dict>
 	</dict>
