@@ -2,7 +2,7 @@
 
 # Banuba VEEffectsSDK. API Reference.
 
-VEEffectSDK consists of several effect applicator:
+VEEffectSDK consists of several effect applicators:
   - [Effects Applicator](#Effects-Applicator)
       + [FX effects functionality](#FX-effects-functionality)
       + [Speed effects functionality](#Speed-effects-functionality)
