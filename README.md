@@ -17,7 +17,7 @@ VEEffectSDK consists of several effect applicators:
 Effects Applicator is used for applying visual effects, such as fx, speed, overlay, transform effects.
 Each method contains set of entire options to setup effect settings: time, type, condition to remove same type and etc.
 
-**Effect ID should be unique for each added effect.**
+:exclamation: **Important:** **Effect ID should be unique for each added effect.**
 
 `EffectApplicator` constructor requires `VideoEditorService` and `EditorEffectsConfigHolder` instances.
 ``` swift
@@ -175,7 +175,7 @@ public enum OverlayEffectApplicatorType {
 
 Effect info options. Main property is image which used as entire effect.
 
-**Image should be create from CGImage represenation.**
+:exclamation: **Important:** **Image should be create from CGImage represenation.**
 
 ``` swift
 /// VideoEditorEffectInfo contains all the information you need to add effects to your video.
@@ -277,7 +277,7 @@ Method contains set of entire options to setup effect settings: configuration an
 
 `WatermarkConfiguration` consist of Image configuration of relevant watermark representation, size, offset, screen position and id.
 
-**Effect ID should be unique for each added effect.**
+:exclamation: **Important:** **Effect ID should be unique for each added effect.**
 
 ``` swift 
 /// The watermark configuration.
