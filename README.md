@@ -19,7 +19,7 @@ Each method contains set of entire options to setup effect settings: time, type,
 
 **Effect ID should be unique for each added effect.**
 
-EffectApplicator constructor requires VideoEditorService and EditorEffectsConfigHolder instances.
+`EffectApplicator` constructor requires `VideoEditorService` and `EditorEffectsConfigHolder` instances.
 ``` swift
   /// EffectApplicator constructor
   /// - Parameters:
@@ -34,7 +34,7 @@ EffectApplicator constructor requires VideoEditorService and EditorEffectsConfig
 
 ### FX effects functionality
 
-'applyVisualEffectApplicatorType' func of EffectApplicator entity allows you to add choosen visual effect to video composition of VideoEditorService.
+`applyVisualEffectApplicatorType` func of `EffectApplicator` entity allows you to add choosen visual effect to video composition of `VideoEditorService`.
 ``` swift
   /// Allows you to add visual effects with required settings.
   /// - Parameters:
@@ -52,7 +52,7 @@ EffectApplicator constructor requires VideoEditorService and EditorEffectsConfig
   )
 ```
 
-VisualEffectApplicatorType options
+`VisualEffectApplicatorType` options
 ``` swift
 /// VisualEffectApplicatorType describes what kind of effect needs to be added
 public enum VisualEffectApplicatorType: String, CaseIterable {
@@ -115,7 +115,7 @@ public enum VisualEffectApplicatorType: String, CaseIterable {
 
 ### Speed effects functionality
 
-'applySpeedEffectType' func of EffectApplicator entity allows you to add choosen speed effect to video composition of VideoEditorService.
+`applySpeedEffectType` func of `EffectApplicator` entity allows you to add choosen speed effect to video composition of `VideoEditorService`.
 ``` swift
   /// Allows you to add speed effects with required settings.
   /// - Parameters:
@@ -132,7 +132,7 @@ public enum VisualEffectApplicatorType: String, CaseIterable {
     effectId: UInt
 ```
 
-SpeedEffectType options.
+`SpeedEffectType` options.
 ``` swift
 /// SpeedEffectType describes what kind of effect needs to be added
 public enum SpeedEffectType: String, CaseIterable {
@@ -145,7 +145,7 @@ public enum SpeedEffectType: String, CaseIterable {
 
 ### Overlay effects functionality
 
-'applyOverlayEffectType' func of EffectApplicator entity allows you to add choosen overlay effect to video composition of VideoEditorService.
+`applyOverlayEffectType` func of `EffectApplicator` entity allows you to add choosen overlay effect to video composition of `VideoEditorService`.
 ``` swift
   /// Allows you to add GIF or text effects with required settings.
   /// - Parameters:
@@ -157,7 +157,7 @@ public enum SpeedEffectType: String, CaseIterable {
   )
 ```
 
-OverlayEffectApplicatorType options.
+`OverlayEffectApplicatorType` options.
 ``` swift
 /// OverlayEffectApplicatorType describes what kind of effect needs to be added
 public enum OverlayEffectApplicatorType {
@@ -262,7 +262,7 @@ public enum AssetRotation: UInt8, Codable {
  ## Watermark Applicator
  
 Watermark Applicator is used for adjusting watermarks filter models for subsequent usage with VEExportSDK.
-Method contains set of entire options to setup effect settings: configuration and preffered video size of exporting VideoEditorService composition.
+Method contains set of entire options to setup effect settings: configuration and preffered video size of exporting `VideoEditorService` composition.
 
 ``` swift
 /// Returns VideoEditorFilterModel with given configuration
@@ -275,7 +275,7 @@ Method contains set of entire options to setup effect settings: configuration an
   )
 ```
 
-WatermarkConfiguration consist of Image configuration of relevant watermark representation, size, offset, screen position and id.
+`WatermarkConfiguration` consist of Image configuration of relevant watermark representation, size, offset, screen position and id.
 
 **Effect ID should be unique for each added effect.**
 
@@ -306,12 +306,12 @@ public struct WatermarkConfiguration {
 ## Pixelate Applicator
 
 PixelateApplicator allows you to change current pixelate effect position and scale options.
-'changeTextureLocation' func requires pixelate effect drawable figure, shapeRenderer and coordinates. So you need to store id of pixelate effect for subsequent getting relevant shape renderer from VideoEditorService entity with method getCurrentAppliedEffects. Then you could filter them with existing id and get renderer instance from model with following casting to pass it to 'changeTextureLocation' func.
+`changeTextureLocation` func requires pixelate effect drawable figure, shapeRenderer and coordinates. So you need to store id of pixelate effect for subsequent getting relevant shape renderer from `VideoEditorService` entity with method getCurrentAppliedEffects. Then you could filter them with existing id and get renderer instance from model with following casting to pass it to `changeTextureLocation` func.
 ``` swift
 let shapeRenderer = model.rendererInstance as? ShapeDrawer
 ```
 
-'changeTextureLocation' func
+`changeTextureLocation` func
 ``` swift
   /// Change blur texture location
   /// - Parameters:
