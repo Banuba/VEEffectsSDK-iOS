@@ -2,7 +2,7 @@
 
 # Banuba VEEffectsSDK. API Reference.
 
-VEEffectsSDK allows you to edit video composition which already setuped in [Core API](https://github.com/Banuba/VideoEditor-iOS). So [Core API](https://github.com/Banuba/VideoEditor-iOS) is requires usage for VEExportSDK.
+VEEffectsSDK allows you to edit video composition which already setuped in [Core API](https://github.com/Banuba/VideoEditor-iOS). So [Core API](https://github.com/Banuba/VideoEditor-iOS) is requires usage for VEEffectsSDK.
 
 VEEffectSDK consists of several effect applicators:
   - [Effects Applicator](#Effects-Applicator)
