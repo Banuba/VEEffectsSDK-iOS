@@ -1,17 +1,17 @@
 // swift-tools-version:5.3
 import PackageDescription
 let package = Package(
-  name: "BanubaVideoEditorEffectsSDK",
+  name: "VEEffectsSDK",
   platforms: [
     .iOS(.v11)
   ],
   products: [
     .library(
-      name: "BanubaVideoEditorEffectsSDK",
-      targets: ["BanubaVideoEditorEffectsSDK"])
+      name: "VEEffectsSDK",
+      targets: ["VEEffectsSDK"])
   ],
   targets: [
     .binaryTarget(
-      name: "BanubaVideoEditorEffectsSDK",
-      path: "BanubaVideoEditorEffectsSDK.xcframework")
+      name: "VEEffectsSDK",
+      path: "VEEffectsSDK.xcframework")
   ])
