@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		IdVimV//zikojhwL7MZ++lOXR0U=
+		LsYk3Tw1TRBg+oaitrb77W6cM7g=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		IdVimV//zikojhwL7MZ++lOXR0U=
+		LsYk3Tw1TRBg+oaitrb77W6cM7g=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		3BKQW52w2e2ZympMiSxBDDPb5IE=
+		9o1JGeImC30o8OiP+VJHS7YtEgg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		3BKQW52w2e2ZympMiSxBDDPb5IE=
+		9o1JGeImC30o8OiP+VJHS7YtEgg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Vjvngp9MQP8QOWDTTHR7veGFDe4=
+		fWzx1CiBmjLPdOuDh5YhSn0dLXo=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Vjvngp9MQP8QOWDTTHR7veGFDe4=
+		fWzx1CiBmjLPdOuDh5YhSn0dLXo=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jH9CmYeRIxqMvrs9z4gX1h6uZ24=
+		2pMWWQ5hjl0xAfLIbfHqDHCnbe8=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		jH9CmYeRIxqMvrs9z4gX1h6uZ24=
+		2pMWWQ5hjl0xAfLIbfHqDHCnbe8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		ijlXuaDibIZHGGeRuXfi9KgsS8M=
+		o3lfI7nsIhn3JT9g57P28h3LnFU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,28 +131,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b2MfgOg8gETticWVLRo/AP431JmgO3SYBIo0AhioaTk=
+			8tKrZogP7tI5fnMBP8Eva+61LHYv8YgbHuEaz/MFyCY=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b2MfgOg8gETticWVLRo/AP431JmgO3SYBIo0AhioaTk=
+			8tKrZogP7tI5fnMBP8Eva+61LHYv8YgbHuEaz/MFyCY=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m838YnzQzl/+vp7coc1bgzgovojwsH/wERBhqV7sd7Q=
+			1gN+Lg49oyB+VollCFR4sR1EgF59aGhBVb58MNUqqrU=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m838YnzQzl/+vp7coc1bgzgovojwsH/wERBhqV7sd7Q=
+			1gN+Lg49oyB+VollCFR4sR1EgF59aGhBVb58MNUqqrU=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PrGTgrq6Xco+Vb3eg4vCvSZNDhpLJL9MB2jYADiU9A=
+			FbAmIaNaDEL2ceS3DNCK1fgvumlqKYOGaCkHPOLQ3KI=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64.swiftdoc</key>
@@ -194,7 +194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PrGTgrq6Xco+Vb3eg4vCvSZNDhpLJL9MB2jYADiU9A=
+			FbAmIaNaDEL2ceS3DNCK1fgvumlqKYOGaCkHPOLQ3KI=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9dVzARR57W662l1hZkudtno+3sGFzwme02AHTSTWYMM=
+			ijQhJELgiMbOmaFBQZscP15sZAo8EPrRPVsExWNbEdc=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9dVzARR57W662l1hZkudtno+3sGFzwme02AHTSTWYMM=
+			ijQhJELgiMbOmaFBQZscP15sZAo8EPrRPVsExWNbEdc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -250,7 +250,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/JSsUrG7SpsF1wRsYAzG2isEclx1A5/q+VqI4TtMLk=
+			GARIk4kvRpvx/gNMgackeZ2RqfOfN/INY3LfNUXpQ+I=
 			</data>
 		</dict>
 	</dict>
