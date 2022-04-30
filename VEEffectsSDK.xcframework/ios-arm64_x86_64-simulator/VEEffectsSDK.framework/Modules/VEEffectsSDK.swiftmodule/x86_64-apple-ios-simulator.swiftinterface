@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name VEEffectsSDK
 import AVFoundation
 import BanubaLicenseServicingSDK
@@ -16,7 +16,7 @@ import UIKit
 import VideoEditor
 import _Concurrency
 @_hasMissingDesignatedInitializers public class VideoCompositionRenderQueue {
-  public static var queue: Dispatch.DispatchQueue
+  public static let queue: Dispatch.DispatchQueue
   @objc deinit
 }
 public class ShapeDrawer : VideoEditor.CompositionRenderering {
@@ -146,12 +146,12 @@ public class ImageEffectInfo {
   @objc deinit
 }
 public struct EffectIDs {
-  public static var colorEffectStartId: Swift.UInt
-  public static var maskEffectStartId: Swift.UInt
-  public static var speedEffectStartId: Swift.UInt
-  public static var visualEffectStartId: Swift.UInt
-  public static var transformEffectId: Swift.UInt
-  public static var pixelateEffectId: Swift.UInt
+  public static let colorEffectStartId: Swift.UInt
+  public static let maskEffectStartId: Swift.UInt
+  public static let speedEffectStartId: Swift.UInt
+  public static let visualEffectStartId: Swift.UInt
+  public static let transformEffectId: Swift.UInt
+  public static let pixelateEffectId: Swift.UInt
 }
 public protocol EffectRenderer {
   func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String, additionalParameters: [Swift.String : Any]?)
@@ -267,3 +267,12 @@ public enum SpeedEffectType : Swift.String, Swift.CaseIterable {
     get
   }
 }
+extension VEEffectsSDK.EditorEffectKey : Swift.Equatable {}
+extension VEEffectsSDK.EditorEffectKey : Swift.Hashable {}
+extension VEEffectsSDK.EditorEffectKey : Swift.RawRepresentable {}
+extension VEEffectsSDK.VisualEffectApplicatorType : Swift.Equatable {}
+extension VEEffectsSDK.VisualEffectApplicatorType : Swift.Hashable {}
+extension VEEffectsSDK.VisualEffectApplicatorType : Swift.RawRepresentable {}
+extension VEEffectsSDK.SpeedEffectType : Swift.Equatable {}
+extension VEEffectsSDK.SpeedEffectType : Swift.Hashable {}
+extension VEEffectsSDK.SpeedEffectType : Swift.RawRepresentable {}
