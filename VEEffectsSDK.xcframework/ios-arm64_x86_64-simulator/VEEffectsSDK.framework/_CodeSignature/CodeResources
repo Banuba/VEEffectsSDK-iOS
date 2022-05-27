@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/VEEffectsSDK-Swift.h</key>
 		<data>
-		k7uLwFC/VtkMBmKGdR74emoudGQ=
+		ikkfP1ELKwHGjrjIMXhoVqfWmkk=
 		</data>
 		<key>Headers/VEEffectsSDK.h</key>
 		<data>
@@ -22,39 +22,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3eHiKkiViPD1HZc++/shOHiECx4=
+		KYsY17s4KroZuYY48aE4frK4q9U=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		HD9f1TRnHEqmXaqLrGLSvwbnPsY=
+		yR2e+DE9/J3e2FSyYr8us/7Kxxk=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		3C+n/jDIAwfVqJLnDNGP4KA2Bww=
+		QETHfpHEI6RmygwVxBJ/dmFAn8Q=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0bYRmyrDE1XMvmBsr3J6kpzx9bA=
+		ecJnsPQKfq1ZKAz+F7BubhR/oC4=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PhwxcV7LWpd4aUoJj06paBjE7Ms=
+		n+4RyUY8A9soYoVeAkA+djQSG9s=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HjDuLT8r76NRg1OgM1RjikLcDeY=
+		mAiIQAlk0CpVi3kCVoz0HM5+RHk=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8oCFEMs/ZUCrey0n6SGr5qMMIGg=
+		xncmnINibRsni/Vh7jag+nt0IYc=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SgcJZIM5uF0j5KkXzSdW7nuwfqY=
+		wp62WWZcVM5CvIZj739SDnW4vrY=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		d+5jtOlT1d8WfmQFkeRXBLKz07Q=
+		97Rq3B0LbPiN43OBOMHPEIx9BHI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		1QPOiZ01vaTx8dymoEy4A4etq54=
+		UXhiQzWhRWNEVGC18AJ8z1Fwyjw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			upAL5OLK9+3OzsmbauGyy4yl87u5rbobUOoQQFwxL+A=
+			I7X7GDzfJp7SOe84Jq/QUxsciOJOaFvMdJtG7Riox+0=
 			</data>
 		</dict>
 		<key>Headers/VEEffectsSDK.h</key>
@@ -99,56 +99,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J1eV1AXZ0qPaswlOx7H7L1taYIHAqulz3ajMJZHmKqE=
+			6RwMBL5ArePeNa/nCnvYNbGa7AdXc2MZvfrYFeqwKqk=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wBPZXYO3VzbapdTJl0voHaU9i+Ef/fl9yxtWpbx/uAY=
+			rZVdpdBuMeWwf4SkblMNqx5OTWOVST91wo3rJBNwA+A=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UN0WjPNsOHUtRXtD36oioJ8xCpJzfCi/W+J8rbf0M8=
+			69X2CXXvaVFj39sRnv6EdC0k0YQC7XzS7fNI5+Dw7tI=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zHknowuC1rxGA26GTk7rIiMqBD5q+U8VxvQPUPF1h+I=
+			0ExRaZ9qmLIWapK2qUTmJTwNfARxmNwT+Ai2nFyLgNo=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XWdbT8j2DAtj70GriBWlTHYJILPKP2xM0p0HmPqOYK4=
+			CtUba476kL2aZb0emb3ikJkxMqK6DPtvyXkD4Ibiei8=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I7GcGxAsw41abzky2JkdJChnSpxYetY7AHY99KVwJrU=
+			iDzolvKWmg6wR9fCB9vIEu22rIFR8EyLynZSnnWJu8k=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0mUwEpuN1YpM5xY8wfxTbjKVwmpqA7XJvjAjdVZ+BXA=
+			wSDvw5p5ZEeOfo1GYSieSroe2weCK9IsszUaEo2qsf8=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5/pvMJzQf1wAX6PB3ZgyhiTFkDxS1gtcKsskaJ4hN58=
+			cYo9rI8GTeLKWewIAG1RJPUpA43KZSvWNRKx0cgEadc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IbytxcZxyG7wwGWfWOhP+t0XNh+fnvZbu7sMWtcWLco=
+			9GuNPg2TQnKOkMdjLPR7CKPDtdWNglfVnR5Rufxf4ws=
 			</data>
 		</dict>
 	</dict>

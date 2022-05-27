@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name VEEffectsSDK
 import AVFoundation
 import BanubaLicenseServicingSDK
@@ -45,6 +45,7 @@ public protocol EffectsApplicatorServicing : AnyObject {
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyOverlayEffectType(_ type: VEEffectsSDK.OverlayEffectApplicatorType, effectInfo: VEEffectsSDK.VideoEditorEffectInfo)
   func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
+  func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
 }
 public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
   final public let pixelateApplicatorService: VEEffectsSDK.PixelateApplicatorServicing
@@ -65,6 +66,9 @@ extension VEEffectsSDK.EffectApplicator {
 }
 extension VEEffectsSDK.EffectApplicator {
   public func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
+}
+extension VEEffectsSDK.EffectApplicator {
+  public func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
 }
 @_inheritsConvenienceInitializers public class ColorEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
   required public init()
@@ -111,11 +115,15 @@ public protocol ImagesSequence {
 }
 public protocol EffectsHolderServicing : AnyObject {
   init(token: Swift.String)
+  var transitionEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
   var speedEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
   var visualEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
 }
 @objc public class EditorEffectsConfigHolder : ObjectiveC.NSObject, VEEffectsSDK.EffectsHolderServicing {
   required public init(token: Swift.String)
+  public var transitionEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
+    get
+  }
   public var speedEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
     get
   }
@@ -123,6 +131,18 @@ public protocol EffectsHolderServicing : AnyObject {
     get
   }
   @objc deinit
+}
+public struct TransitionEffectInfo {
+  public var type: VEEffectsSDK.TransitionEffectType {
+    get
+  }
+  public var start: CoreMedia.CMTime {
+    get
+  }
+  public var end: CoreMedia.CMTime {
+    get
+  }
+  public init(type: VEEffectsSDK.TransitionEffectType, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
 }
 public protocol TransformEffectsSDKServicing {
   var effectsApplicator: VEEffectsSDK.EffectsApplicatorServicing { get }
@@ -222,24 +242,26 @@ public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case dslrKaleidoscope
   case dvCam
   case flash
+  case glitch
   case glitch2
   case glitch3
-  case glitch
   case glitchEffect2
   case kaleidoscope
   case heatmap
   case lumeire
+  case mirror
+  case mirror2
   case pixelationDynamic
   case pixelationStatic
   case polaroid
   case rave
   case soul
   case stars
+  case tvFoam
   case transition
   case transition2
   case transition3
   case transition4
-  case tvFoam
   case vhs
   case vhs2
   case zoom
@@ -267,6 +289,31 @@ public enum SpeedEffectType : Swift.String, Swift.CaseIterable {
     get
   }
 }
+public enum TransitionEffectType : Swift.String, Swift.CaseIterable {
+  case normal
+  case whipDown
+  case whipUp
+  case whipRight
+  case whipLeft
+  case scrollDown
+  case scrollUp
+  case scrollRight
+  case scrollLeft
+  case spinRight
+  case fade
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [VEEffectsSDK.TransitionEffectType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [VEEffectsSDK.TransitionEffectType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension VEEffectsSDK.TransitionEffectType {
+  public static func type(from type: BanubaUtilities.TransitionType) -> VEEffectsSDK.TransitionEffectType
+}
 extension VEEffectsSDK.EditorEffectKey : Swift.Equatable {}
 extension VEEffectsSDK.EditorEffectKey : Swift.Hashable {}
 extension VEEffectsSDK.EditorEffectKey : Swift.RawRepresentable {}
@@ -276,3 +323,6 @@ extension VEEffectsSDK.VisualEffectApplicatorType : Swift.RawRepresentable {}
 extension VEEffectsSDK.SpeedEffectType : Swift.Equatable {}
 extension VEEffectsSDK.SpeedEffectType : Swift.Hashable {}
 extension VEEffectsSDK.SpeedEffectType : Swift.RawRepresentable {}
+extension VEEffectsSDK.TransitionEffectType : Swift.Equatable {}
+extension VEEffectsSDK.TransitionEffectType : Swift.Hashable {}
+extension VEEffectsSDK.TransitionEffectType : Swift.RawRepresentable {}
