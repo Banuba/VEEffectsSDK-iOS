@@ -21,7 +21,7 @@ Each method contains set of entire options to setup effect settings: time, type,
 
 :exclamation: **Important:** **Effect ID should be unique for each added effect.**
 
-`EffectApplicator` constructor requires `VideoEditorService` and `EditorEffectsConfigHolder` instances.
+`EffectApplicator: EffectsApplicatorServicing` constructor requires `VideoEditorService` and `EditorEffectsConfigHolder` instances.
 ``` swift
   /// EffectApplicator constructor
   /// - Parameters:
@@ -33,8 +33,27 @@ Each method contains set of entire options to setup effect settings: time, type,
     effectConfigHolder: EffectsHolderServicing
   )
 ```
-
 ### FX effects functionality
+
+`applyColorEffect` func of `EffectApplicator` entity allows you to add choosen speed effect to video composition of `VideoEditorService`
+``` swift
+  /// Allows you to add speed effects with required settings.
+  /// - Parameters:
+  ///   - name: Lut name
+  ///   - lutUrl: Url to lut file
+  ///   - startTime: When effect starts
+  ///   - endTime: When effect ends
+  ///   - removeSameType: Remove same effect if exist
+  ///   - effectId: Unic effect id
+  public func applyColorEffect(
+    name: String,
+    lutUrl: URL,
+    startTime: CMTime,
+    endTime: CMTime,
+    removeSameType: Bool,
+    effectId: UInt
+  )
+```
 
 `applyVisualEffectApplicatorType` func of `EffectApplicator` entity allows you to add choosen visual effect to video composition of `VideoEditorService`.
 ``` swift
@@ -82,6 +101,10 @@ public enum VisualEffectApplicatorType: String, CaseIterable {
   case heatmap
   /// lumeire effect type
   case lumeire
+  /// mirror effect type
+  case mirror
+  /// mirror 2 effect type
+  case mirror2
   /// pixelationDynamic effect type
   case pixelationDynamic
   /// pixelationStatic effect type
@@ -260,8 +283,18 @@ public enum AssetRotation: UInt8, Codable {
   case rotate270 = 3
 }
  ```
+ ### Transition effect functionality
  
- ## Watermark Applicator
+ ``` swift
+ /// Allows you to add transition effect between two parts of video
+  ///  - Parameters:
+  ///    - effectInfo: Transition effect info (id, type, start time, end time)
+  public func applyTransitionEffect(
+  type: TransitionType,
+  effectInfo: TransitionEffectInfo
+  )
+ ```
+ ## Watermark Applicator: WatermarkApplicatorServicing
  
 Watermark Applicator is used for adjusting watermarks filter models for subsequent usage with VEExportSDK.
 Method contains set of entire options to setup effect settings: configuration and preffered video size of exporting `VideoEditorService` composition.
@@ -305,7 +338,7 @@ public struct WatermarkConfiguration {
 }
 ```
 
-## Pixelate Applicator
+## Pixelate Applicator: PixelateApplicatorServicing
 
 PixelateApplicator allows you to change current pixelate effect position and scale options.
 `changeTextureLocation` func requires pixelate effect drawable figure, shapeRenderer and coordinates. So you need to store id of pixelate effect for subsequent getting relevant shape renderer from `VideoEditorService` entity with method getCurrentAppliedEffects. Then you could filter them with existing id and get renderer instance from model with following casting to pass it to `changeTextureLocation` func.
@@ -329,3 +362,69 @@ let shapeRenderer = model.rendererInstance as? ShapeDrawer
   )
 ```
 
+``` swift
+class ShapeDrawer: CompositionRenderering {
+  
+  public var shapeTexture: MTLTexture?
+  
+  public init(renderer: EffectRenderer) {
+    self.renderer = renderer
+  }
+  
+  public func render(
+    in pixelBuffer: CVPixelBuffer,
+    source allSources: CVPixelBuffer,
+    sampleTime: CMTime,
+    effect: EditorCompositionEffectProtocol,
+    additionalParameters: [String : Any]?
+  )
+```
+
+## EditorCompositionEffectProtocol
+
+``` swift
+  var additionalParameters: [String: Any]? { get }
+  var startTime: CMTime { get }
+  var endTime: CMTime { get }
+  var id: UInt { get }
+  var tokenId: String { get set }
+  var path: String { get }
+```
+
+## CoordinatesParams
+
+``` swift
+/// Blur effect coordinate parameters 
+  public struct PixelateCoordinateParams: Codable {
+    /// Center point
+    public var center: CGPoint
+    /// Effect width
+    public var width: CGFloat
+    /// Effect height
+    public var height: CGFloat
+    /// Effect radius
+    public var radius: CGFloat
+
+    /// Center point in absolute frame. Value ranges from 0 to 100.
+    public var absoluteCenter: CGPoint
+    /// Radius in absolute frame. Value ranges from 0 to 100.
+    public var absoluteRadius: CGFloat
+
+    /// Zero parameters
+    public static var zero: PixelateCoordinateParams {
+      PixelateCoordinateParams(
+        center: .zero,
+        width: .zero,
+        height: .zero,
+        radius: .zero
+      )
+    }
+
+    /// Constructor
+    public init(
+      center: CGPoint,
+      width: CGFloat,
+      height: CGFloat,
+      radius: CGFloat
+    ) 
+  ```
