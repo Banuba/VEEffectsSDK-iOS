@@ -44,7 +44,7 @@ Each method contains set of entire options to setup effect settings: time, type,
   ///   - startTime: When effect starts
   ///   - endTime: When effect ends
   ///   - removeSameType: Remove same effect if exist
-  ///   - effectId: Unic effect id
+  ///   - effectId: Unique effect id
   public func applyColorEffect(
     name: String,
     lutUrl: URL,
@@ -63,7 +63,7 @@ Each method contains set of entire options to setup effect settings: time, type,
   ///   - startTime: When effect starts
   ///   - endTime: When effect ends
   ///   - removeSameType: Remove same effect if exist
-  ///   - effectId: Unic effect id
+  ///   - effectId: Unique effect id
   func applyVisualEffectApplicatorType(
     _ type: VisualEffectApplicatorType,
     startTime: CMTime,
