@@ -6,6 +6,6 @@ framework module VEEffectsSDK {
 }
 
 module VEEffectsSDK.Swift {
-    header "VEEffectsSDK-Swift.h"
-    requires objc
+  header "VEEffectsSDK-Swift.h"
+  requires objc
 }

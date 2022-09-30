@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name VEEffectsSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import BanubaLicenseServicingSDK
 import BanubaSDKServicing
@@ -15,6 +16,7 @@ import UIKit
 @_exported import VEEffectsSDK
 import VideoEditor
 import _Concurrency
+import _StringProcessing
 @_hasMissingDesignatedInitializers public class VideoCompositionRenderQueue {
   public static let queue: Dispatch.DispatchQueue
   @objc deinit
@@ -76,7 +78,7 @@ extension VEEffectsSDK.EffectApplicator {
 }
 public class WatermarkApplicator : VideoEditor.WatermarkApplicatorServicing {
   public init()
-  public func adjustWatermarkEffect(configuration: VideoEditor.WatermarkConfiguration, videoSize: CoreGraphics.CGSize) -> VideoEditor.VideoEditorFilterModel
+  public func adjustWatermarkEffect(configuration: VideoEditor.WatermarkConfiguration, videoSize: CoreFoundation.CGSize) -> VideoEditor.VideoEditorFilterModel
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BanubaMaskRenderer : VEEffectsSDK.EffectRenderer {
@@ -84,6 +86,7 @@ public class WatermarkApplicator : VideoEditor.WatermarkApplicatorServicing {
   public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String, additionalParameters: [Swift.String : Any]?)
   @objc deinit
   public static func destroy()
+  public static func loadEffectPath(_ path: Swift.String)
 }
 public class EffectMetalRenderer : VEEffectsSDK.EffectRenderer {
   required public init()
@@ -152,12 +155,12 @@ public protocol EffectsSDKServicing : VEEffectsSDK.TransformEffectsSDKServicing 
   var effectsConfigHolder: VEEffectsSDK.EffectsHolderServicing { get }
 }
 public struct ImagePoints {
-  public init(leftTop: CoreGraphics.CGPoint, rightTop: CoreGraphics.CGPoint, leftBottom: CoreGraphics.CGPoint, rightBottom: CoreGraphics.CGPoint)
-  public var leftTop: CoreGraphics.CGPoint
-  public var rightTop: CoreGraphics.CGPoint
-  public var leftBottom: CoreGraphics.CGPoint
-  public var rightBottom: CoreGraphics.CGPoint
-  public func applying(_ t: CoreGraphics.CGAffineTransform) -> VEEffectsSDK.ImagePoints
+  public init(leftTop: CoreFoundation.CGPoint, rightTop: CoreFoundation.CGPoint, leftBottom: CoreFoundation.CGPoint, rightBottom: CoreFoundation.CGPoint)
+  public var leftTop: CoreFoundation.CGPoint
+  public var rightTop: CoreFoundation.CGPoint
+  public var leftBottom: CoreFoundation.CGPoint
+  public var rightBottom: CoreFoundation.CGPoint
+  public func applying(_ t: CoreFoundation.CGAffineTransform) -> VEEffectsSDK.ImagePoints
 }
 public class ImageEffectInfo {
   final public let image: CoreGraphics.CGImage
