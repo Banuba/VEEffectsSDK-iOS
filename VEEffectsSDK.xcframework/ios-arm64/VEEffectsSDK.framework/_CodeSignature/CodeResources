@@ -22,31 +22,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E0DcUYAluN/HX+jTG7MTdHq7QSQ=
-		</data>
-		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		DyF0cEPhwsZ95v9d7exVM07BnAc=
+		pcOlY3dT89vnQ5U79mXWcJvjnfQ=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Qo3/1oMSRtCvHnU1XyC0+aU3oUI=
+		e9r5I7aDOsjrYger8ZLTdMxlrUE=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZNVOtOffxHsxrgnwUp3qCFGc+rc=
+		Px1hSa7qeyESNQVzwi+ONweghAU=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		6P1d/l+8nCJLzdg8cGknllczUnw=
+		5DryCQYTQFGpaMJtMFPGQuxZ698=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZNVOtOffxHsxrgnwUp3qCFGc+rc=
+		Px1hSa7qeyESNQVzwi+ONweghAU=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7QqFfu+hkPkdJynr718edL0YNJA=
+		CE0wf5kmIbkYZou2M+USLvvYQ/U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +50,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		7h++HIyMmm/9aMTdLEutzrdOSFs=
+		M3GlZi+2yTIBiyzdO5KCnDnc6oU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -87,46 +83,39 @@
 			vEa5Y6HSzwfQsbs+k7lUd1aZztfq8e3wZr/2jWQDpko=
 			</data>
 		</dict>
-		<key>Modules/VEEffectsSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WJEMc2ZwoUaJdUerHlxn9+yshl12ybhKcA0N5j6OC74=
-			</data>
-		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNJZlchdhT4t2yiCtdbyaWqEUKEvp8uAT1NWAMoXxbM=
+			Ei6nFjU5Vl1aBc7qXqgp8TOmB23YOzDWphikd+9vBCg=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			chH/USydJbX2MZMSn56e2Rw3dDgGU6LkRooS+cqSlM0=
+			OJUKfhF0EwDG2IIh6yE7gXtXoJ5Tt8G12X1AQie5dCA=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			26gCm9ZJ8fzB3hon7xQfgMNE77LjwqZGMzu/as3EiYg=
+			IbGuBDdk+wDwcH73iLeSN1QJOtkkPehPupJEq9y0YB4=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			chH/USydJbX2MZMSn56e2Rw3dDgGU6LkRooS+cqSlM0=
+			OJUKfhF0EwDG2IIh6yE7gXtXoJ5Tt8G12X1AQie5dCA=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQBzzWS4zuKQCtf7CijJYOmX3udvQu98SSSRdfCzcZg=
+			8wIRcOT+Bz6yHVymrWCVa7AEIAXV8mO8pbuJaZpbsBg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7fNLundDLChVpvN0c+K1+UKBap9CB8Aiw7QzlC3sZ8o=
+			3R0MtTYI0gd8Vnh7rmDnheU+I9sHWjbIpIN6B0IY+2s=
 			</data>
 		</dict>
 	</dict>
