@@ -242,18 +242,15 @@ public enum OverlayEffectApplicatorType {
 public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case acid
   case cathode
-  case dslrKaleidoscope
   case dvCam
   case flash
   case glitch
-  case glitch2
-  case glitch3
   case glitchEffect2
-  case kaleidoscope
+  case glitch3
   case heatmap
   case lumeire
-  case mirror
-  case mirror2
+  case kaleidoscope
+  case dslrKaleidoscope
   case pixelationDynamic
   case pixelationStatic
   case polaroid
@@ -270,6 +267,9 @@ public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case vhs2
   case zoom
   case zoom2
+  public var id: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.String)
   public typealias AllCases = [VEEffectsSDK.VisualEffectApplicatorType]
   public typealias RawValue = Swift.String
