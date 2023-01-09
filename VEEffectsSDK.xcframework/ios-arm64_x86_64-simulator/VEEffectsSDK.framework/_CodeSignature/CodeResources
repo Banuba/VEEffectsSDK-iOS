@@ -22,47 +22,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8nafCsCHSy7nLU8EdV1/fk5N8Hg=
+		LefN4F8mEVrdylxmn/xea8fuxSw=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+YylV7NZ+CYch8v2rEIMo7ztj4M=
+		qOsBv/+yS+p4U/gjYPekDEoa2PA=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jlGwSTln2Icru/zWcpJJuWG89HA=
+		BKy6vg0EOGWjShy55BdBZqEX+Wg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GBcPQTE7/gFdzFSDwuFeo5whNaE=
+		JHETirhezsWti+S+P686Id+pjTo=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jlGwSTln2Icru/zWcpJJuWG89HA=
+		BKy6vg0EOGWjShy55BdBZqEX+Wg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IzfMgXz6og7xrCR8rcNEnkfC+Is=
+		D4zoOutlABPyoWhrKAY6V0igS2w=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+YylV7NZ+CYch8v2rEIMo7ztj4M=
+		qOsBv/+yS+p4U/gjYPekDEoa2PA=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NRCsuvdRO85CIHXLzEgIojbauos=
+		DOa1D7FRChlX6EQ7lsgkH5Am+J8=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xkr/7EuOygZu/0qHxUOoY0O/BqA=
+		uXv0I79TXMay8XDNJgh2HaS/aJc=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NRCsuvdRO85CIHXLzEgIojbauos=
+		DOa1D7FRChlX6EQ7lsgkH5Am+J8=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YX2JwnDXEaIgaMFv3s1O0ddKxDM=
+		aeUqr8v1mijRY9b/+zossnIyaCw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,70 +107,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			57OaEiB3fehudkjVDB7EOJ3kEQT6Oqh/n/dbvrf8x7o=
+			mhs04dzwPPi9FpofXTYZuUY5VhNWdCe+hgRL2EfdWk0=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGnBcHn0KKQBLihSXWXDkEt58qgg2/ISb1kN1XP+/z0=
+			AEPOpe7d/cU8AzckY8HEl3YPMqI+e+tZLYpMByyc45Y=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7UYs1dEAhggmcnCLHw4JJRnun6u/WHbRyTQeWy0rZbY=
+			6o2eV0P9h2lE5BFY3td8ZEg1tfiWUeiL4qJmNk5Inrc=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGnBcHn0KKQBLihSXWXDkEt58qgg2/ISb1kN1XP+/z0=
+			AEPOpe7d/cU8AzckY8HEl3YPMqI+e+tZLYpMByyc45Y=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1PfYwZ8Locy4jE5iNYgdh7JhM6UbHJoFPrIRB4O39Y=
+			QTsXBVFYdH1sXhEFuUGDcOepjechLyLsMMwgUt2hRQE=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57OaEiB3fehudkjVDB7EOJ3kEQT6Oqh/n/dbvrf8x7o=
+			mhs04dzwPPi9FpofXTYZuUY5VhNWdCe+hgRL2EfdWk0=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zqbrqwj2fs6+0hdYxboz9AAbhhrQYbRNZyFvrJfnj+c=
+			BRoQhr6MljguOCe4WyMZhD4Yo5N3CYPbIZYtHpVDuB8=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXmNfDLL4ZGPqAS7koHjo0Om5IOJgjVeBFFeC5N+nz8=
+			DSfj8Ql2B8IpKQMeW0OWgfSFXIjCIgmMizhP6VUDkf4=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zqbrqwj2fs6+0hdYxboz9AAbhhrQYbRNZyFvrJfnj+c=
+			BRoQhr6MljguOCe4WyMZhD4Yo5N3CYPbIZYtHpVDuB8=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vja/86Ybk1c1vQnpwspQkyrjDTnT1GpThiQOP/a4/mU=
+			Cdd6mQTnQaA7qwPnRUs+x1jyte7KYWx10EVnmKnYXxg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

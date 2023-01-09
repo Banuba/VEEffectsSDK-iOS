@@ -117,20 +117,21 @@ public protocol ImagesSequence {
   func getImage(at time: Foundation.TimeInterval) -> CoreGraphics.CGImage
 }
 public protocol EffectsHolderServicing : AnyObject {
-  init(token: Swift.String)
+  init(license: BanubaLicenseServicingSDK.License)
   var transitionEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
   var speedEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
   var visualEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] { get }
 }
-@objc public class EditorEffectsConfigHolder : ObjectiveC.NSObject, VEEffectsSDK.EffectsHolderServicing {
-  required public init(token: Swift.String)
-  public var transitionEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
+@objc final public class EditorEffectsConfigHolder : ObjectiveC.NSObject, VEEffectsSDK.EffectsHolderServicing {
+  public init(license: BanubaLicenseServicingSDK.License)
+  public init(token: Swift.String)
+  final public var transitionEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
     get
   }
-  public var speedEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
+  final public var speedEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
     get
   }
-  public var visualEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
+  final public var visualEffectsConfig: [[VEEffectsSDK.EditorEffectKey : Any]] {
     get
   }
   @objc deinit
