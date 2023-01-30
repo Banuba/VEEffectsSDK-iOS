@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VEEffectsSDK
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VEEffectsSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import BanubaLicenseServicingSDK
@@ -41,7 +41,7 @@ public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
   @objc deinit
 }
 public protocol EffectsApplicatorServicing : AnyObject {
-  var pixelateApplicatorService: VEEffectsSDK.PixelateApplicatorServicing { get }
+  var blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing { get }
   init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: VEEffectsSDK.EffectsHolderServicing)
   func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
@@ -50,7 +50,7 @@ public protocol EffectsApplicatorServicing : AnyObject {
   func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
 }
 public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
-  final public let pixelateApplicatorService: VEEffectsSDK.PixelateApplicatorServicing
+  final public let blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing
   required public init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: VEEffectsSDK.EffectsHolderServicing)
   @objc deinit
 }
@@ -97,7 +97,7 @@ public class EditorEffectModelBuilder {
   public init()
   public func gifModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
   public func textModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
-  public func pixelateModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?, rendererTexture: Metal.MTLTexture?) -> VideoEditor.VideoEditorFilterModel
+  public func blurModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?, rendererTexture: Metal.MTLTexture?) -> VideoEditor.VideoEditorFilterModel
   public func makeModels(configs: [[VEEffectsSDK.EditorEffectKey : Any]], startId: Swift.UInt) -> [VideoEditor.VideoEditorFilterModel]
   public func makeModel(config: [VEEffectsSDK.EditorEffectKey : Any], id: Swift.UInt) -> VideoEditor.VideoEditorFilterModel
   @objc deinit
@@ -175,7 +175,7 @@ public struct EffectIDs {
   public static let speedEffectStartId: Swift.UInt
   public static let visualEffectStartId: Swift.UInt
   public static let transformEffectId: Swift.UInt
-  public static let pixelateEffectId: Swift.UInt
+  public static let blurEffectId: Swift.UInt
 }
 public protocol EffectRenderer {
   func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String, additionalParameters: [Swift.String : Any]?)
@@ -212,11 +212,11 @@ public struct VideoEditorEffectInfo {
   }
   public init(id: Swift.UInt, image: UIKit.UIImage? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
 }
-public protocol PixelateApplicatorServicing : AnyObject {
-  func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.PixelateCoordinateParams, completion: (() -> Swift.Void)?)
+public protocol BlurApplicatorServicing : AnyObject {
+  func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)
 }
-@_hasMissingDesignatedInitializers public class PixelateApplicator : VEEffectsSDK.PixelateApplicatorServicing {
-  public func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.PixelateCoordinateParams, completion: (() -> Swift.Void)?)
+@_hasMissingDesignatedInitializers public class BlurApplicator : VEEffectsSDK.BlurApplicatorServicing {
+  public func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)
   @objc deinit
 }
 public enum EditorEffectKey : Swift.String {
@@ -238,7 +238,7 @@ public enum EditorEffectKey : Swift.String {
 public enum OverlayEffectApplicatorType {
   case gif
   case text
-  case pixelate(drawableFigure: BanubaUtilities.DrawableFigure, coordinates: BanubaUtilities.PixelateCoordinateParams)
+  case blur(drawableFigure: BanubaUtilities.DrawableFigure, coordinates: BanubaUtilities.BlurCoordinateParams)
 }
 public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case acid

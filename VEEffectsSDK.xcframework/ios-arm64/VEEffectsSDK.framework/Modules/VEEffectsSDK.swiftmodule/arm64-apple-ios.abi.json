@@ -675,19 +675,19 @@
         "children": [
           {
             "kind": "Var",
-            "name": "pixelateApplicatorService",
-            "printedName": "pixelateApplicatorService",
+            "name": "blurApplicatorService",
+            "printedName": "blurApplicatorService",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PixelateApplicatorServicing",
-                "printedName": "VEEffectsSDK.PixelateApplicatorServicing",
-                "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP"
+                "name": "BlurApplicatorServicing",
+                "printedName": "VEEffectsSDK.BlurApplicatorServicing",
+                "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP08pixelateD7ServiceAA08PixelatedE0_pvp",
-            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP08pixelateD7ServiceAA08PixelatedE0_pvp",
+            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvp",
+            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvp",
             "moduleName": "VEEffectsSDK",
             "protocolReq": true,
             "declAttributes": [
@@ -701,14 +701,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PixelateApplicatorServicing",
-                    "printedName": "VEEffectsSDK.PixelateApplicatorServicing",
-                    "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP"
+                    "name": "BlurApplicatorServicing",
+                    "printedName": "VEEffectsSDK.BlurApplicatorServicing",
+                    "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP08pixelateD7ServiceAA08PixelatedE0_pvg",
-                "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP08pixelateD7ServiceAA08PixelatedE0_pvg",
+                "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvg",
+                "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvg",
                 "moduleName": "VEEffectsSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
                 "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
@@ -1001,19 +1001,19 @@
         "children": [
           {
             "kind": "Var",
-            "name": "pixelateApplicatorService",
-            "printedName": "pixelateApplicatorService",
+            "name": "blurApplicatorService",
+            "printedName": "blurApplicatorService",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PixelateApplicatorServicing",
-                "printedName": "VEEffectsSDK.PixelateApplicatorServicing",
-                "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP"
+                "name": "BlurApplicatorServicing",
+                "printedName": "VEEffectsSDK.BlurApplicatorServicing",
+                "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK16EffectApplicatorC08pixelateD7ServiceAA08PixelateD9Servicing_pvp",
-            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC08pixelateD7ServiceAA08PixelateD9Servicing_pvp",
+            "usr": "s:12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvp",
+            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "Final",
@@ -1031,14 +1031,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "PixelateApplicatorServicing",
-                    "printedName": "VEEffectsSDK.PixelateApplicatorServicing",
-                    "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP"
+                    "name": "BlurApplicatorServicing",
+                    "printedName": "VEEffectsSDK.BlurApplicatorServicing",
+                    "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK16EffectApplicatorC08pixelateD7ServiceAA08PixelateD9Servicing_pvg",
-                "mangledName": "$s12VEEffectsSDK16EffectApplicatorC08pixelateD7ServiceAA08PixelateD9Servicing_pvg",
+                "usr": "s:12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvg",
+                "mangledName": "$s12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvg",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -2275,8 +2275,8 @@
           },
           {
             "kind": "Function",
-            "name": "pixelateModel",
-            "printedName": "pixelateModel(id:rendererInstance:rendererTexture:)",
+            "name": "blurModel",
+            "printedName": "blurModel(id:rendererInstance:rendererTexture:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2320,8 +2320,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK24EditorEffectModelBuilderC08pixelateE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
-            "mangledName": "$s12VEEffectsSDK24EditorEffectModelBuilderC08pixelateE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
+            "usr": "s:12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
+            "mangledName": "$s12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",
@@ -5103,8 +5103,8 @@
           },
           {
             "kind": "Var",
-            "name": "pixelateEffectId",
-            "printedName": "pixelateEffectId",
+            "name": "blurEffectId",
+            "printedName": "blurEffectId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5114,8 +5114,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK9EffectIDsV08pixelateC2IdSuvpZ",
-            "mangledName": "$s12VEEffectsSDK9EffectIDsV08pixelateC2IdSuvpZ",
+            "usr": "s:12VEEffectsSDK9EffectIDsV04blurC2IdSuvpZ",
+            "mangledName": "$s12VEEffectsSDK9EffectIDsV04blurC2IdSuvpZ",
             "moduleName": "VEEffectsSDK",
             "static": true,
             "declAttributes": [
@@ -5140,8 +5140,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK9EffectIDsV08pixelateC2IdSuvgZ",
-                "mangledName": "$s12VEEffectsSDK9EffectIDsV08pixelateC2IdSuvgZ",
+                "usr": "s:12VEEffectsSDK9EffectIDsV04blurC2IdSuvgZ",
+                "mangledName": "$s12VEEffectsSDK9EffectIDsV04blurC2IdSuvgZ",
                 "moduleName": "VEEffectsSDK",
                 "static": true,
                 "implicit": true,
@@ -6177,8 +6177,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PixelateApplicatorServicing",
-        "printedName": "PixelateApplicatorServicing",
+        "name": "BlurApplicatorServicing",
+        "printedName": "BlurApplicatorServicing",
         "children": [
           {
             "kind": "Function",
@@ -6204,9 +6204,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PixelateCoordinateParams",
-                "printedName": "BanubaUtilities.PixelateCoordinateParams",
-                "usr": "s:15BanubaUtilities24PixelateCoordinateParamsV"
+                "name": "BlurCoordinateParams",
+                "printedName": "BanubaUtilities.BlurCoordinateParams",
+                "usr": "s:15BanubaUtilities20BlurCoordinateParamsV"
               },
               {
                 "kind": "TypeNominal",
@@ -6235,11 +6235,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "mangledName": "$s12VEEffectsSDK27PixelateApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
+            "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
+            "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
             "moduleName": "VEEffectsSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.PixelateApplicatorServicing>",
-            "sugared_genericSig": "<Self where Self : VEEffectsSDK.PixelateApplicatorServicing>",
+            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.BlurApplicatorServicing>",
+            "sugared_genericSig": "<Self where Self : VEEffectsSDK.BlurApplicatorServicing>",
             "protocolReq": true,
             "declAttributes": [
               "RawDocComment"
@@ -6249,8 +6249,8 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP",
-        "mangledName": "$s12VEEffectsSDK27PixelateApplicatorServicingP",
+        "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP",
+        "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP",
         "moduleName": "VEEffectsSDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -6260,8 +6260,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PixelateApplicator",
-        "printedName": "PixelateApplicator",
+        "name": "BlurApplicator",
+        "printedName": "BlurApplicator",
         "children": [
           {
             "kind": "Function",
@@ -6287,9 +6287,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PixelateCoordinateParams",
-                "printedName": "BanubaUtilities.PixelateCoordinateParams",
-                "usr": "s:15BanubaUtilities24PixelateCoordinateParamsV"
+                "name": "BlurCoordinateParams",
+                "printedName": "BanubaUtilities.BlurCoordinateParams",
+                "usr": "s:15BanubaUtilities20BlurCoordinateParamsV"
               },
               {
                 "kind": "TypeNominal",
@@ -6318,8 +6318,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK18PixelateApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "mangledName": "$s12VEEffectsSDK18PixelateApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
+            "usr": "s:12VEEffectsSDK14BlurApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
+            "mangledName": "$s12VEEffectsSDK14BlurApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",
@@ -6329,8 +6329,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:12VEEffectsSDK18PixelateApplicatorC",
-        "mangledName": "$s12VEEffectsSDK18PixelateApplicatorC",
+        "usr": "s:12VEEffectsSDK14BlurApplicatorC",
+        "mangledName": "$s12VEEffectsSDK14BlurApplicatorC",
         "moduleName": "VEEffectsSDK",
         "declAttributes": [
           "AccessControl",
@@ -6340,10 +6340,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "PixelateApplicatorServicing",
-            "printedName": "PixelateApplicatorServicing",
-            "usr": "s:12VEEffectsSDK27PixelateApplicatorServicingP",
-            "mangledName": "$s12VEEffectsSDK27PixelateApplicatorServicingP"
+            "name": "BlurApplicatorServicing",
+            "printedName": "BlurApplicatorServicing",
+            "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP",
+            "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP"
           }
         ]
       },
@@ -6937,18 +6937,18 @@
           },
           {
             "kind": "Var",
-            "name": "pixelate",
-            "printedName": "pixelate",
+            "name": "blur",
+            "printedName": "blur",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(VEEffectsSDK.OverlayEffectApplicatorType.Type) -> (BanubaUtilities.DrawableFigure, BanubaUtilities.PixelateCoordinateParams) -> VEEffectsSDK.OverlayEffectApplicatorType",
+                "printedName": "(VEEffectsSDK.OverlayEffectApplicatorType.Type) -> (BanubaUtilities.DrawableFigure, BanubaUtilities.BlurCoordinateParams) -> VEEffectsSDK.OverlayEffectApplicatorType",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(BanubaUtilities.DrawableFigure, BanubaUtilities.PixelateCoordinateParams) -> VEEffectsSDK.OverlayEffectApplicatorType",
+                    "printedName": "(BanubaUtilities.DrawableFigure, BanubaUtilities.BlurCoordinateParams) -> VEEffectsSDK.OverlayEffectApplicatorType",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6959,7 +6959,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(drawableFigure: BanubaUtilities.DrawableFigure, coordinates: BanubaUtilities.PixelateCoordinateParams)",
+                        "printedName": "(drawableFigure: BanubaUtilities.DrawableFigure, coordinates: BanubaUtilities.BlurCoordinateParams)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -6969,9 +6969,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "PixelateCoordinateParams",
-                            "printedName": "BanubaUtilities.PixelateCoordinateParams",
-                            "usr": "s:15BanubaUtilities24PixelateCoordinateParamsV"
+                            "name": "BlurCoordinateParams",
+                            "printedName": "BanubaUtilities.BlurCoordinateParams",
+                            "usr": "s:15BanubaUtilities20BlurCoordinateParamsV"
                           }
                         ]
                       }
@@ -6994,8 +6994,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12VEEffectsSDK27OverlayEffectApplicatorTypeO8pixelateyAC15BanubaUtilities14DrawableFigureO_AE24PixelateCoordinateParamsVtcACmF",
-            "mangledName": "$s12VEEffectsSDK27OverlayEffectApplicatorTypeO8pixelateyAC15BanubaUtilities14DrawableFigureO_AE24PixelateCoordinateParamsVtcACmF",
+            "usr": "s:12VEEffectsSDK27OverlayEffectApplicatorTypeO4bluryAC15BanubaUtilities14DrawableFigureO_AE20BlurCoordinateParamsVtcACmF",
+            "mangledName": "$s12VEEffectsSDK27OverlayEffectApplicatorTypeO4bluryAC15BanubaUtilities14DrawableFigureO_AE20BlurCoordinateParamsVtcACmF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "RawDocComment"
@@ -10402,7 +10402,7 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EffectIds.swift",
       "kind": "IntegerLiteral",
-      "offset": 617,
+      "offset": 609,
       "length": 6,
       "value": "300000"
     },
@@ -10577,336 +10577,336 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1161,
+      "offset": 1149,
       "length": 11,
       "value": "\"Acid whip\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1230,
+      "offset": 1218,
       "length": 9,
       "value": "\"Cathode\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1292,
+      "offset": 1280,
       "length": 8,
       "value": "\"DV Cam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1352,
+      "offset": 1340,
       "length": 7,
       "value": "\"Flash\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1414,
+      "offset": 1402,
       "length": 8,
       "value": "\"Glitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1537,
       "length": 10,
       "value": "\"Glitch 3\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1606,
       "length": 10,
       "value": "\"Heat Map\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
+      "offset": 1674,
       "length": 9,
       "value": "\"Lumiere\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1917,
+      "offset": 1905,
       "length": 15,
       "value": "\"Pixel Dynamic\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 2001,
       "length": 14,
       "value": "\"Pixel Static\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2088,
+      "offset": 2076,
       "length": 10,
       "value": "\"Polaroid\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2147,
+      "offset": 2135,
       "length": 6,
       "value": "\"Rave\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2190,
       "length": 6,
       "value": "\"Soul\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2248,
       "length": 7,
       "value": "\"Stars\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2323,
+      "offset": 2311,
       "length": 9,
       "value": "\"TV-Foam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2399,
+      "offset": 2387,
       "length": 12,
       "value": "\"Transition\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2482,
+      "offset": 2470,
       "length": 14,
       "value": "\"Transition 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2567,
+      "offset": 2555,
       "length": 14,
       "value": "\"Transition 3\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2640,
       "length": 14,
       "value": "\"Transition 4\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2709,
       "length": 8,
       "value": "\"Twitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 2763,
       "length": 5,
       "value": "\"VHS\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 2818,
       "length": 7,
       "value": "\"VHS 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2886,
+      "offset": 2874,
       "length": 6,
       "value": "\"Zoom\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2945,
+      "offset": 2933,
       "length": 8,
       "value": "\"Zoom 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1161,
+      "offset": 1149,
       "length": 11,
       "value": "\"Acid whip\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1230,
+      "offset": 1218,
       "length": 9,
       "value": "\"Cathode\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1292,
+      "offset": 1280,
       "length": 8,
       "value": "\"DV Cam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1352,
+      "offset": 1340,
       "length": 7,
       "value": "\"Flash\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1414,
+      "offset": 1402,
       "length": 8,
       "value": "\"Glitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1537,
       "length": 10,
       "value": "\"Glitch 3\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1606,
       "length": 10,
       "value": "\"Heat Map\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
+      "offset": 1674,
       "length": 9,
       "value": "\"Lumiere\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 1917,
+      "offset": 1905,
       "length": 15,
       "value": "\"Pixel Dynamic\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 2001,
       "length": 14,
       "value": "\"Pixel Static\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2088,
+      "offset": 2076,
       "length": 10,
       "value": "\"Polaroid\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2147,
+      "offset": 2135,
       "length": 6,
       "value": "\"Rave\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2190,
       "length": 6,
       "value": "\"Soul\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2248,
       "length": 7,
       "value": "\"Stars\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2323,
+      "offset": 2311,
       "length": 9,
       "value": "\"TV-Foam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2399,
+      "offset": 2387,
       "length": 12,
       "value": "\"Transition\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2482,
+      "offset": 2470,
       "length": 14,
       "value": "\"Transition 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2567,
+      "offset": 2555,
       "length": 14,
       "value": "\"Transition 3\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2640,
       "length": 14,
       "value": "\"Transition 4\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2709,
       "length": 8,
       "value": "\"Twitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2775,
+      "offset": 2763,
       "length": 5,
       "value": "\"VHS\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 2818,
       "length": 7,
       "value": "\"VHS 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2886,
+      "offset": 2874,
       "length": 6,
       "value": "\"Zoom\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2945,
+      "offset": 2933,
       "length": 8,
       "value": "\"Zoom 2\""
     }
