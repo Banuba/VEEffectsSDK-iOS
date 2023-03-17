@@ -259,9 +259,7 @@ public enum VisualEffectApplicatorType : Swift.String, Swift.CaseIterable {
   case soul
   case stars
   case tvFoam
-  case transition
-  case transition2
-  case transition3
+  case transition1
   case transition4
   case twitch
   case vhs

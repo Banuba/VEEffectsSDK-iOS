@@ -7738,8 +7738,8 @@
           },
           {
             "kind": "Var",
-            "name": "transition",
-            "printedName": "transition",
+            "name": "transition1",
+            "printedName": "transition1",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7769,88 +7769,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO10transitionyA2CmF",
-            "mangledName": "$s12VEEffectsSDK26VisualEffectApplicatorTypeO10transitionyA2CmF",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "transition2",
-            "printedName": "transition2",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VEEffectsSDK.VisualEffectApplicatorType.Type) -> VEEffectsSDK.VisualEffectApplicatorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VisualEffectApplicatorType",
-                    "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                    "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VEEffectsSDK.VisualEffectApplicatorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VisualEffectApplicatorType",
-                        "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                        "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO11transition2yA2CmF",
-            "mangledName": "$s12VEEffectsSDK26VisualEffectApplicatorTypeO11transition2yA2CmF",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "transition3",
-            "printedName": "transition3",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(VEEffectsSDK.VisualEffectApplicatorType.Type) -> VEEffectsSDK.VisualEffectApplicatorType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VisualEffectApplicatorType",
-                    "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                    "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "VEEffectsSDK.VisualEffectApplicatorType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "VisualEffectApplicatorType",
-                        "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                        "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO11transition3yA2CmF",
-            "mangledName": "$s12VEEffectsSDK26VisualEffectApplicatorTypeO11transition3yA2CmF",
+            "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO11transition1yA2CmF",
+            "mangledName": "$s12VEEffectsSDK26VisualEffectApplicatorTypeO11transition1yA2CmF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "RawDocComment"
@@ -9793,574 +9713,546 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 951,
+      "offset": 944,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
-      "length": 19,
-      "value": "\"vertexPassThrough\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 1042,
-      "length": 19,
-      "value": "\"vertexPassThrough\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 986,
       "length": 12,
       "value": "\"soulVertex\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1025,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1069,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1210,
+      "offset": 1112,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1254,
+      "offset": 1156,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1201,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1340,
+      "offset": 1242,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1287,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 1337,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1489,
+      "offset": 1391,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1456,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1520,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
+      "kind": "StringLiteral",
+      "offset": 1573,
+      "length": 19,
+      "value": "\"vertexPassThrough\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
+      "kind": "StringLiteral",
+      "offset": 1619,
+      "length": 19,
+      "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
       "offset": 1671,
-      "length": 19,
-      "value": "\"vertexPassThrough\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 1717,
-      "length": 19,
-      "value": "\"vertexPassThrough\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 1769,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1730,
       "length": 19,
       "value": "\"starsFilterVertex\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 1778,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1931,
+      "offset": 1833,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 1977,
+      "offset": 1879,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2020,
+      "offset": 1922,
       "length": 18,
       "value": "\"simpleTextVertex\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 1970,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2126,
+      "offset": 2028,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2186,
+      "offset": 2088,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2245,
+      "offset": 2147,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2304,
+      "offset": 2206,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2369,
+      "offset": 2271,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2424,
+      "offset": 2326,
       "length": 29,
       "value": "\"vertexPassThroughByVertexID\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2385,
       "length": 19,
       "value": "\"transition1Vertex\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2535,
+      "offset": 2437,
       "length": 19,
       "value": "\"vertexPassThrough\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2579,
+      "offset": 2481,
       "length": 14,
       "value": "\"twitchVertex\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2656,
+      "offset": 2558,
       "length": 21,
       "value": "\"fragmentDisplayRGBA\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 2606,
       "length": 18,
       "value": "\"acidwhipFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2745,
+      "offset": 2647,
       "length": 14,
       "value": "\"zoomFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2783,
+      "offset": 2685,
       "length": 15,
       "value": "\"zoom2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2827,
+      "offset": 2729,
       "length": 20,
       "value": "\"scrollDownFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 2776,
       "length": 18,
       "value": "\"scrollUpFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2922,
+      "offset": 2824,
       "length": 21,
       "value": "\"scrollRightFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2972,
+      "offset": 2874,
       "length": 20,
       "value": "\"scrollLeftFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 2921,
       "length": 18,
       "value": "\"whipDownFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3062,
+      "offset": 2964,
       "length": 16,
       "value": "\"whipUpFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3105,
+      "offset": 3007,
       "length": 18,
       "value": "\"whipLeftFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3151,
+      "offset": 3053,
       "length": 19,
       "value": "\"whipRightFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3198,
+      "offset": 3100,
       "length": 19,
       "value": "\"spinRightFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3240,
+      "offset": 3142,
       "length": 14,
       "value": "\"fadeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3284,
-      "length": 21,
-      "value": "\"transition2Fragment\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 3335,
-      "length": 21,
-      "value": "\"transition3Fragment\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 3386,
+      "offset": 3186,
       "length": 21,
       "value": "\"transition4Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3430,
+      "offset": 3230,
       "length": 14,
       "value": "\"raveFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3467,
+      "offset": 3267,
       "length": 14,
       "value": "\"soulFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3508,
+      "offset": 3308,
       "length": 18,
       "value": "\"polaroidFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3551,
+      "offset": 3351,
       "length": 16,
       "value": "\"tvfoamFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3591,
+      "offset": 3391,
       "length": 15,
       "value": "\"flashFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3631,
+      "offset": 3431,
       "length": 16,
       "value": "\"glitchFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3673,
+      "offset": 3473,
       "length": 17,
       "value": "\"glitch2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3712,
+      "offset": 3512,
       "length": 13,
       "value": "\"vhsFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 3551,
       "length": 17,
       "value": "\"lumiereFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3599,
       "length": 22,
       "value": "\"kaleidoscopeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3865,
+      "offset": 3665,
       "length": 35,
       "value": "\"pixelationStaticFragmentWithShape\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3942,
+      "offset": 3742,
       "length": 33,
       "value": "\"pixelationStaticFragmentWOShape\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4011,
+      "offset": 3811,
       "length": 27,
       "value": "\"pixelationDynamicFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4073,
+      "offset": 3873,
       "length": 26,
       "value": "\"DSLRKaleidoscopeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4123,
+      "offset": 3923,
       "length": 21,
       "value": "\"fragmentDisplayRGBA\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4171,
+      "offset": 3971,
       "length": 18,
       "value": "\"colorLutFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4222,
+      "offset": 4022,
       "length": 24,
       "value": "\"starsThresholdFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4276,
+      "offset": 4076,
       "length": 21,
       "value": "\"starsFilterFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4326,
+      "offset": 4126,
       "length": 20,
       "value": "\"starsApplyFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4372,
+      "offset": 4172,
       "length": 17,
       "value": "\"heatmapFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4416,
+      "offset": 4216,
       "length": 17,
       "value": "\"cathodeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4457,
+      "offset": 4257,
       "length": 20,
       "value": "\"simpleTextFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4507,
+      "offset": 4307,
       "length": 31,
       "value": "\"fragmentDisplayRGBAbyVertexId\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4567,
+      "offset": 4367,
       "length": 14,
       "value": "\"vhs2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4612,
+      "offset": 4412,
       "length": 31,
       "value": "\"fragmentDisplayRGBAbyVertexId\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4673,
+      "offset": 4473,
       "length": 15,
       "value": "\"dvCamFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4718,
+      "offset": 4518,
       "length": 21,
       "value": "\"fragmentDisplayRGBA\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4769,
+      "offset": 4569,
       "length": 21,
       "value": "\"glitch3RankFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4826,
+      "offset": 4626,
       "length": 27,
       "value": "\"glitch3BrightnessFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4879,
+      "offset": 4679,
       "length": 17,
       "value": "\"glitch3Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4929,
+      "offset": 4729,
       "length": 24,
       "value": "\"cameraColorLutFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4978,
+      "offset": 4778,
       "length": 16,
       "value": "\"twitchFragment\""
     },
@@ -10682,63 +10574,49 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2387,
+      "offset": 2390,
       "length": 12,
       "value": "\"Transition\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2470,
-      "length": 14,
-      "value": "\"Transition 2\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
-      "kind": "StringLiteral",
-      "offset": 2555,
-      "length": 14,
-      "value": "\"Transition 3\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
-      "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2473,
       "length": 14,
       "value": "\"Transition 4\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 2542,
       "length": 8,
       "value": "\"Twitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2763,
+      "offset": 2596,
       "length": 5,
       "value": "\"VHS\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 2651,
       "length": 7,
       "value": "\"VHS 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 2707,
       "length": 6,
       "value": "\"Zoom\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2933,
+      "offset": 2766,
       "length": 8,
       "value": "\"Zoom 2\""
     },
@@ -10850,63 +10728,49 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2387,
+      "offset": 2390,
       "length": 12,
       "value": "\"Transition\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2470,
-      "length": 14,
-      "value": "\"Transition 2\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
-      "kind": "StringLiteral",
-      "offset": 2555,
-      "length": 14,
-      "value": "\"Transition 3\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
-      "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2473,
       "length": 14,
       "value": "\"Transition 4\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 2542,
       "length": 8,
       "value": "\"Twitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2763,
+      "offset": 2596,
       "length": 5,
       "value": "\"VHS\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 2651,
       "length": 7,
       "value": "\"VHS 2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 2707,
       "length": 6,
       "value": "\"Zoom\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectType.swift",
       "kind": "StringLiteral",
-      "offset": 2933,
+      "offset": 2766,
       "length": 8,
       "value": "\"Zoom 2\""
     }
