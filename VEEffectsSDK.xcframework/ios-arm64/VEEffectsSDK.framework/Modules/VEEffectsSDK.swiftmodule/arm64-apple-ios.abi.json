@@ -5804,26 +5804,26 @@
         "children": [
           {
             "kind": "Var",
-            "name": "id",
-            "printedName": "id",
+            "name": "uuid",
+            "printedName": "uuid",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV2idSuvp",
-            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV2idSuvp",
+            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV4uuidSSvp",
+            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV4uuidSSvp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5833,14 +5833,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UInt",
-                    "printedName": "Swift.UInt",
-                    "usr": "s:Su"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV2idSuvg",
-                "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV2idSuvg",
+                "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV4uuidSSvg",
+                "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV4uuidSSvg",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -5872,12 +5872,11 @@
             "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV5imageSo7UIImageCSgvp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
-              "HasInitialValue",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5934,12 +5933,11 @@
             "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV20relativeScreenPointsAA05ImageI0VSgvp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
-              "HasInitialValue",
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -5989,10 +5987,10 @@
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -6034,10 +6032,10 @@
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "HasStorage",
-              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
+            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -6064,7 +6062,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:image:relativeScreenPoints:start:end:)",
+            "printedName": "init(uuid:image:relativeScreenPoints:start:end:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6074,9 +6072,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -6122,8 +6120,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV2id5image20relativeScreenPoints5start3endACSu_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
-            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV2id5image20relativeScreenPoints5start3endACSu_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
+            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image20relativeScreenPoints5start3endACSS_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
+            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image20relativeScreenPoints5start3endACSS_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",

@@ -195,22 +195,12 @@ extension VEEffectsSDK.CameraLutStage : BanubaSDKServicing.RenderEffect {
   @objc dynamic public func apply(pixelBuffer: CoreVideo.CVPixelBuffer)
 }
 public struct VideoEditorEffectInfo {
-  public var id: Swift.UInt {
-    get
-  }
-  public var image: UIKit.UIImage? {
-    get
-  }
-  public var relativeScreenPoints: VEEffectsSDK.ImagePoints? {
-    get
-  }
-  public var start: CoreMedia.CMTime {
-    get
-  }
-  public var end: CoreMedia.CMTime {
-    get
-  }
-  public init(id: Swift.UInt, image: UIKit.UIImage? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
+  public let uuid: Swift.String
+  public let image: UIKit.UIImage?
+  public let relativeScreenPoints: VEEffectsSDK.ImagePoints?
+  public let start: CoreMedia.CMTime
+  public let end: CoreMedia.CMTime
+  public init(uuid: Swift.String, image: UIKit.UIImage? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
 }
 public protocol BlurApplicatorServicing : AnyObject {
   func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)
