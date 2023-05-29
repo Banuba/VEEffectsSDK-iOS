@@ -810,6 +810,54 @@
           },
           {
             "kind": "Function",
+            "name": "applyAutoCutVisualEffect",
+            "printedName": "applyAutoCutVisualEffect(applicatorType:startTime:endTime:effectId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VisualEffectApplicatorType",
+                "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
+                "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP24applyAutoCutVisualEffect14applicatorType9startTime03endN08effectIdyAA0ijdL0O_So6CMTimeaALSutF",
+            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP24applyAutoCutVisualEffect14applicatorType9startTime03endN08effectIdyAA0ijdL0O_So6CMTimeaALSutF",
+            "moduleName": "VEEffectsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
+            "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "applySpeedEffectType",
             "printedName": "applySpeedEffectType(_:startTime:endTime:removeSameType:effectId:)",
             "children": [
@@ -981,6 +1029,48 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applyAutoCutTransitionEffect",
+            "printedName": "applyAutoCutTransitionEffect(type:startTime:endTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransitionType",
+                "printedName": "BanubaUtilities.TransitionType",
+                "usr": "s:15BanubaUtilities14TransitionTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP28applyAutoCutTransitionEffect4type9startTime03endM0y15BanubaUtilities0I4TypeO_So6CMTimeaALtF",
+            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP28applyAutoCutTransitionEffect4type9startTime03endM0y15BanubaUtilities0I4TypeO_So6CMTimeaALtF",
+            "moduleName": "VEEffectsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
+            "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1131,6 +1221,51 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applyAutoCutVisualEffect",
+            "printedName": "applyAutoCutVisualEffect(applicatorType:startTime:endTime:effectId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VisualEffectApplicatorType",
+                "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
+                "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK16EffectApplicatorC018applyAutoCutVisualC014applicatorType9startTime03endL08effectIdyAA0hcdJ0O_So6CMTimeaALSutF",
+            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC018applyAutoCutVisualC014applicatorType9startTime03endL08effectIdyAA0hcdJ0O_So6CMTimeaALSutF",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1355,6 +1490,45 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "applyAutoCutTransitionEffect",
+            "printedName": "applyAutoCutTransitionEffect(type:startTime:endTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransitionType",
+                "printedName": "BanubaUtilities.TransitionType",
+                "usr": "s:15BanubaUtilities14TransitionTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMTime",
+                "printedName": "CoreMedia.CMTime",
+                "usr": "c:@SA@CMTime"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK16EffectApplicatorC022applyAutoCutTransitionC04type9startTime03endK0y15BanubaUtilities0H4TypeO_So6CMTimeaALtF",
+            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC022applyAutoCutTransitionC04type9startTime03endK0y15BanubaUtilities0H4TypeO_So6CMTimeaALtF",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -4226,6 +4400,13 @@
         "kind": "Import",
         "name": "VideoEditor",
         "printedName": "VideoEditor",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK"
       },
@@ -9001,6 +9182,46 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12VEEffectsSDK20TransitionEffectTypeO2idSivp",
+            "mangledName": "$s12VEEffectsSDK20TransitionEffectTypeO2idSivp",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK20TransitionEffectTypeO2idSivg",
+                "mangledName": "$s12VEEffectsSDK20TransitionEffectTypeO2idSivg",
+                "moduleName": "VEEffectsSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9571,14 +9792,14 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
+      "offset": 317,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 340,
+      "offset": 360,
       "length": 1,
       "value": "4"
     },

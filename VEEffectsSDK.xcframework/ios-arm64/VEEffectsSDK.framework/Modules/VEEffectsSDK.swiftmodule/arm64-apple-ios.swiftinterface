@@ -44,10 +44,12 @@ public protocol EffectsApplicatorServicing : AnyObject {
   var blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing { get }
   init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: VEEffectsSDK.EffectsHolderServicing)
   func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
+  func applyAutoCutVisualEffect(applicatorType: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, effectId: Swift.UInt)
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyOverlayEffectType(_ type: VEEffectsSDK.OverlayEffectApplicatorType, effectInfo: VEEffectsSDK.VideoEditorEffectInfo)
   func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
   func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
+  func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
 public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
   final public let blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing
@@ -56,6 +58,7 @@ public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
+  public func applyAutoCutVisualEffect(applicatorType: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, effectId: Swift.UInt)
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
@@ -71,6 +74,7 @@ extension VEEffectsSDK.EffectApplicator {
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
+  public func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
 @_inheritsConvenienceInitializers public class ColorEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
   required public init()
@@ -294,6 +298,9 @@ public enum TransitionEffectType : Swift.String, Swift.CaseIterable {
   case scrollLeft
   case spinRight
   case fade
+  public var id: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.String)
   public typealias AllCases = [VEEffectsSDK.TransitionEffectType]
   public typealias RawValue = Swift.String
