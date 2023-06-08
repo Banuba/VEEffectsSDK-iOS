@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VEEffectsSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -22,10 +22,10 @@ import _StringProcessing
   @objc deinit
 }
 public class ShapeDrawer : VideoEditor.CompositionRenderering {
-  public var shapeTexture: Metal.MTLTexture?
+  public var shapeTexture: (any Metal.MTLTexture)?
   required public init()
-  public init(renderer: VEEffectsSDK.EffectRenderer)
-  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source allSources: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
+  public init(renderer: any VEEffectsSDK.EffectRenderer)
+  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source allSources: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: any VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
   @objc deinit
 }
 @_inheritsConvenienceInitializers public class BanubaMaskDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
@@ -33,16 +33,16 @@ public class ShapeDrawer : VideoEditor.CompositionRenderering {
   @objc deinit
 }
 public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
-  public var renderer: VEEffectsSDK.EffectRenderer? {
+  public var renderer: (any VEEffectsSDK.EffectRenderer)? {
     get
   }
   required public init()
-  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
+  public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: any VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
   @objc deinit
 }
 public protocol EffectsApplicatorServicing : AnyObject {
-  var blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing { get }
-  init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: VEEffectsSDK.EffectsHolderServicing)
+  var blurApplicatorService: any VEEffectsSDK.BlurApplicatorServicing { get }
+  init(editor: any VideoEditor.VideoEditorServicing, effectConfigHolder: any VEEffectsSDK.EffectsHolderServicing)
   func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyAutoCutVisualEffect(applicatorType: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, effectId: Swift.UInt)
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
@@ -52,8 +52,8 @@ public protocol EffectsApplicatorServicing : AnyObject {
   func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
 public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
-  final public let blurApplicatorService: VEEffectsSDK.BlurApplicatorServicing
-  required public init(editor: VideoEditor.VideoEditorServicing, effectConfigHolder: VEEffectsSDK.EffectsHolderServicing)
+  final public let blurApplicatorService: any VEEffectsSDK.BlurApplicatorServicing
+  required public init(editor: any VideoEditor.VideoEditorServicing, effectConfigHolder: any VEEffectsSDK.EffectsHolderServicing)
   @objc deinit
 }
 extension VEEffectsSDK.EffectApplicator {
@@ -86,7 +86,7 @@ public class WatermarkApplicator : VideoEditor.WatermarkApplicatorServicing {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class BanubaMaskRenderer : VEEffectsSDK.EffectRenderer {
-  public static var postprocessServicing: BanubaSDKServicing.SDKMaskPostprocessServicing?
+  public static var postprocessServicing: (any BanubaSDKServicing.SDKMaskPostprocessServicing)?
   public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String, additionalParameters: [Swift.String : Any]?)
   @objc deinit
   public static func destroy()
@@ -99,9 +99,9 @@ public class EffectMetalRenderer : VEEffectsSDK.EffectRenderer {
 }
 public class EditorEffectModelBuilder {
   public init()
-  public func gifModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
-  public func textModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?) -> VideoEditor.VideoEditorFilterModel
-  public func blurModel(id: Swift.UInt, rendererInstance: VideoEditor.CompositionRenderering?, rendererTexture: Metal.MTLTexture?) -> VideoEditor.VideoEditorFilterModel
+  public func gifModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?) -> VideoEditor.VideoEditorFilterModel
+  public func textModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?) -> VideoEditor.VideoEditorFilterModel
+  public func blurModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?, rendererTexture: (any Metal.MTLTexture)?) -> VideoEditor.VideoEditorFilterModel
   public func makeModels(configs: [[VEEffectsSDK.EditorEffectKey : Any]], startId: Swift.UInt) -> [VideoEditor.VideoEditorFilterModel]
   public func makeModel(config: [VEEffectsSDK.EditorEffectKey : Any], id: Swift.UInt) -> VideoEditor.VideoEditorFilterModel
   @objc deinit
@@ -153,11 +153,11 @@ public struct TransitionEffectInfo {
   public init(type: VEEffectsSDK.TransitionEffectType, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
 }
 public protocol TransformEffectsSDKServicing {
-  var effectsApplicator: VEEffectsSDK.EffectsApplicatorServicing { get }
+  var effectsApplicator: any VEEffectsSDK.EffectsApplicatorServicing { get }
 }
 public protocol EffectsSDKServicing : VEEffectsSDK.TransformEffectsSDKServicing {
-  var watermarkApplicator: VideoEditor.WatermarkApplicatorServicing { get }
-  var effectsConfigHolder: VEEffectsSDK.EffectsHolderServicing { get }
+  var watermarkApplicator: any VideoEditor.WatermarkApplicatorServicing { get }
+  var effectsConfigHolder: any VEEffectsSDK.EffectsHolderServicing { get }
 }
 public struct ImagePoints {
   public init(leftTop: CoreFoundation.CGPoint, rightTop: CoreFoundation.CGPoint, leftBottom: CoreFoundation.CGPoint, rightBottom: CoreFoundation.CGPoint)
