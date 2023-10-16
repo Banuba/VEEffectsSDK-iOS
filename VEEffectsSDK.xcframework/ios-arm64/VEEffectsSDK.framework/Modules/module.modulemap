@@ -1,7 +1,7 @@
 framework module VEEffectsSDK {
   umbrella header "VEEffectsSDK.h"
-
   export *
+
   module * { export * }
 }
 
