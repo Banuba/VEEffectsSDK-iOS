@@ -3,7 +3,7 @@ triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-dvbqgkbyffpndzghkkiwcffgdpts/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
 relocations:
   - { offsetInCU: 0x34, offset: 0xA7E81, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x31300, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0xA7EB6, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x31338, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0xA7EB6, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x31340, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0xA7EF3, size: 0x8, addend: 0x0, symName: __Z11convertTime6CMTime, symObjAddr: 0x0, symBinAddr: 0x20B0, symSize: 0x4D }
   - { offsetInCU: 0x5E6, offset: 0xA84B2, size: 0x8, addend: 0x0, symName: __ZN5tweenL13Linear_easeInEff, symObjAddr: 0x550, symBinAddr: 0x2600, symSize: 0xA }
   - { offsetInCU: 0x623, offset: 0xA84EF, size: 0x8, addend: 0x0, symName: __ZN5tweenL11Sine_easeInEff, symObjAddr: 0x55A, symBinAddr: 0x260A, symSize: 0x26 }
@@ -252,7 +252,7 @@ relocations:
   - { offsetInCU: 0x21D, offset: 0xB8B45, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17FlashEffectDrawerCfD', symObjAddr: 0x140, symBinAddr: 0xB520, symSize: 0x20 }
   - { offsetInCU: 0x2D0, offset: 0xB8BF8, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17FlashEffectDrawerCMa', symObjAddr: 0x160, symBinAddr: 0xB540, symSize: 0x20 }
   - { offsetInCU: 0x2B, offset: 0xB8DE1, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0xB560, symSize: 0x40 }
-  - { offsetInCU: 0x4F, offset: 0xB8E05, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6sharedACvpZ', symObjAddr: 0x3390, symBinAddr: 0x78EC0, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0xB8E05, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6sharedACvpZ', symObjAddr: 0x3398, symBinAddr: 0x78EC0, symSize: 0x0 }
   - { offsetInCU: 0x7A, offset: 0xB8E30, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderCACyc33_AF12DB2B70D3F002EF446350F6601E70Llfc', symObjAddr: 0x40, symBinAddr: 0xB5A0, symSize: 0x80 }
   - { offsetInCU: 0xF1, offset: 0xB8EA7, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderCfD', symObjAddr: 0xC0, symBinAddr: 0xB620, symSize: 0x20 }
   - { offsetInCU: 0x13D, offset: 0xB8EF3, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0xB560, symSize: 0x40 }
@@ -473,7 +473,7 @@ relocations:
   - { offsetInCU: 0x9B6, offset: 0xC354F, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK10AverageSumCMa', symObjAddr: 0xBE0, symBinAddr: 0x15170, symSize: 0x20 }
   - { offsetInCU: 0x9CA, offset: 0xC3563, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK14AverageTimeSumCMa', symObjAddr: 0xC00, symBinAddr: 0x15190, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0xC386B, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0_WZ', symObjAddr: 0x0, symBinAddr: 0x151B0, symSize: 0x1E0 }
-  - { offsetInCU: 0x4B, offset: 0xC388F, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0SDy11VideoEditor05AssetC0OSaySfGGvpZ', symObjAddr: 0x39E8, symBinAddr: 0x78EC8, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xC388F, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0SDy11VideoEditor05AssetC0OSaySfGGvpZ', symObjAddr: 0x39F0, symBinAddr: 0x78EC8, symSize: 0x0 }
   - { offsetInCU: 0xA6, offset: 0xC38EA, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0_WZ', symObjAddr: 0x0, symBinAddr: 0x151B0, symSize: 0x1E0 }
   - { offsetInCU: 0x189, offset: 0xC39CD, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterCfD', symObjAddr: 0x1E0, symBinAddr: 0x15390, symSize: 0x20 }
   - { offsetInCU: 0x1B7, offset: 0xC39FB, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterCMa', symObjAddr: 0x200, symBinAddr: 0x153B0, symSize: 0x20 }
@@ -907,27 +907,27 @@ relocations:
   - { offsetInCU: 0x4FA, offset: 0xDB098, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK16LutTextureConfigVwst', symObjAddr: 0x2B0, symBinAddr: 0x279C0, symSize: 0x40 }
   - { offsetInCU: 0x50E, offset: 0xDB0AC, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK16LutTextureConfigVMa', symObjAddr: 0x2F0, symBinAddr: 0x27A00, symSize: 0x10 }
   - { offsetInCU: 0x27, offset: 0xDB488, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4zoom_WZ', symObjAddr: 0x0, symBinAddr: 0x27DD0, symSize: 0x30 }
-  - { offsetInCU: 0x4B, offset: 0xDB4AC, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4zoomSSvpZ', symObjAddr: 0x47C0, symBinAddr: 0x78EF0, symSize: 0x0 }
-  - { offsetInCU: 0x65, offset: 0xDB4C6, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4soulSSvpZ', symObjAddr: 0x47D0, symBinAddr: 0x78F00, symSize: 0x0 }
-  - { offsetInCU: 0x7F, offset: 0xDB4E0, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO6twitchSSvpZ', symObjAddr: 0x47E0, symBinAddr: 0x78F10, symSize: 0x0 }
-  - { offsetInCU: 0x99, offset: 0xDB4FA, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4zoomSSvpZ', symObjAddr: 0x47F0, symBinAddr: 0x78F20, symSize: 0x0 }
-  - { offsetInCU: 0xB3, offset: 0xDB514, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO5zoom2SSvpZ', symObjAddr: 0x4800, symBinAddr: 0x78F30, symSize: 0x0 }
-  - { offsetInCU: 0xCD, offset: 0xDB52E, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6whipUpSSvpZ', symObjAddr: 0x4810, symBinAddr: 0x78F40, symSize: 0x0 }
-  - { offsetInCU: 0xE7, offset: 0xDB548, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4fadeSSvpZ', symObjAddr: 0x4820, symBinAddr: 0x78F50, symSize: 0x0 }
-  - { offsetInCU: 0x101, offset: 0xDB562, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4raveSSvpZ', symObjAddr: 0x4830, symBinAddr: 0x78F60, symSize: 0x0 }
-  - { offsetInCU: 0x11B, offset: 0xDB57C, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4soulSSvpZ', symObjAddr: 0x4840, symBinAddr: 0x78F70, symSize: 0x0 }
-  - { offsetInCU: 0x135, offset: 0xDB596, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6tvfoamSSvpZ', symObjAddr: 0x4850, symBinAddr: 0x78F80, symSize: 0x0 }
-  - { offsetInCU: 0x14F, offset: 0xDB5B0, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO5flashSSvpZ', symObjAddr: 0x4860, symBinAddr: 0x78F90, symSize: 0x0 }
-  - { offsetInCU: 0x169, offset: 0xDB5CA, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6glitchSSvpZ', symObjAddr: 0x4870, symBinAddr: 0x78FA0, symSize: 0x0 }
-  - { offsetInCU: 0x183, offset: 0xDB5E4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7glitch2SSvpZ', symObjAddr: 0x4880, symBinAddr: 0x78FB0, symSize: 0x0 }
-  - { offsetInCU: 0x19D, offset: 0xDB5FE, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO3vhsSSvpZ', symObjAddr: 0x4890, symBinAddr: 0x78FC0, symSize: 0x0 }
-  - { offsetInCU: 0x1B7, offset: 0xDB618, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7lumiereSSvpZ', symObjAddr: 0x48A0, symBinAddr: 0x78FD0, symSize: 0x0 }
-  - { offsetInCU: 0x1D1, offset: 0xDB632, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7heatmapSSvpZ', symObjAddr: 0x48B0, symBinAddr: 0x78FE0, symSize: 0x0 }
-  - { offsetInCU: 0x1EB, offset: 0xDB64C, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7cathodeSSvpZ', symObjAddr: 0x48C0, symBinAddr: 0x78FF0, symSize: 0x0 }
-  - { offsetInCU: 0x205, offset: 0xDB666, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO10vhs2FilterSSvpZ', symObjAddr: 0x48D0, symBinAddr: 0x79000, symSize: 0x0 }
-  - { offsetInCU: 0x21F, offset: 0xDB680, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO11dvCamFilterSSvpZ', symObjAddr: 0x48E0, symBinAddr: 0x79010, symSize: 0x0 }
-  - { offsetInCU: 0x239, offset: 0xDB69A, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7glitch3SSvpZ', symObjAddr: 0x48F0, symBinAddr: 0x79020, symSize: 0x0 }
-  - { offsetInCU: 0x253, offset: 0xDB6B4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6twitchSSvpZ', symObjAddr: 0x4900, symBinAddr: 0x79030, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xDB4AC, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4zoomSSvpZ', symObjAddr: 0x47C8, symBinAddr: 0x78EF0, symSize: 0x0 }
+  - { offsetInCU: 0x65, offset: 0xDB4C6, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4soulSSvpZ', symObjAddr: 0x47D8, symBinAddr: 0x78F00, symSize: 0x0 }
+  - { offsetInCU: 0x7F, offset: 0xDB4E0, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO6twitchSSvpZ', symObjAddr: 0x47E8, symBinAddr: 0x78F10, symSize: 0x0 }
+  - { offsetInCU: 0x99, offset: 0xDB4FA, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4zoomSSvpZ', symObjAddr: 0x47F8, symBinAddr: 0x78F20, symSize: 0x0 }
+  - { offsetInCU: 0xB3, offset: 0xDB514, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO5zoom2SSvpZ', symObjAddr: 0x4808, symBinAddr: 0x78F30, symSize: 0x0 }
+  - { offsetInCU: 0xCD, offset: 0xDB52E, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6whipUpSSvpZ', symObjAddr: 0x4818, symBinAddr: 0x78F40, symSize: 0x0 }
+  - { offsetInCU: 0xE7, offset: 0xDB548, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4fadeSSvpZ', symObjAddr: 0x4828, symBinAddr: 0x78F50, symSize: 0x0 }
+  - { offsetInCU: 0x101, offset: 0xDB562, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4raveSSvpZ', symObjAddr: 0x4838, symBinAddr: 0x78F60, symSize: 0x0 }
+  - { offsetInCU: 0x11B, offset: 0xDB57C, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO4soulSSvpZ', symObjAddr: 0x4848, symBinAddr: 0x78F70, symSize: 0x0 }
+  - { offsetInCU: 0x135, offset: 0xDB596, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6tvfoamSSvpZ', symObjAddr: 0x4858, symBinAddr: 0x78F80, symSize: 0x0 }
+  - { offsetInCU: 0x14F, offset: 0xDB5B0, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO5flashSSvpZ', symObjAddr: 0x4868, symBinAddr: 0x78F90, symSize: 0x0 }
+  - { offsetInCU: 0x169, offset: 0xDB5CA, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6glitchSSvpZ', symObjAddr: 0x4878, symBinAddr: 0x78FA0, symSize: 0x0 }
+  - { offsetInCU: 0x183, offset: 0xDB5E4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7glitch2SSvpZ', symObjAddr: 0x4888, symBinAddr: 0x78FB0, symSize: 0x0 }
+  - { offsetInCU: 0x19D, offset: 0xDB5FE, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO3vhsSSvpZ', symObjAddr: 0x4898, symBinAddr: 0x78FC0, symSize: 0x0 }
+  - { offsetInCU: 0x1B7, offset: 0xDB618, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7lumiereSSvpZ', symObjAddr: 0x48A8, symBinAddr: 0x78FD0, symSize: 0x0 }
+  - { offsetInCU: 0x1D1, offset: 0xDB632, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7heatmapSSvpZ', symObjAddr: 0x48B8, symBinAddr: 0x78FE0, symSize: 0x0 }
+  - { offsetInCU: 0x1EB, offset: 0xDB64C, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7cathodeSSvpZ', symObjAddr: 0x48C8, symBinAddr: 0x78FF0, symSize: 0x0 }
+  - { offsetInCU: 0x205, offset: 0xDB666, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO10vhs2FilterSSvpZ', symObjAddr: 0x48D8, symBinAddr: 0x79000, symSize: 0x0 }
+  - { offsetInCU: 0x21F, offset: 0xDB680, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO11dvCamFilterSSvpZ', symObjAddr: 0x48E8, symBinAddr: 0x79010, symSize: 0x0 }
+  - { offsetInCU: 0x239, offset: 0xDB69A, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO7glitch3SSvpZ', symObjAddr: 0x48F8, symBinAddr: 0x79020, symSize: 0x0 }
+  - { offsetInCU: 0x253, offset: 0xDB6B4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO8FragmentO6twitchSSvpZ', symObjAddr: 0x4908, symBinAddr: 0x79030, symSize: 0x0 }
   - { offsetInCU: 0x268, offset: 0xDB6C9, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4zoom_WZ', symObjAddr: 0x0, symBinAddr: 0x27DD0, symSize: 0x30 }
   - { offsetInCU: 0x282, offset: 0xDB6E3, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO4soul_WZ', symObjAddr: 0x30, symBinAddr: 0x27E00, symSize: 0x30 }
   - { offsetInCU: 0x29C, offset: 0xDB6FD, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18EffectsShaderNamesO6VertexO6twitch_WZ', symObjAddr: 0x60, symBinAddr: 0x27E30, symSize: 0x30 }
