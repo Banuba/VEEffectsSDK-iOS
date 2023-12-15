@@ -8,7 +8,6 @@ import BanubaSDKServicing
 import BanubaUtilities
 import CoreMedia
 import Foundation
-import GLKit
 import MetalKit
 import QuartzCore
 import Swift
@@ -39,6 +38,7 @@ public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
   }
   required public init()
   public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: any VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
+  public func cleanUpResources()
   @objc deinit
 }
 public protocol EffectsApplicatorServicing : AnyObject {
@@ -169,9 +169,13 @@ public struct ImagePoints {
   public func applying(_ t: CoreFoundation.CGAffineTransform) -> VEEffectsSDK.ImagePoints
 }
 public class ImageEffectInfo {
-  final public let image: CoreGraphics.CGImage
+  public enum ImageSource {
+    case `static`(_: CoreGraphics.CGImage)
+    case dynamic(_: any VEEffectsSDK.VideoEditorEffectImageProvider)
+  }
+  final public let imageSource: VEEffectsSDK.ImageEffectInfo.ImageSource
   final public let imagePoints: VEEffectsSDK.ImagePoints
-  public init(image: CoreGraphics.CGImage, imagePoints: VEEffectsSDK.ImagePoints)
+  public init(imageSource: VEEffectsSDK.ImageEffectInfo.ImageSource, imagePoints: VEEffectsSDK.ImagePoints)
   @objc deinit
 }
 public struct EffectIDs {
@@ -199,13 +203,17 @@ extension VEEffectsSDK.CameraLutStage : BanubaSDKServicing.RenderEffect {
   @objc dynamic public func unload()
   @objc dynamic public func apply(pixelBuffer: CoreVideo.CVPixelBuffer)
 }
+public protocol VideoEditorEffectImageProvider {
+  func provideImage(for textureSize: CoreFoundation.CGSize) -> UIKit.UIImage
+}
 public struct VideoEditorEffectInfo {
   public let uuid: Swift.String
   public let image: UIKit.UIImage?
+  public let imageProvider: (any VEEffectsSDK.VideoEditorEffectImageProvider)?
   public let relativeScreenPoints: VEEffectsSDK.ImagePoints?
   public let start: CoreMedia.CMTime
   public let end: CoreMedia.CMTime
-  public init(uuid: Swift.String, image: UIKit.UIImage? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
+  public init(uuid: Swift.String, image: UIKit.UIImage? = nil, imageProvider: (any VEEffectsSDK.VideoEditorEffectImageProvider)? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
 }
 public protocol BlurApplicatorServicing : AnyObject {
   func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)

@@ -607,6 +607,27 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanUpResources",
+            "printedName": "cleanUpResources()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK23VideoEditorEffectDrawerC16cleanUpResourcesyyF",
+            "mangledName": "$s12VEEffectsSDK23VideoEditorEffectDrawerC16cleanUpResourcesyyF",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3186,6 +3207,13 @@
         "moduleName": "VEEffectsSDK"
       },
       {
+        "kind": "Import",
+        "name": "BanubaUtilities",
+        "printedName": "BanubaUtilities",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "EffectsHolderServicing",
         "printedName": "EffectsHolderServicing",
@@ -4391,13 +4419,6 @@
       },
       {
         "kind": "Import",
-        "name": "GLKit",
-        "printedName": "GLKit",
-        "declKind": "Import",
-        "moduleName": "VEEffectsSDK"
-      },
-      {
-        "kind": "Import",
         "name": "VideoEditor",
         "printedName": "VideoEditor",
         "declKind": "Import",
@@ -4407,6 +4428,13 @@
         "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "BanubaUtilities",
+        "printedName": "BanubaUtilities",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK"
       },
@@ -4849,20 +4877,134 @@
         "printedName": "ImageEffectInfo",
         "children": [
           {
+            "kind": "TypeDecl",
+            "name": "ImageSource",
+            "printedName": "ImageSource",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "static",
+                "printedName": "static",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(VEEffectsSDK.ImageEffectInfo.ImageSource.Type) -> (CoreGraphics.CGImage) -> VEEffectsSDK.ImageEffectInfo.ImageSource",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CoreGraphics.CGImage) -> VEEffectsSDK.ImageEffectInfo.ImageSource",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                            "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGImage",
+                            "printedName": "CoreGraphics.CGImage",
+                            "usr": "c:@T@CGImageRef"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                            "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO6staticyAESo10CGImageRefacAEmF",
+                "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC0C6SourceO6staticyAESo10CGImageRefacAEmF",
+                "moduleName": "VEEffectsSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "dynamic",
+                "printedName": "dynamic",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(VEEffectsSDK.ImageEffectInfo.ImageSource.Type) -> (VEEffectsSDK.VideoEditorEffectImageProvider) -> VEEffectsSDK.ImageEffectInfo.ImageSource",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(VEEffectsSDK.VideoEditorEffectImageProvider) -> VEEffectsSDK.ImageEffectInfo.ImageSource",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                            "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoEditorEffectImageProvider",
+                            "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider",
+                            "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                            "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO7dynamicyAeA011VideoEditordC8Provider_pcAEmF",
+                "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC0C6SourceO7dynamicyAeA011VideoEditordC8Provider_pcAEmF",
+                "moduleName": "VEEffectsSDK"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO",
+            "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC0C6SourceO",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
             "kind": "Var",
-            "name": "image",
-            "printedName": "image",
+            "name": "imageSource",
+            "printedName": "imageSource",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CGImage",
-                "printedName": "CoreGraphics.CGImage",
-                "usr": "c:@T@CGImageRef"
+                "name": "ImageSource",
+                "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK15ImageEffectInfoC5imageSo10CGImageRefavp",
-            "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC5imageSo10CGImageRefavp",
+            "usr": "s:12VEEffectsSDK15ImageEffectInfoC11imageSourceAC0cG0Ovp",
+            "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC11imageSourceAC0cG0Ovp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "Final",
@@ -4880,14 +5022,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CGImage",
-                    "printedName": "CoreGraphics.CGImage",
-                    "usr": "c:@T@CGImageRef"
+                    "name": "ImageSource",
+                    "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                    "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK15ImageEffectInfoC5imageSo10CGImageRefavg",
-                "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC5imageSo10CGImageRefavg",
+                "usr": "s:12VEEffectsSDK15ImageEffectInfoC11imageSourceAC0cG0Ovg",
+                "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC11imageSourceAC0cG0Ovg",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -4949,7 +5091,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(image:imagePoints:)",
+            "printedName": "init(imageSource:imagePoints:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4959,9 +5101,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGImage",
-                "printedName": "CoreGraphics.CGImage",
-                "usr": "c:@T@CGImageRef"
+                "name": "ImageSource",
+                "printedName": "VEEffectsSDK.ImageEffectInfo.ImageSource",
+                "usr": "s:12VEEffectsSDK15ImageEffectInfoC0C6SourceO"
               },
               {
                 "kind": "TypeNominal",
@@ -4971,8 +5113,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK15ImageEffectInfoC5image0F6PointsACSo10CGImageRefa_AA0cG0Vtcfc",
-            "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC5image0F6PointsACSo10CGImageRefa_AA0cG0Vtcfc",
+            "usr": "s:12VEEffectsSDK15ImageEffectInfoC11imageSource0F6PointsA2C0cG0O_AA0cH0Vtcfc",
+            "mangledName": "$s12VEEffectsSDK15ImageEffectInfoC11imageSource0F6PointsA2C0cG0O_AA0cH0Vtcfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",
@@ -5956,8 +6098,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK",
         "declAttributes": [
@@ -5966,17 +6108,52 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VEEffectsSDK"
-      },
-      {
-        "kind": "Import",
         "name": "VideoEditor",
         "printedName": "VideoEditor",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoEditorEffectImageProvider",
+        "printedName": "VideoEditorEffectImageProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "provideImage",
+            "printedName": "provideImage(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP07provideF03forSo7UIImageCSo6CGSizeV_tF",
+            "mangledName": "$s12VEEffectsSDK30VideoEditorEffectImageProviderP07provideF03forSo7UIImageCSo6CGSizeV_tF",
+            "moduleName": "VEEffectsSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.VideoEditorEffectImageProvider>",
+            "sugared_genericSig": "<Self where Self : VEEffectsSDK.VideoEditorEffectImageProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP",
+        "mangledName": "$s12VEEffectsSDK30VideoEditorEffectImageProviderP",
+        "moduleName": "VEEffectsSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6083,6 +6260,67 @@
                 "declKind": "Accessor",
                 "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV5imageSo7UIImageCSgvg",
                 "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV5imageSo7UIImageCSgvg",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "imageProvider",
+            "printedName": "imageProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoEditorEffectImageProvider",
+                    "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider",
+                    "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV13imageProviderAA0cde5ImageH0_pSgvp",
+            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV13imageProviderAA0cde5ImageH0_pSgvp",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoEditorEffectImageProvider",
+                        "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider",
+                        "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV13imageProviderAA0cde5ImageH0_pSgvg",
+                "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV13imageProviderAA0cde5ImageH0_pSgvg",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6243,7 +6481,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(uuid:image:relativeScreenPoints:start:end:)",
+            "printedName": "init(uuid:image:imageProvider:relativeScreenPoints:start:end:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6267,6 +6505,21 @@
                     "name": "UIImage",
                     "printedName": "UIKit.UIImage",
                     "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoEditorEffectImageProvider",
+                    "printedName": "VEEffectsSDK.VideoEditorEffectImageProvider",
+                    "usr": "s:12VEEffectsSDK30VideoEditorEffectImageProviderP"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -6301,8 +6554,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image20relativeScreenPoints5start3endACSS_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
-            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image20relativeScreenPoints5start3endACSS_So7UIImageCSgAA05ImageK0VSgSo6CMTimeaAPtcfc",
+            "usr": "s:12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image0H8Provider20relativeScreenPoints5start3endACSS_So7UIImageCSgAA0cde5ImageI0_pSgAA0pL0VSgSo6CMTimeaAStcfc",
+            "mangledName": "$s12VEEffectsSDK21VideoEditorEffectInfoV4uuid5image0H8Provider20relativeScreenPoints5start3endACSS_So7UIImageCSgAA0cde5ImageI0_pSgAA0pL0VSgSo6CMTimeaAStcfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",
@@ -9664,6 +9917,13 @@
       },
       {
         "kind": "Import",
+        "name": "VideoEditor",
+        "printedName": "VideoEditor",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -10652,28 +10912,28 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14028,
+      "offset": 14308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14058,
+      "offset": 14338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15030,
+      "offset": 15310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15060,
+      "offset": 15340,
       "length": 5,
       "value": "false"
     },
@@ -13339,13 +13599,6 @@
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/GifImageEffectRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1592,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/GifImageEffectRenderer.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 22,
@@ -13354,588 +13607,301 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "Array",
-      "offset": 843,
+      "offset": 866,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1503,
       "length": 46,
       "value": "\"com.banuba.videoEditor.transition.scrollDown\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
-      "length": 36,
-      "value": "\"Scroll down transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1807,
       "length": 44,
       "value": "\"com.banuba.videoEditor.transition.scrollUp\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 1935,
-      "length": 34,
-      "value": "\"Scroll up transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 2240,
+      "offset": 2103,
       "length": 47,
       "value": "\"com.banuba.videoEditor.transition.scrollRight\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 2308,
-      "length": 37,
-      "value": "\"Scroll right transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 2625,
+      "offset": 2411,
       "length": 46,
       "value": "\"com.banuba.videoEditor.transition.scrollLeft\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
-      "length": 36,
-      "value": "\"Scroll left transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 3005,
+      "offset": 2715,
       "length": 44,
       "value": "\"com.banuba.videoEditor.transition.whipDown\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
-      "length": 34,
-      "value": "\"Whip down transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 3375,
+      "offset": 3011,
       "length": 42,
       "value": "\"com.banuba.videoEditor.transition.whipUp\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 3438,
-      "length": 32,
-      "value": "\"Whip up transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 3735,
+      "offset": 3299,
       "length": 45,
       "value": "\"com.banuba.videoEditor.transition.whipRight\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 3801,
-      "length": 35,
-      "value": "\"Whip right transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 4110,
+      "offset": 3599,
       "length": 44,
       "value": "\"com.banuba.videoEditor.transition.whipLeft\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
-      "length": 34,
-      "value": "\"Whip left transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 4480,
+      "offset": 3895,
       "length": 45,
       "value": "\"com.banuba.videoEditor.transition.spinRight\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 4546,
-      "length": 35,
-      "value": "\"Spin right transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 4855,
+      "offset": 4195,
       "length": 40,
       "value": "\"com.banuba.videoEditor.transition.fade\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 4916,
-      "length": 29,
-      "value": "\"Fade transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 5364,
+      "offset": 4635,
       "length": 43,
       "value": "\"com.banuba.editor.effect.name.slow-motion\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 5428,
-      "length": 25,
-      "value": "\"Slow motion effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 5694,
+      "offset": 4900,
       "length": 37,
       "value": "\"com.banuba.editor.effect.name.rapid\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 5752,
-      "length": 26,
-      "value": "\"Rapid motion effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 6329,
+      "offset": 5469,
       "length": 41,
       "value": "\"com.banuba.editor.effect.name.acid-whip\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 6391,
-      "length": 23,
-      "value": "\"Acid whip effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 6698,
+      "offset": 5775,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.cathode\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 6758,
-      "length": 21,
-      "value": "\"Cathode effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 7068,
+      "offset": 6084,
       "length": 37,
       "value": "\"com.banuba.editor.effect.name.dvcam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 7126,
-      "length": 19,
-      "value": "\"DVCam effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 7427,
+      "offset": 6384,
       "length": 37,
       "value": "\"com.banuba.editor.effect.name.flash\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 7485,
-      "length": 25,
-      "value": "\"Flash video effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 7793,
+      "offset": 6685,
       "length": 38,
       "value": "\"com.banuba.editor.effect.name.glitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 7852,
-      "length": 20,
-      "value": "\"Glitch effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 8158,
+      "offset": 6990,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.glitch2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 8218,
-      "length": 22,
-      "value": "\"Glitch 2 effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 7311,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.heatmap\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 8601,
-      "length": 21,
-      "value": "\"Heatmap effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 8911,
+      "offset": 7620,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.lumiere\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 8971,
-      "length": 21,
-      "value": "\"Lumiere effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 9281,
+      "offset": 7929,
       "length": 38,
       "value": "\"com.banuba.editor.effect.name.mirror\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 9340,
-      "length": 20,
-      "value": "\"Mirror effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 9664,
+      "offset": 8252,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.mirror2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 9724,
-      "length": 22,
-      "value": "\"Mirror 2 effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 10062,
+      "offset": 8588,
       "length": 49,
       "value": "\"com.banuba.editor.effect.name.pixelationdynamic\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 10132,
-      "length": 32,
-      "value": "\"Pixelation Dynamic effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 10483,
+      "offset": 8937,
       "length": 48,
       "value": "\"com.banuba.editor.effect.name.pixelationstatic\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 10552,
-      "length": 31,
-      "value": "\"Pixelation Static effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 10899,
+      "offset": 9282,
       "length": 40,
       "value": "\"com.banuba.editor.effect.name.polaroid\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 10960,
-      "length": 22,
-      "value": "\"Polaroid effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 11274,
+      "offset": 9595,
       "length": 36,
       "value": "\"com.banuba.editor.effect.name.rave\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 11331,
-      "length": 18,
-      "value": "\"Rave effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 11629,
+      "offset": 9892,
       "length": 36,
       "value": "\"com.banuba.editor.effect.name.soul\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 11686,
-      "length": 18,
-      "value": "\"Soul effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 11984,
+      "offset": 10189,
       "length": 37,
       "value": "\"com.banuba.editor.effect.name.stars\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 12042,
-      "length": 19,
-      "value": "\"Stars effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 12344,
+      "offset": 10490,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.tv-foam\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 12404,
-      "length": 21,
-      "value": "\"TV Foam effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 12711,
+      "offset": 10796,
       "length": 42,
       "value": "\"com.banuba.editor.effect.name.transition\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 12774,
-      "length": 24,
-      "value": "\"Transition effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 13099,
+      "offset": 11120,
       "length": 43,
       "value": "\"com.banuba.editor.effect.name.transition4\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 13163,
-      "length": 14,
-      "value": "\"Transition 4\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 13478,
+      "offset": 11445,
       "length": 35,
       "value": "\"com.banuba.editor.effect.name.vhs\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 13534,
-      "length": 23,
-      "value": "\"VHS video effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 13834,
+      "offset": 11738,
       "length": 36,
       "value": "\"com.banuba.editor.effect.name.vhs2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 13891,
-      "length": 19,
-      "value": "\"VHS 2 effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 14190,
+      "offset": 12035,
       "length": 36,
       "value": "\"com.banuba.editor.effect.name.zoom\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 14247,
-      "length": 18,
-      "value": "\"Zoom effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 14545,
+      "offset": 12332,
       "length": 37,
       "value": "\"com.banuba.editor.effect.name.zoom2\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 14603,
-      "length": 20,
-      "value": "\"Zoom 2 effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 14906,
+      "offset": 12633,
       "length": 38,
       "value": "\"com.banuba.editor.effect.name.twitch\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 14965,
-      "length": 20,
-      "value": "\"Twitch effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 15271,
+      "offset": 12938,
       "length": 39,
       "value": "\"com.banuba.editor.effect.name.glitch3\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 15331,
-      "length": 22,
-      "value": "\"Glitch 3 effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 15642,
+      "offset": 13247,
       "length": 43,
       "value": "\"com.banuba.editor.effect.name.corner-flip\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 15706,
-      "length": 25,
-      "value": "\"Corner flip effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 16053,
+      "offset": 13593,
       "length": 40,
       "value": "\"com.banuba.editor.effect.name.blur-out\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 16114,
-      "length": 22,
-      "value": "\"Blur out effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 16455,
+      "offset": 13933,
       "length": 40,
       "value": "\"com.banuba.editor.effect.name.zoom-out\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 16516,
-      "length": 22,
-      "value": "\"Zoom out effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 16872,
+      "offset": 14288,
       "length": 41,
       "value": "\"com.banuba.editor.effect.name.warp-back\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
       "kind": "StringLiteral",
-      "offset": 16934,
-      "length": 23,
-      "value": "\"Warp back effect name\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EditorEffectsConfigHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 778,
       "length": 25,
       "value": "\"VEEffectsSDK.EditorEffectsConfigHolder\""
     },
@@ -14208,331 +14174,345 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 317,
+      "offset": 327,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 360,
+      "offset": 370,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2717,
-      "length": 4,
-      "value": "true"
+      "offset": 2822,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3174,
+      "offset": 3528,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4337,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4367,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4379,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4385,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4415,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4420,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4437,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4468,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4480,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4486,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4517,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4522,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4539,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4572,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4584,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4590,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4623,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4628,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4645,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 4679,
-      "length": 3,
-      "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "FloatLiteral",
       "offset": 4691,
       "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4721,
+      "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 4697,
+      "offset": 4733,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4739,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 4731,
+      "offset": 4769,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "FloatLiteral",
-      "offset": 4736,
+      "offset": 4774,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4791,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4822,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4834,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4840,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4871,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4876,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4893,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4926,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4938,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4944,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4977,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4982,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 4999,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 5033,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 5045,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 5051,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 5085,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 5090,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5070,
+      "offset": 6387,
       "length": 4,
       "value": "8192"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7027,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5764,
+      "offset": 7342,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7841,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7847,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8069,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8075,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8163,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8166,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8238,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8833,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8843,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8898,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8908,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 6168,
+      "offset": 8964,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 6231,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6296,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6531,
+      "offset": 9040,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 7004,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7010,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7100,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7103,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7507,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7517,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7572,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7582,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7638,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7714,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7730,
+      "offset": 9056,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9418,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 8426,
+      "offset": 9921,
       "length": 33,
       "value": "\"Unable to create command buffer\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 8747,
+      "offset": 10242,
       "length": 33,
       "value": "\"Unable to create render encoder\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/ImageEffectRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10953,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/LutHelper.swift",
@@ -16763,7 +16743,7 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Drawers\/TextEffectDrawer.swift",
       "kind": "StringLiteral",
-      "offset": 535,
+      "offset": 554,
       "length": 33,
       "value": "\"init() has not been implemented\""
     }
