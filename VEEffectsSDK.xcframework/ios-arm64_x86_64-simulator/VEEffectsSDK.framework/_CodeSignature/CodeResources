@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jmBpdh1lX6Tb7MovnivAX12v7qY=
+		fmG1nhLBzFIZoxxtj9p4/nwMY98=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -67,6 +67,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		MdTfEcjcY7Eh66KRGZ5yjdE1WPo=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ddjeciPe7EMnZX+icw2VOPCtzQQ=
 		</data>
 		<key>default.metallib</key>
 		<data>
@@ -178,6 +182,13 @@
 			<key>hash2</key>
 			<data>
 			cDs4QVeF/vIFpQ4GNlNDhCEkcQJDgRY6l+LclNshHKA=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mph9b2XawMqYrnetEn8wILj7Oa0ZlyS1aE7S/sIfY8s=
 			</data>
 		</dict>
 		<key>default.metallib</key>
