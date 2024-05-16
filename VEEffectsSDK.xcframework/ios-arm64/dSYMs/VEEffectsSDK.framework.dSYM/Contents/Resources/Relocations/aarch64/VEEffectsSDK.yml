@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
 relocations:
   - { offsetInCU: 0x34, offset: 0xA1714, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x2F0D0, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0xA1749, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x2F110, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0xA1749, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2F108, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0xA1786, size: 0x8, addend: 0x0, symName: __Z11convertTime6CMTime, symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x40 }
   - { offsetInCU: 0x5E6, offset: 0xA1D45, size: 0x8, addend: 0x0, symName: __ZN5tweenL13Linear_easeInEff, symObjAddr: 0x510, symBinAddr: 0x4510, symSize: 0x8 }
   - { offsetInCU: 0x624, offset: 0xA1D83, size: 0x8, addend: 0x0, symName: __ZN5tweenL11Sine_easeInEff, symObjAddr: 0x518, symBinAddr: 0x4518, symSize: 0x2C }
@@ -54,16 +54,16 @@ relocations:
   - { offsetInCU: 0x8F, offset: 0xA737A, size: 0x8, addend: 0x0, symName: _stbi__stdio_callbacks, symObjAddr: 0x5360, symBinAddr: 0x40C20, symSize: 0x0 }
   - { offsetInCU: 0x12B, offset: 0xA7416, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file, symObjAddr: 0x27D8, symBinAddr: 0x7464, symSize: 0xBBC }
   - { offsetInCU: 0x153, offset: 0xA743E, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file.invalid_chunk, symObjAddr: 0x5340, symBinAddr: 0x4B690, symSize: 0x0 }
-  - { offsetInCU: 0xAAB, offset: 0xA7D96, size: 0x8, addend: 0x0, symName: _stbi__depth_scale_table, symObjAddr: 0x4B4F, symBinAddr: 0x2F1CF, symSize: 0x0 }
-  - { offsetInCU: 0xACE, offset: 0xA7DB9, size: 0x8, addend: 0x0, symName: _first_row_filter, symObjAddr: 0x4BC8, symBinAddr: 0x2F248, symSize: 0x0 }
+  - { offsetInCU: 0xAAB, offset: 0xA7D96, size: 0x8, addend: 0x0, symName: _stbi__depth_scale_table, symObjAddr: 0x4B4F, symBinAddr: 0x2F1C7, symSize: 0x0 }
+  - { offsetInCU: 0xACE, offset: 0xA7DB9, size: 0x8, addend: 0x0, symName: _first_row_filter, symObjAddr: 0x4BC8, symBinAddr: 0x2F240, symSize: 0x0 }
   - { offsetInCU: 0xAF1, offset: 0xA7DDC, size: 0x8, addend: 0x0, symName: _stbi__l2h_gamma, symObjAddr: 0x5338, symBinAddr: 0x4B688, symSize: 0x0 }
   - { offsetInCU: 0xB0F, offset: 0xA7DFA, size: 0x8, addend: 0x0, symName: _stbi__l2h_scale, symObjAddr: 0x533C, symBinAddr: 0x4B68C, symSize: 0x0 }
-  - { offsetInCU: 0xB26, offset: 0xA7E11, size: 0x8, addend: 0x0, symName: _stbi__zdefault_length, symObjAddr: 0x4BCD, symBinAddr: 0x2F24D, symSize: 0x0 }
-  - { offsetInCU: 0xB4A, offset: 0xA7E35, size: 0x8, addend: 0x0, symName: _stbi__zdefault_distance, symObjAddr: 0x4CED, symBinAddr: 0x2F36D, symSize: 0x0 }
-  - { offsetInCU: 0xB6D, offset: 0xA7E58, size: 0x8, addend: 0x0, symName: _stbi__zlength_base, symObjAddr: 0x4D20, symBinAddr: 0x2F3A0, symSize: 0x0 }
-  - { offsetInCU: 0xB95, offset: 0xA7E80, size: 0x8, addend: 0x0, symName: _stbi__zlength_extra, symObjAddr: 0x4D9C, symBinAddr: 0x2F41C, symSize: 0x0 }
-  - { offsetInCU: 0xBAC, offset: 0xA7E97, size: 0x8, addend: 0x0, symName: _stbi__zdist_base, symObjAddr: 0x4E18, symBinAddr: 0x2F498, symSize: 0x0 }
-  - { offsetInCU: 0xBCF, offset: 0xA7EBA, size: 0x8, addend: 0x0, symName: _stbi__zdist_extra, symObjAddr: 0x4E98, symBinAddr: 0x2F518, symSize: 0x0 }
+  - { offsetInCU: 0xB26, offset: 0xA7E11, size: 0x8, addend: 0x0, symName: _stbi__zdefault_length, symObjAddr: 0x4BCD, symBinAddr: 0x2F245, symSize: 0x0 }
+  - { offsetInCU: 0xB4A, offset: 0xA7E35, size: 0x8, addend: 0x0, symName: _stbi__zdefault_distance, symObjAddr: 0x4CED, symBinAddr: 0x2F365, symSize: 0x0 }
+  - { offsetInCU: 0xB6D, offset: 0xA7E58, size: 0x8, addend: 0x0, symName: _stbi__zlength_base, symObjAddr: 0x4D20, symBinAddr: 0x2F398, symSize: 0x0 }
+  - { offsetInCU: 0xB95, offset: 0xA7E80, size: 0x8, addend: 0x0, symName: _stbi__zlength_extra, symObjAddr: 0x4D9C, symBinAddr: 0x2F414, symSize: 0x0 }
+  - { offsetInCU: 0xBAC, offset: 0xA7E97, size: 0x8, addend: 0x0, symName: _stbi__zdist_base, symObjAddr: 0x4E18, symBinAddr: 0x2F490, symSize: 0x0 }
+  - { offsetInCU: 0xBCF, offset: 0xA7EBA, size: 0x8, addend: 0x0, symName: _stbi__zdist_extra, symObjAddr: 0x4E98, symBinAddr: 0x2F510, symSize: 0x0 }
   - { offsetInCU: 0xBE6, offset: 0xA7ED1, size: 0x8, addend: 0x0, symName: _stbi__unpremultiply_on_load, symObjAddr: 0x1B66C, symBinAddr: 0x77F5C, symSize: 0x0 }
   - { offsetInCU: 0xBFD, offset: 0xA7EE8, size: 0x8, addend: 0x0, symName: _stbi__de_iphone_flag, symObjAddr: 0x1B670, symBinAddr: 0x77F60, symSize: 0x0 }
   - { offsetInCU: 0xCB6, offset: 0xA7FA1, size: 0x8, addend: 0x0, symName: _stbi_failure_reason, symObjAddr: 0x0, symBinAddr: 0x4C8C, symSize: 0xC }
