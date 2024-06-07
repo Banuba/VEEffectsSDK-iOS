@@ -287,9 +287,6 @@ public enum VisualEffectApplicatorType : Swift.CaseIterable {
   case pendulum
   case revers2
   case coloring
-  case fadingFromWhite
-  case fromDark
-  case intoDark
   case randomMonochrome
   case fireflies
   case fromDark4
