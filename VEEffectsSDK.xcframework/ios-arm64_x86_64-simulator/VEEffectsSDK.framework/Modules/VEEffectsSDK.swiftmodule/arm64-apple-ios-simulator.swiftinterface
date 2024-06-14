@@ -49,6 +49,7 @@ public protocol EffectsApplicatorServicing : AnyObject {
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyOverlayEffectType(_ type: VEEffectsSDK.OverlayEffectApplicatorType, effectInfo: VEEffectsSDK.VideoEditorEffectInfo)
   func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
+  func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect)
   func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
   func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
@@ -72,6 +73,9 @@ extension VEEffectsSDK.EffectApplicator {
 }
 extension VEEffectsSDK.EffectApplicator {
   public func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
+}
+extension VEEffectsSDK.EffectApplicator {
+  public func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect)
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
@@ -115,6 +119,11 @@ public class EditorEffectModelBuilder {
 }
 @_inheritsConvenienceInitializers public class RotateEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
   required public init(rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
+  required public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CropEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
+  required public init(cropFrame: CoreFoundation.CGRect)
   required public init()
   @objc deinit
 }
