@@ -49,7 +49,7 @@ public protocol EffectsApplicatorServicing : AnyObject {
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyOverlayEffectType(_ type: VEEffectsSDK.OverlayEffectApplicatorType, effectInfo: VEEffectsSDK.VideoEditorEffectInfo)
   func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
-  func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect)
+  func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect, videoSize: CoreFoundation.CGSize)
   func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
   func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
@@ -75,7 +75,7 @@ extension VEEffectsSDK.EffectApplicator {
   public func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
 }
 extension VEEffectsSDK.EffectApplicator {
-  public func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect)
+  public func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect, videoSize: CoreFoundation.CGSize)
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
@@ -123,7 +123,7 @@ public class EditorEffectModelBuilder {
   @objc deinit
 }
 @_inheritsConvenienceInitializers public class CropEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
-  required public init(cropFrame: CoreFoundation.CGRect)
+  required public init(cropFrame: CoreFoundation.CGRect, videoSize: CoreFoundation.CGSize)
   required public init()
   @objc deinit
 }
@@ -198,6 +198,7 @@ public struct EffectIDs {
   public static let visualEffectStartId: Swift.UInt
   public static let transformEffectId: Swift.UInt
   public static let blurEffectId: Swift.UInt
+  public static let cropEffectId: Swift.UInt
 }
 public protocol EffectRenderer {
   func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, startTime: CoreMedia.CMTime, path: Swift.String, additionalParameters: [Swift.String : Any]?)

@@ -1036,7 +1036,7 @@
           {
             "kind": "Function",
             "name": "addCropEffect",
-            "printedName": "addCropEffect(atStartTime:end:cropFrame:)",
+            "printedName": "addCropEffect(atStartTime:end:cropFrame:videoSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1060,11 +1060,17 @@
                 "name": "CGRect",
                 "printedName": "CoreFoundation.CGRect",
                 "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP13addCropEffect11atStartTime3end9cropFrameySo6CMTimea_AISo6CGRectVtF",
-            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP13addCropEffect11atStartTime3end9cropFrameySo6CMTimea_AISo6CGRectVtF",
+            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP13addCropEffect11atStartTime3end9cropFrame9videoSizeySo6CMTimea_AJSo6CGRectVSo6CGSizeVtF",
+            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP13addCropEffect11atStartTime3end9cropFrame9videoSizeySo6CMTimea_AJSo6CGRectVSo6CGSizeVtF",
             "moduleName": "VEEffectsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
             "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
@@ -1544,7 +1550,7 @@
           {
             "kind": "Function",
             "name": "addCropEffect",
-            "printedName": "addCropEffect(atStartTime:end:cropFrame:)",
+            "printedName": "addCropEffect(atStartTime:end:cropFrame:videoSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1568,11 +1574,17 @@
                 "name": "CGRect",
                 "printedName": "CoreFoundation.CGRect",
                 "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK16EffectApplicatorC07addCropC011atStartTime3end9cropFrameySo6CMTimea_AISo6CGRectVtF",
-            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC07addCropC011atStartTime3end9cropFrameySo6CMTimea_AISo6CGRectVtF",
+            "usr": "s:12VEEffectsSDK16EffectApplicatorC07addCropC011atStartTime3end9cropFrame9videoSizeySo6CMTimea_AJSo6CGRectVSo6CGSizeVtF",
+            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC07addCropC011atStartTime3end9cropFrame9videoSizeySo6CMTimea_AJSo6CGRectVSo6CGSizeVtF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl"
@@ -3201,7 +3213,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(cropFrame:)",
+            "printedName": "init(cropFrame:videoSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3214,11 +3226,17 @@
                 "name": "CGRect",
                 "printedName": "CoreFoundation.CGRect",
                 "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK16CropEffectDrawerC9cropFrameACSo6CGRectV_tcfc",
-            "mangledName": "$s12VEEffectsSDK16CropEffectDrawerC9cropFrameACSo6CGRectV_tcfc",
+            "usr": "s:12VEEffectsSDK16CropEffectDrawerC9cropFrame9videoSizeACSo6CGRectV_So6CGSizeVtcfc",
+            "mangledName": "$s12VEEffectsSDK16CropEffectDrawerC9cropFrame9videoSizeACSo6CGRectV_So6CGSizeVtcfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "Required",
@@ -5729,6 +5747,54 @@
                 "declKind": "Accessor",
                 "usr": "s:12VEEffectsSDK9EffectIDsV04blurC2IdSuvgZ",
                 "mangledName": "$s12VEEffectsSDK9EffectIDsV04blurC2IdSuvgZ",
+                "moduleName": "VEEffectsSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cropEffectId",
+            "printedName": "cropEffectId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12VEEffectsSDK9EffectIDsV04cropC2IdSuvpZ",
+            "mangledName": "$s12VEEffectsSDK9EffectIDsV04cropC2IdSuvpZ",
+            "moduleName": "VEEffectsSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt",
+                    "printedName": "Swift.UInt",
+                    "usr": "s:Su"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK9EffectIDsV04cropC2IdSuvgZ",
+                "mangledName": "$s12VEEffectsSDK9EffectIDsV04cropC2IdSuvgZ",
                 "moduleName": "VEEffectsSDK",
                 "static": true,
                 "implicit": true,
@@ -11315,189 +11381,189 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5289,
+      "offset": 5344,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5726,
+      "offset": 5781,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5756,
+      "offset": 5811,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6491,
+      "offset": 6546,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6916,
+      "offset": 6971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 8680,
+      "offset": 8735,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9440,
       "length": 8,
       "value": "\"rotate\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 9494,
+      "offset": 9549,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 9525,
+      "offset": 9580,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 9748,
+      "offset": 9803,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 9778,
+      "offset": 9833,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 10087,
+      "offset": 10193,
       "length": 6,
       "value": "\"crop\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 10194,
-      "length": 32,
+      "offset": 10290,
+      "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 10225,
+      "offset": 10316,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10448,
+      "offset": 10539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 10478,
+      "offset": 10569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11142,
+      "offset": 11233,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11172,
+      "offset": 11263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11556,
+      "offset": 11647,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 11586,
+      "offset": 11677,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "StringLiteral",
-      "offset": 11865,
+      "offset": 11956,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12840,
+      "offset": 12931,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 12870,
+      "offset": 12961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13899,
+      "offset": 13990,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 13929,
+      "offset": 14020,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14901,
+      "offset": 14992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Applicators\/EffectApplicator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14931,
+      "offset": 15022,
       "length": 5,
       "value": "false"
     },
@@ -12071,205 +12137,121 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 439,
+      "offset": 649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1945,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 2018,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
+      "kind": "FloatLiteral",
+      "offset": 2161,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2181,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 2687,
       "length": 31,
       "value": "\"Render pipeline state is nil.\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 1903,
+      "offset": 3136,
       "length": 33,
       "value": "\"Unable to create command buffer\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 2244,
+      "offset": 3477,
       "length": 33,
       "value": "\"Unable to create render encoder\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2431,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2441,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2498,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2508,
+      "offset": 4365,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2576,
+      "offset": 4564,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3057,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3073,
+      "offset": 5021,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3686,
-      "length": 1,
-      "value": "2"
+      "kind": "FloatLiteral",
+      "offset": 6172,
+      "length": 3,
+      "value": "2.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3712,
-      "length": 1,
-      "value": "0"
+      "kind": "FloatLiteral",
+      "offset": 6360,
+      "length": 3,
+      "value": "2.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3719,
-      "length": 1,
-      "value": "1"
+      "kind": "FloatLiteral",
+      "offset": 6776,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3803,
-      "length": 1,
-      "value": "0"
+      "kind": "FloatLiteral",
+      "offset": 6846,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3810,
-      "length": 1,
-      "value": "1"
+      "kind": "FloatLiteral",
+      "offset": 6916,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3894,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3901,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3974,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3981,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4179,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4205,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4212,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4284,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4291,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4363,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4370,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4455,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/CropEffectMetalRenderer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4462,
-      "length": 1,
-      "value": "1"
+      "kind": "FloatLiteral",
+      "offset": 6987,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/KaleidoscopeEffectRenderer.swift",
@@ -14171,7 +14153,7 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Drawers\/CropEffectDrawer.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 551,
       "length": 33,
       "value": "\"init() has not been implemented\""
     },
@@ -15833,6 +15815,13 @@
       "offset": 609,
       "length": 6,
       "value": "300000"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Components\/EffectIds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 683,
+      "length": 6,
+      "value": "400000"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/EffectsRenders\/SimpleTextMetalRenderer.swift",
