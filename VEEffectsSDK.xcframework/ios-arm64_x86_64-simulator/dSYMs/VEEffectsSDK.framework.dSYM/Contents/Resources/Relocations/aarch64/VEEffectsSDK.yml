@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/andreysak/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-ezoslqjgzogakvbxvtshzvbufdhd/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
+binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
 relocations:
   - { offsetInCU: 0x34, offset: 0xA3498, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x2CB80, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xA34CD, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2CBB8, symSize: 0x0 }
@@ -49,8 +49,8 @@ relocations:
   - { offsetInCU: 0x54E6, offset: 0xA89C9, size: 0x8, addend: 0x0, symName: '+[BNBValuesAnimator animated_float_expo_ease_in_out:start:finish:animationParameters:]', symObjAddr: 0x244, symBinAddr: 0x1FE8, symSize: 0xE8 }
   - { offsetInCU: 0x58CF, offset: 0xA8DB2, size: 0x8, addend: 0x0, symName: __ZN5tween12TweenerParamIfLi1EE14decreaseRepeatEv, symObjAddr: 0x4A0, symBinAddr: 0x2244, symSize: 0x70 }
   - { offsetInCU: 0x27, offset: 0xA9099, size: 0x8, addend: 0x0, symName: _stbi_failure_reason, symObjAddr: 0x0, symBinAddr: 0x2A30, symSize: 0xC }
-  - { offsetInCU: 0x50, offset: 0xA90C2, size: 0x8, addend: 0x0, symName: _stbi__g_failure_reason, symObjAddr: 0x1B578, symBinAddr: 0x74470, symSize: 0x0 }
-  - { offsetInCU: 0x71, offset: 0xA90E3, size: 0x8, addend: 0x0, symName: _stbi__vertically_flip_on_load, symObjAddr: 0x1B580, symBinAddr: 0x74478, symSize: 0x0 }
+  - { offsetInCU: 0x50, offset: 0xA90C2, size: 0x8, addend: 0x0, symName: _stbi__g_failure_reason, symObjAddr: 0x1B5B0, symBinAddr: 0x74470, symSize: 0x0 }
+  - { offsetInCU: 0x71, offset: 0xA90E3, size: 0x8, addend: 0x0, symName: _stbi__vertically_flip_on_load, symObjAddr: 0x1B5B8, symBinAddr: 0x74478, symSize: 0x0 }
   - { offsetInCU: 0x8F, offset: 0xA9101, size: 0x8, addend: 0x0, symName: _stbi__stdio_callbacks, symObjAddr: 0x52A0, symBinAddr: 0x3CC90, symSize: 0x0 }
   - { offsetInCU: 0x12B, offset: 0xA919D, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file, symObjAddr: 0x2774, symBinAddr: 0x51A4, symSize: 0xB68 }
   - { offsetInCU: 0x153, offset: 0xA91C5, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file.invalid_chunk, symObjAddr: 0x5280, symBinAddr: 0x478E0, symSize: 0x0 }
@@ -64,8 +64,8 @@ relocations:
   - { offsetInCU: 0xB76, offset: 0xA9BE8, size: 0x8, addend: 0x0, symName: _stbi__zlength_extra, symObjAddr: 0x4CDC, symBinAddr: 0x2CEC4, symSize: 0x0 }
   - { offsetInCU: 0xB8D, offset: 0xA9BFF, size: 0x8, addend: 0x0, symName: _stbi__zdist_base, symObjAddr: 0x4D58, symBinAddr: 0x2CF40, symSize: 0x0 }
   - { offsetInCU: 0xBB0, offset: 0xA9C22, size: 0x8, addend: 0x0, symName: _stbi__zdist_extra, symObjAddr: 0x4DD8, symBinAddr: 0x2CFC0, symSize: 0x0 }
-  - { offsetInCU: 0xBC7, offset: 0xA9C39, size: 0x8, addend: 0x0, symName: _stbi__unpremultiply_on_load, symObjAddr: 0x1B584, symBinAddr: 0x7447C, symSize: 0x0 }
-  - { offsetInCU: 0xBDE, offset: 0xA9C50, size: 0x8, addend: 0x0, symName: _stbi__de_iphone_flag, symObjAddr: 0x1B588, symBinAddr: 0x74480, symSize: 0x0 }
+  - { offsetInCU: 0xBC7, offset: 0xA9C39, size: 0x8, addend: 0x0, symName: _stbi__unpremultiply_on_load, symObjAddr: 0x1B5BC, symBinAddr: 0x7447C, symSize: 0x0 }
+  - { offsetInCU: 0xBDE, offset: 0xA9C50, size: 0x8, addend: 0x0, symName: _stbi__de_iphone_flag, symObjAddr: 0x1B5C0, symBinAddr: 0x74480, symSize: 0x0 }
   - { offsetInCU: 0xC97, offset: 0xA9D09, size: 0x8, addend: 0x0, symName: _stbi_failure_reason, symObjAddr: 0x0, symBinAddr: 0x2A30, symSize: 0xC }
   - { offsetInCU: 0xCB2, offset: 0xA9D24, size: 0x8, addend: 0x0, symName: _stbi_image_free, symObjAddr: 0xC, symBinAddr: 0x2A3C, symSize: 0x4 }
   - { offsetInCU: 0xCCF, offset: 0xA9D41, size: 0x8, addend: 0x0, symName: _stbi_set_flip_vertically_on_load, symObjAddr: 0x10, symBinAddr: 0x2A40, symSize: 0xC }
@@ -266,7 +266,7 @@ relocations:
   - { offsetInCU: 0x352, offset: 0xB438F, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17FlashEffectDrawerCACycfc', symObjAddr: 0x90, symBinAddr: 0xA6EC, symSize: 0xA4 }
   - { offsetInCU: 0x416, offset: 0xB4453, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17FlashEffectDrawerCfD', symObjAddr: 0x134, symBinAddr: 0xA790, symSize: 0x24 }
   - { offsetInCU: 0x2B, offset: 0xB44DD, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0xA7D4, symSize: 0x38 }
-  - { offsetInCU: 0x4F, offset: 0xB4501, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6sharedACvpZ', symObjAddr: 0x3130, symBinAddr: 0x74D30, symSize: 0x0 }
+  - { offsetInCU: 0x4F, offset: 0xB4501, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6sharedACvpZ', symObjAddr: 0x3160, symBinAddr: 0x74D30, symSize: 0x0 }
   - { offsetInCU: 0xC2, offset: 0xB4574, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0xA7D4, symSize: 0x38 }
   - { offsetInCU: 0xF2, offset: 0xB45A4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderCMa', symObjAddr: 0xD8, symBinAddr: 0xA8AC, symSize: 0x20 }
   - { offsetInCU: 0x2F6, offset: 0xB47A8, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK17MetalHelperHolderCACyc33_AF12DB2B70D3F002EF446350F6601E70Llfc', symObjAddr: 0x38, symBinAddr: 0xA80C, symSize: 0x7C }
@@ -505,7 +505,7 @@ relocations:
   - { offsetInCU: 0xA03, offset: 0xC1281, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK14AverageTimeSumCfD', symObjAddr: 0x60C, symBinAddr: 0x13A34, symSize: 0x24 }
   - { offsetInCU: 0xAC3, offset: 0xC1341, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK18BanubaMaskRendererC6render2in6source10sampleTime05startJ04path20additionalParametersySo11CVBufferRefa_ALSo6CMTimeaANSSSDySSypGSgtFTf4nnndndn_n', symObjAddr: 0x630, symBinAddr: 0x13A58, symSize: 0x1B8 }
   - { offsetInCU: 0x27, offset: 0xC1500, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0_WZ', symObjAddr: 0x0, symBinAddr: 0x13C98, symSize: 0x1C4 }
-  - { offsetInCU: 0x4B, offset: 0xC1524, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0SDy11VideoEditor05AssetC0OSaySfGGvpZ', symObjAddr: 0x3EC8, symBinAddr: 0x74D38, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xC1524, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0SDy11VideoEditor05AssetC0OSaySfGGvpZ', symObjAddr: 0x3EF8, symBinAddr: 0x74D38, symSize: 0x0 }
   - { offsetInCU: 0xCE, offset: 0xC15A7, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC06mappedcE0_WZ', symObjAddr: 0x0, symBinAddr: 0x13C98, symSize: 0x1C4 }
   - { offsetInCU: 0x21B, offset: 0xC16F4, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterC04makee4WithC0ySaySfG11VideoEditor05AssetC0OFZTf4nd_n', symObjAddr: 0x1F4, symBinAddr: 0x13E8C, symSize: 0xE0 }
   - { offsetInCU: 0x282, offset: 0xC175B, size: 0x8, addend: 0x0, symName: '_$s12VEEffectsSDK40RotationTextureCoordinatesMetalConverterCMa', symObjAddr: 0x1D4, symBinAddr: 0x13E6C, symSize: 0x20 }
