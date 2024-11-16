@@ -3,7 +3,7 @@ triple:          'arm64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
 relocations:
   - { offset: 0xADFAB, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x2CBA0, symSize: 0x0 }
-  - { offset: 0xADFE0, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2CBD8, symSize: 0x0 }
+  - { offset: 0xADFE0, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x2CBE0, symSize: 0x0 }
   - { offset: 0xAE01D, size: 0x8, addend: 0x0, symName: __Z11convertTime6CMTime, symObjAddr: 0x0, symBinAddr: 0x463C, symSize: 0x40 }
   - { offset: 0xAE5CD, size: 0x8, addend: 0x0, symName: __ZN5tweenL13Linear_easeInEff, symObjAddr: 0x510, symBinAddr: 0x4B4C, symSize: 0x8 }
   - { offset: 0xAE60B, size: 0x8, addend: 0x0, symName: __ZN5tweenL11Sine_easeInEff, symObjAddr: 0x518, symBinAddr: 0x4B54, symSize: 0x2C }
@@ -54,16 +54,16 @@ relocations:
   - { offset: 0xB3D27, size: 0x8, addend: 0x0, symName: _stbi__stdio_callbacks, symObjAddr: 0x5290, symBinAddr: 0x3CC98, symSize: 0x0 }
   - { offset: 0xB3DC3, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file, symObjAddr: 0x2774, symBinAddr: 0x7A3C, symSize: 0xB5C }
   - { offset: 0xB3DEB, size: 0x8, addend: 0x0, symName: _stbi__parse_png_file.invalid_chunk, symObjAddr: 0x5270, symBinAddr: 0x47A00, symSize: 0x0 }
-  - { offset: 0xB47BC, size: 0x8, addend: 0x0, symName: _stbi__depth_scale_table, symObjAddr: 0x4A7F, symBinAddr: 0x2CC9F, symSize: 0x0 }
-  - { offset: 0xB47DF, size: 0x8, addend: 0x0, symName: _first_row_filter, symObjAddr: 0x4AF8, symBinAddr: 0x2CD18, symSize: 0x0 }
+  - { offset: 0xB47BC, size: 0x8, addend: 0x0, symName: _stbi__depth_scale_table, symObjAddr: 0x4A7F, symBinAddr: 0x2CCA7, symSize: 0x0 }
+  - { offset: 0xB47DF, size: 0x8, addend: 0x0, symName: _first_row_filter, symObjAddr: 0x4AF8, symBinAddr: 0x2CD20, symSize: 0x0 }
   - { offset: 0xB4802, size: 0x8, addend: 0x0, symName: _stbi__l2h_gamma, symObjAddr: 0x5268, symBinAddr: 0x479F8, symSize: 0x0 }
   - { offset: 0xB4820, size: 0x8, addend: 0x0, symName: _stbi__l2h_scale, symObjAddr: 0x526C, symBinAddr: 0x479FC, symSize: 0x0 }
-  - { offset: 0xB4837, size: 0x8, addend: 0x0, symName: _stbi__zdefault_length, symObjAddr: 0x4AFD, symBinAddr: 0x2CD1D, symSize: 0x0 }
-  - { offset: 0xB485B, size: 0x8, addend: 0x0, symName: _stbi__zdefault_distance, symObjAddr: 0x4C1D, symBinAddr: 0x2CE3D, symSize: 0x0 }
-  - { offset: 0xB487E, size: 0x8, addend: 0x0, symName: _stbi__zlength_base, symObjAddr: 0x4C50, symBinAddr: 0x2CE70, symSize: 0x0 }
-  - { offset: 0xB48A6, size: 0x8, addend: 0x0, symName: _stbi__zlength_extra, symObjAddr: 0x4CCC, symBinAddr: 0x2CEEC, symSize: 0x0 }
-  - { offset: 0xB48BD, size: 0x8, addend: 0x0, symName: _stbi__zdist_base, symObjAddr: 0x4D48, symBinAddr: 0x2CF68, symSize: 0x0 }
-  - { offset: 0xB48E0, size: 0x8, addend: 0x0, symName: _stbi__zdist_extra, symObjAddr: 0x4DC8, symBinAddr: 0x2CFE8, symSize: 0x0 }
+  - { offset: 0xB4837, size: 0x8, addend: 0x0, symName: _stbi__zdefault_length, symObjAddr: 0x4AFD, symBinAddr: 0x2CD25, symSize: 0x0 }
+  - { offset: 0xB485B, size: 0x8, addend: 0x0, symName: _stbi__zdefault_distance, symObjAddr: 0x4C1D, symBinAddr: 0x2CE45, symSize: 0x0 }
+  - { offset: 0xB487E, size: 0x8, addend: 0x0, symName: _stbi__zlength_base, symObjAddr: 0x4C50, symBinAddr: 0x2CE78, symSize: 0x0 }
+  - { offset: 0xB48A6, size: 0x8, addend: 0x0, symName: _stbi__zlength_extra, symObjAddr: 0x4CCC, symBinAddr: 0x2CEF4, symSize: 0x0 }
+  - { offset: 0xB48BD, size: 0x8, addend: 0x0, symName: _stbi__zdist_base, symObjAddr: 0x4D48, symBinAddr: 0x2CF70, symSize: 0x0 }
+  - { offset: 0xB48E0, size: 0x8, addend: 0x0, symName: _stbi__zdist_extra, symObjAddr: 0x4DC8, symBinAddr: 0x2CFF0, symSize: 0x0 }
   - { offset: 0xB48F7, size: 0x8, addend: 0x0, symName: _stbi__unpremultiply_on_load, symObjAddr: 0x1C92C, symBinAddr: 0x7455C, symSize: 0x0 }
   - { offset: 0xB490E, size: 0x8, addend: 0x0, symName: _stbi__de_iphone_flag, symObjAddr: 0x1C930, symBinAddr: 0x74560, symSize: 0x0 }
   - { offset: 0xB4979, size: 0x8, addend: 0x0, symName: _stbi_failure_reason, symObjAddr: 0x0, symBinAddr: 0x52C8, symSize: 0xC }
