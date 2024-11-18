@@ -3,7 +3,7 @@ triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/user/Library/Developer/Xcode/DerivedData/VideoEditorSDKSandbox-apczolamkvzvcugwxnswrghnwlmi/Build/Intermediates.noindex/ArchiveIntermediates/VEEffectsSDK/InstallationBuildProductsLocation/Library/Frameworks/VEEffectsSDK.framework/VEEffectsSDK'
 relocations:
   - { offset: 0xB285A, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x2CD50, symSize: 0x0 }
-  - { offset: 0xB288F, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x2CD90, symSize: 0x0 }
+  - { offset: 0xB288F, size: 0x8, addend: 0x0, symName: _VEEffectsSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x2CD88, symSize: 0x0 }
   - { offset: 0xB28CC, size: 0x8, addend: 0x0, symName: __Z11convertTime6CMTime, symObjAddr: 0x0, symBinAddr: 0x2330, symSize: 0x4D }
   - { offset: 0xB2E7C, size: 0x8, addend: 0x0, symName: __ZN5tweenL13Linear_easeInEff, symObjAddr: 0x550, symBinAddr: 0x2880, symSize: 0xA }
   - { offset: 0xB2EB9, size: 0x8, addend: 0x0, symName: __ZN5tweenL11Sine_easeInEff, symObjAddr: 0x55A, symBinAddr: 0x288A, symSize: 0x26 }
