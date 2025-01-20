@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rBloFOPvnxleUDlx2BP69RQsrwY=
+		TRjKF9LH1KS6CeAwQutzovRZKJc=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		6IjZiqh7MV/vQ7mlmuKxcC2pcCo=
+		YmexoV/qOhFXNpFkO15FJe3gzVs=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		bTG9GrMMn+L7u6xXK2ghdZuAa5M=
+		aiiyQPg5twXFiXvrU6tZL91knks=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		6IjZiqh7MV/vQ7mlmuKxcC2pcCo=
+		YmexoV/qOhFXNpFkO15FJe3gzVs=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sOSgIOgPirsnTehU28TvbyxNGV8=
+		yhVu1rjIxqRVnpVSeCW9JJuqsCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		td4oaXML5rLBMVVByYtBYFqcRwo=
+		VQddKup0bP3pjvmZs1P8AuttqKs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -98,28 +98,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			78p6A/oW9kBPvFq0Gvq0j2jBdU9NfwBObKHaAJRnfZc=
+			LMFp4yhHvwqJNQpv6j6kbmi0rF4UhEnBg5SKxCxP1/c=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yLaCyDcrGAu9IEM7YZd0OJkFXFwJc7pP7baio4FUXjk=
+			obvN4QoWTyfHwH3b9f8WpY8F7aHPwkJj4127KUKYWBo=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			78p6A/oW9kBPvFq0Gvq0j2jBdU9NfwBObKHaAJRnfZc=
+			LMFp4yhHvwqJNQpv6j6kbmi0rF4UhEnBg5SKxCxP1/c=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y5Lt1Fga7XTBONk0aVr6kUrfy2DEmqdBg2TardS4H2E=
+			dSeud8w4qSV2aIKjDUEiS/QNXYgjA3hkAuaYIKnPc5Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mo/tHWKnEqDDaxolqROoQ2Sr4EktgNLk6c5sivg9UjE=
+			Lnq/GHMh1A+GthSgB4uY2fEvkPP38ltXVHGq+4Ng9z8=
 			</data>
 		</dict>
 	</dict>

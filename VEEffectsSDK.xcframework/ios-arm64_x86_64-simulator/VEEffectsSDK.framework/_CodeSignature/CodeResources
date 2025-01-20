@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kW2KTFO5OcVZLT+AzJm8z29nolI=
+		q5Sgo7O0eHeZdT+CBTHe/OGBLdw=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dzBDp1DYkzYBhS2S+F8CIt20+iI=
+		Y8mK9dvR4L2QoT2jzdNYR7jJDFE=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dHEiKmnPB74e0WgELtbgyE8ZPW8=
+		SicEne1SUaFDFNVvIdXHQWLHfzo=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dzBDp1DYkzYBhS2S+F8CIt20+iI=
+		Y8mK9dvR4L2QoT2jzdNYR7jJDFE=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UIeYeVV78prPCZMBzRTAWh44WKc=
+		Z0oIVDenxHihiJRp5pqMbC8E93A=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,19 +50,19 @@
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0VGs1mL+mv8SSZdFNpnoEg/tUr0=
+		hdyWBAnrQa6+dZ/4+ZFBupaGaXg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		orPyCTLLFqL49NZsbvW5InksmpE=
+		DgbPagI3v5b5Sx5dHbxH9OIL4jM=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0VGs1mL+mv8SSZdFNpnoEg/tUr0=
+		hdyWBAnrQa6+dZ/4+ZFBupaGaXg=
 		</data>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		c1F6ofeyRLXm4YY+Y15K4ONdtVY=
+		NiQLmhsmG4dlghG7PUYDxOr9/Sw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		4k8Twl9lsJcSUXhcKwaPxeMZoU0=
+		O381aXPwxByfeo3ncyOdhnNkUGw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -118,28 +118,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H9vY/2/L3CKLlF5uWbWjRbe+M/6PoP0vDIJzfK1hzMU=
+			KCG+/F9ljgoPkvfE4FnTZZZ3qLWSiscT+7blWRBHHbU=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			emLKn+Qa5BatG1pC7VMuSq2NYn+xXz3jQKHukJQlFTY=
+			zkCDaTDwxlqZEerXqTCUxQtNRMWtDmHV9jdP5epuU9Y=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H9vY/2/L3CKLlF5uWbWjRbe+M/6PoP0vDIJzfK1hzMU=
+			KCG+/F9ljgoPkvfE4FnTZZZ3qLWSiscT+7blWRBHHbU=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NjJVfW0Wd1mZh/gvDsPgRfFPLqHfaq7Ag6xxbIWxEXM=
+			nqesWbyBCt+pR5sFm0YJQkHnWoILEKcYQqxQakilw8Y=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -153,28 +153,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzJCmDJvQ+MA60r0MeUqjazPGUTu/OEdXh4JdOpgMoQ=
+			O7oc16IMCtLbT1WvWLF2VdGElKOjSWBVOLIUYUYG8CQ=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7FjguEd2Sa8j6JWnin0DGic8/KmArYWOOFnDwkjHpWk=
+			sOYg1FKAh9R3+atlJIyrlac/Yl0OSfpEioZmVBsaz8w=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzJCmDJvQ+MA60r0MeUqjazPGUTu/OEdXh4JdOpgMoQ=
+			O7oc16IMCtLbT1WvWLF2VdGElKOjSWBVOLIUYUYG8CQ=
 			</data>
 		</dict>
 		<key>Modules/VEEffectsSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bopq0HqChFs6MJvAwkaXHWyMZVMFygRMRtFonSj73hk=
+			7XesOWRSL0C/AtGVow0pvVbX5nV3bN68qS/SUptOAY8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -195,7 +195,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4fE4Fn1tY84znR1/8gVACGl+l4L+VxBAeA5jL2IU6E=
+			O7NSLOdsQnO5eg7asDHCe4qwuReDav1KpoSQu3qsoOE=
 			</data>
 		</dict>
 	</dict>
