@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "VideoEditor",
+        "printedName": "VideoEditor",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK",
         "declAttributes": [
@@ -16,40 +16,37 @@
       },
       {
         "kind": "Import",
-        "name": "VideoEditor",
-        "printedName": "VideoEditor",
+        "name": "BanubaUtilities",
+        "printedName": "BanubaUtilities",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK"
       },
       {
         "kind": "TypeDecl",
-        "name": "VideoCompositionRenderQueue",
-        "printedName": "VideoCompositionRenderQueue",
+        "name": "BlurShapeDrawer",
+        "printedName": "BlurShapeDrawer",
         "children": [
           {
             "kind": "Var",
-            "name": "queue",
-            "printedName": "queue",
+            "name": "blurFrame",
+            "printedName": "blurFrame",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DispatchQueue",
-                "printedName": "Dispatch.DispatchQueue",
-                "usr": "c:objc(cs)OS_dispatch_queue"
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK27VideoCompositionRenderQueueC5queueSo012OS_dispatch_G0CvpZ",
-            "mangledName": "$s12VEEffectsSDK27VideoCompositionRenderQueueC5queueSo012OS_dispatch_G0CvpZ",
+            "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvp",
+            "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvp",
             "moduleName": "VEEffectsSDK",
-            "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -59,78 +56,171 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DispatchQueue",
-                    "printedName": "Dispatch.DispatchQueue",
-                    "usr": "c:objc(cs)OS_dispatch_queue"
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK27VideoCompositionRenderQueueC5queueSo012OS_dispatch_G0CvgZ",
-                "mangledName": "$s12VEEffectsSDK27VideoCompositionRenderQueueC5queueSo012OS_dispatch_G0CvgZ",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvg",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvg",
                 "moduleName": "VEEffectsSDK",
-                "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvs",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvs",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvM",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9blurFrameSo6CGRectVvM",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:12VEEffectsSDK27VideoCompositionRenderQueueC",
-        "mangledName": "$s12VEEffectsSDK27VideoCompositionRenderQueueC",
-        "moduleName": "VEEffectsSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
           },
           {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ShapeDrawer",
-        "printedName": "ShapeDrawer",
-        "children": [
+            "kind": "Var",
+            "name": "blurShape",
+            "printedName": "blurShape",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DrawableFigure",
+                "printedName": "BanubaUtilities.DrawableFigure",
+                "usr": "s:15BanubaUtilities14DrawableFigureO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvp",
+            "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvp",
+            "moduleName": "VEEffectsSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DrawableFigure",
+                    "printedName": "BanubaUtilities.DrawableFigure",
+                    "usr": "s:15BanubaUtilities14DrawableFigureO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvg",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvg",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DrawableFigure",
+                    "printedName": "BanubaUtilities.DrawableFigure",
+                    "usr": "s:15BanubaUtilities14DrawableFigureO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvs",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvs",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvM",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC04blurD015BanubaUtilities14DrawableFigureOvM",
+                "moduleName": "VEEffectsSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
-            "name": "shapeTexture",
-            "printedName": "shapeTexture",
+            "name": "videoSize",
+            "printedName": "videoSize",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any Metal.MTLTexture)?",
+                "printedName": "CoreFoundation.CGSize?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MTLTexture",
-                    "printedName": "any Metal.MTLTexture",
-                    "usr": "c:objc(pl)MTLTexture"
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvp",
-            "mangledName": "$s12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvp",
+            "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvp",
+            "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvp",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -147,21 +237,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any Metal.MTLTexture)?",
+                    "printedName": "CoreFoundation.CGSize?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MTLTexture",
-                        "printedName": "any Metal.MTLTexture",
-                        "usr": "c:objc(pl)MTLTexture"
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvg",
-                "mangledName": "$s12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvg",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvg",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvg",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -179,21 +269,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any Metal.MTLTexture)?",
+                    "printedName": "CoreFoundation.CGSize?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "MTLTexture",
-                        "printedName": "any Metal.MTLTexture",
-                        "usr": "c:objc(pl)MTLTexture"
+                        "name": "CGSize",
+                        "printedName": "CoreFoundation.CGSize",
+                        "usr": "c:@S@CGSize"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvs",
-                "mangledName": "$s12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvs",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvs",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvs",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -210,8 +300,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvM",
-                "mangledName": "$s12VEEffectsSDK11ShapeDrawerC12shapeTextureSo10MTLTexture_pSgvM",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvM",
+                "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC9videoSizeSo6CGSizeVSgvM",
                 "moduleName": "VEEffectsSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -225,45 +315,18 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ShapeDrawer",
-                "printedName": "VEEffectsSDK.ShapeDrawer",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC"
+                "name": "BlurShapeDrawer",
+                "printedName": "VEEffectsSDK.BlurShapeDrawer",
+                "usr": "s:12VEEffectsSDK15BlurShapeDrawerC"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK11ShapeDrawerCACycfc",
-            "mangledName": "$s12VEEffectsSDK11ShapeDrawerCACycfc",
+            "usr": "s:12VEEffectsSDK15BlurShapeDrawerCACycfc",
+            "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerCACycfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
-              "Required",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(renderer:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ShapeDrawer",
-                "printedName": "VEEffectsSDK.ShapeDrawer",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "EffectRenderer",
-                "printedName": "any VEEffectsSDK.EffectRenderer",
-                "usr": "s:12VEEffectsSDK14EffectRendererP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12VEEffectsSDK11ShapeDrawerC8rendererAcA14EffectRenderer_p_tcfc",
-            "mangledName": "$s12VEEffectsSDK11ShapeDrawerC8rendererAcA14EffectRenderer_p_tcfc",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Required"
             ],
             "init_kind": "Designated"
           },
@@ -330,8 +393,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK11ShapeDrawerC6render2in6source10sampleTime6effect20additionalParametersySo11CVBufferRefa_AKSo6CMTimea11VideoEditor0Q25CompositionEffectProtocol_pSDySSypGSgtF",
-            "mangledName": "$s12VEEffectsSDK11ShapeDrawerC6render2in6source10sampleTime6effect20additionalParametersySo11CVBufferRefa_AKSo6CMTimea11VideoEditor0Q25CompositionEffectProtocol_pSDySSypGSgtF",
+            "usr": "s:12VEEffectsSDK15BlurShapeDrawerC6render2in6source10sampleTime6effect20additionalParametersySo11CVBufferRefa_AKSo6CMTimea11VideoEditor0R25CompositionEffectProtocol_pSDySSypGSgtF",
+            "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC6render2in6source10sampleTime6effect20additionalParametersySo11CVBufferRefa_AKSo6CMTimea11VideoEditor0R25CompositionEffectProtocol_pSDySSypGSgtF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl"
@@ -340,12 +403,13 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:12VEEffectsSDK11ShapeDrawerC",
-        "mangledName": "$s12VEEffectsSDK11ShapeDrawerC",
+        "usr": "s:12VEEffectsSDK15BlurShapeDrawerC",
+        "mangledName": "$s12VEEffectsSDK15BlurShapeDrawerC",
         "moduleName": "VEEffectsSDK",
         "declAttributes": [
           "AccessControl"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -771,51 +835,6 @@
         "printedName": "EffectsApplicatorServicing",
         "children": [
           {
-            "kind": "Var",
-            "name": "blurApplicatorService",
-            "printedName": "blurApplicatorService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BlurApplicatorServicing",
-                "printedName": "any VEEffectsSDK.BlurApplicatorServicing",
-                "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvp",
-            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvp",
-            "moduleName": "VEEffectsSDK",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BlurApplicatorServicing",
-                    "printedName": "any VEEffectsSDK.BlurApplicatorServicing",
-                    "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvg",
-                "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP04blurD7ServiceAA04BlurdE0_pvg",
-                "moduleName": "VEEffectsSDK",
-                "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
-                "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(editor:effectConfigHolder:)",
@@ -895,54 +914,6 @@
             "declKind": "Func",
             "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP017applyVisualEffectD4Type_9startTime03endK0010removeSameI08effectIdyAA0ghdI0O_So6CMTimeaALSbSutF",
             "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP017applyVisualEffectD4Type_9startTime03endK0010removeSameI08effectIdyAA0ghdI0O_So6CMTimeaALSbSutF",
-            "moduleName": "VEEffectsSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
-            "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "applyAutoCutVisualEffect",
-            "printedName": "applyAutoCutVisualEffect(applicatorType:startTime:endTime:effectId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "VisualEffectApplicatorType",
-                "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP24applyAutoCutVisualEffect14applicatorType9startTime03endN08effectIdyAA0ijdL0O_So6CMTimeaALSutF",
-            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP24applyAutoCutVisualEffect14applicatorType9startTime03endN08effectIdyAA0ijdL0O_So6CMTimeaALSutF",
             "moduleName": "VEEffectsSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
             "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
@@ -1174,48 +1145,6 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "applyAutoCutTransitionEffect",
-            "printedName": "applyAutoCutTransitionEffect(type:startTime:endTime:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TransitionType",
-                "printedName": "BanubaUtilities.TransitionType",
-                "usr": "s:15BanubaUtilities14TransitionTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK26EffectsApplicatorServicingP28applyAutoCutTransitionEffect4type9startTime03endM0y15BanubaUtilities0I4TypeO_So6CMTimeaALtF",
-            "mangledName": "$s12VEEffectsSDK26EffectsApplicatorServicingP28applyAutoCutTransitionEffect4type9startTime03endM0y15BanubaUtilities0I4TypeO_So6CMTimeaALtF",
-            "moduleName": "VEEffectsSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.EffectsApplicatorServicing>",
-            "sugared_genericSig": "<Self where Self : VEEffectsSDK.EffectsApplicatorServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -1251,55 +1180,6 @@
         "printedName": "EffectApplicator",
         "children": [
           {
-            "kind": "Var",
-            "name": "blurApplicatorService",
-            "printedName": "blurApplicatorService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BlurApplicatorServicing",
-                "printedName": "any VEEffectsSDK.BlurApplicatorServicing",
-                "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvp",
-            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvp",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BlurApplicatorServicing",
-                    "printedName": "any VEEffectsSDK.BlurApplicatorServicing",
-                    "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvg",
-                "mangledName": "$s12VEEffectsSDK16EffectApplicatorC04blurD7ServiceAA04BlurD9Servicing_pvg",
-                "moduleName": "VEEffectsSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(editor:effectConfigHolder:)",
@@ -1328,8 +1208,8 @@
             "mangledName": "$s12VEEffectsSDK16EffectApplicatorC6editor18effectConfigHolderAC11VideoEditor0iJ9Servicing_p_AA07EffectshK0_ptcfc",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
-              "AccessControl",
               "Required",
+              "AccessControl",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -1382,51 +1262,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "applyAutoCutVisualEffect",
-            "printedName": "applyAutoCutVisualEffect(applicatorType:startTime:endTime:effectId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "VisualEffectApplicatorType",
-                "printedName": "VEEffectsSDK.VisualEffectApplicatorType",
-                "usr": "s:12VEEffectsSDK26VisualEffectApplicatorTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK16EffectApplicatorC018applyAutoCutVisualC014applicatorType9startTime03endL08effectIdyAA0hcdJ0O_So6CMTimeaALSutF",
-            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC018applyAutoCutVisualC014applicatorType9startTime03endL08effectIdyAA0hcdJ0O_So6CMTimeaALSutF",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -1696,45 +1531,6 @@
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "applyAutoCutTransitionEffect",
-            "printedName": "applyAutoCutTransitionEffect(type:startTime:endTime:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "TransitionType",
-                "printedName": "BanubaUtilities.TransitionType",
-                "usr": "s:15BanubaUtilities14TransitionTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CMTime",
-                "printedName": "CoreMedia.CMTime",
-                "usr": "c:@SA@CMTime"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK16EffectApplicatorC022applyAutoCutTransitionC04type9startTime03endK0y15BanubaUtilities0H4TypeO_So6CMTimeaALtF",
-            "mangledName": "$s12VEEffectsSDK16EffectApplicatorC022applyAutoCutTransitionC04type9startTime03endK0y15BanubaUtilities0H4TypeO_So6CMTimeaALtF",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "AccessControl"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -2628,6 +2424,13 @@
         "moduleName": "VEEffectsSDK"
       },
       {
+        "kind": "Import",
+        "name": "BanubaUtilities",
+        "printedName": "BanubaUtilities",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "EditorEffectModelBuilder",
         "printedName": "EditorEffectModelBuilder",
@@ -2741,7 +2544,7 @@
           {
             "kind": "Function",
             "name": "blurModel",
-            "printedName": "blurModel(id:rendererInstance:rendererTexture:)",
+            "printedName": "blurModel(id:rendererInstance:blurFrame:blurShape:videoSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2757,36 +2560,32 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any VideoEditor.CompositionRenderering)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CompositionRenderering",
-                    "printedName": "any VideoEditor.CompositionRenderering",
-                    "usr": "s:11VideoEditor22CompositionRendereringP"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CompositionRenderering",
+                "printedName": "any VideoEditor.CompositionRenderering",
+                "usr": "s:11VideoEditor22CompositionRendereringP"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Metal.MTLTexture)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MTLTexture",
-                    "printedName": "any Metal.MTLTexture",
-                    "usr": "c:objc(pl)MTLTexture"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DrawableFigure",
+                "printedName": "BanubaUtilities.DrawableFigure",
+                "usr": "s:15BanubaUtilities14DrawableFigureO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
-            "mangledName": "$s12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0I7Texture05VideoC00lc6FilterE0CSu_AH22CompositionRenderering_pSgSo10MTLTexture_pSgtF",
+            "usr": "s:12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0G5Frame0G5Shape9videoSize05VideoC00oc6FilterE0CSu_AJ22CompositionRenderering_pSo6CGRectV15BanubaUtilities14DrawableFigureOSo6CGSizeVtF",
+            "mangledName": "$s12VEEffectsSDK24EditorEffectModelBuilderC04blurE02id16rendererInstance0G5Frame0G5Shape9videoSize05VideoC00oc6FilterE0CSu_AJ22CompositionRenderering_pSo6CGRectV15BanubaUtilities14DrawableFigureOSo6CGSizeVtF",
             "moduleName": "VEEffectsSDK",
             "declAttributes": [
               "AccessControl",
@@ -2999,6 +2798,20 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "simd",
+        "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "VEEffectsSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "BanubaUtilities",
+        "printedName": "BanubaUtilities",
         "declKind": "Import",
         "moduleName": "VEEffectsSDK"
       },
@@ -7314,232 +7127,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "VEEffectsSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "BanubaUtilities",
-        "printedName": "BanubaUtilities",
-        "declKind": "Import",
-        "moduleName": "VEEffectsSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BlurApplicatorServicing",
-        "printedName": "BlurApplicatorServicing",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "changeTextureLocation",
-            "printedName": "changeTextureLocation(drawableFigure:shapeRenderer:coordinates:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DrawableFigure",
-                "printedName": "BanubaUtilities.DrawableFigure",
-                "usr": "s:15BanubaUtilities14DrawableFigureO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ShapeDrawer",
-                "printedName": "VEEffectsSDK.ShapeDrawer",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BlurCoordinateParams",
-                "printedName": "BanubaUtilities.BlurCoordinateParams",
-                "usr": "s:15BanubaUtilities20BlurCoordinateParamsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableJ0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "moduleName": "VEEffectsSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : VEEffectsSDK.BlurApplicatorServicing>",
-            "sugared_genericSig": "<Self where Self : VEEffectsSDK.BlurApplicatorServicing>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP",
-        "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP",
-        "moduleName": "VEEffectsSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BlurApplicator",
-        "printedName": "BlurApplicator",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "changeTextureLocation",
-            "printedName": "changeTextureLocation(drawableFigure:shapeRenderer:coordinates:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "DrawableFigure",
-                "printedName": "BanubaUtilities.DrawableFigure",
-                "usr": "s:15BanubaUtilities14DrawableFigureO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ShapeDrawer",
-                "printedName": "VEEffectsSDK.ShapeDrawer",
-                "usr": "s:12VEEffectsSDK11ShapeDrawerC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BlurCoordinateParams",
-                "printedName": "BanubaUtilities.BlurCoordinateParams",
-                "usr": "s:15BanubaUtilities20BlurCoordinateParamsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12VEEffectsSDK14BlurApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "mangledName": "$s12VEEffectsSDK14BlurApplicatorC21changeTextureLocation14drawableFigure13shapeRenderer11coordinates10completiony15BanubaUtilities08DrawableI0O_AA11ShapeDrawerCAI0C16CoordinateParamsVyycSgtF",
-            "moduleName": "VEEffectsSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:12VEEffectsSDK14BlurApplicatorC",
-        "mangledName": "$s12VEEffectsSDK14BlurApplicatorC",
-        "moduleName": "VEEffectsSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BlurApplicatorServicing",
-            "printedName": "BlurApplicatorServicing",
-            "usr": "s:12VEEffectsSDK23BlurApplicatorServicingP",
-            "mangledName": "$s12VEEffectsSDK23BlurApplicatorServicingP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "VEEffectsSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "BanubaUtilities",
         "printedName": "BanubaUtilities",
         "declKind": "Import",
@@ -11067,6 +10654,27 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/Drawers\/BlurShapeDrawer.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 11,
+      "value": "\"blurFrame\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/Drawers\/BlurShapeDrawer.swift",
+      "kind": "StringLiteral",
+      "offset": 281,
+      "length": 11,
+      "value": "\"blurShape\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/Drawers\/BlurShapeDrawer.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 11,
+      "value": "\"videoSize\""
+    },
+    {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/ColorEffectRenderer.swift",
       "kind": "StringLiteral",
       "offset": 272,
@@ -11573,399 +11181,392 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2056,
-      "length": 35,
-      "value": "\"pixelationStaticFragmentWithShape\""
+      "offset": 2047,
+      "length": 26,
+      "value": "\"pixelationStaticFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2133,
-      "length": 33,
-      "value": "\"pixelationStaticFragmentWOShape\""
-    },
-    {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
-      "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2109,
       "length": 27,
       "value": "\"pixelationDynamicFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2264,
+      "offset": 2171,
       "length": 26,
       "value": "\"DSLRKaleidoscopeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2314,
+      "offset": 2221,
       "length": 21,
       "value": "\"fragmentDisplayRGBA\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2362,
+      "offset": 2269,
       "length": 18,
       "value": "\"colorLutFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2413,
+      "offset": 2320,
       "length": 24,
       "value": "\"starsThresholdFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2467,
+      "offset": 2374,
       "length": 21,
       "value": "\"starsFilterFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
+      "offset": 2424,
       "length": 20,
       "value": "\"starsApplyFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2563,
+      "offset": 2470,
       "length": 17,
       "value": "\"heatmapFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2607,
+      "offset": 2514,
       "length": 17,
       "value": "\"cathodeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2648,
+      "offset": 2555,
       "length": 20,
       "value": "\"simpleTextFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2698,
+      "offset": 2605,
       "length": 31,
       "value": "\"fragmentDisplayRGBAbyVertexId\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2758,
+      "offset": 2665,
       "length": 14,
       "value": "\"vhs2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2803,
+      "offset": 2710,
       "length": 31,
       "value": "\"fragmentDisplayRGBAbyVertexId\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2771,
       "length": 15,
       "value": "\"dvCamFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2909,
+      "offset": 2816,
       "length": 21,
       "value": "\"fragmentDisplayRGBA\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 2963,
+      "offset": 2870,
       "length": 24,
       "value": "\"cameraColorLutFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 2919,
       "length": 16,
       "value": "\"twitchFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3064,
+      "offset": 2971,
       "length": 27,
       "value": "\"electricalDiagramFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3117,
+      "offset": 3024,
       "length": 17,
       "value": "\"frames2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3160,
+      "offset": 3067,
       "length": 17,
       "value": "\"frames3Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3203,
+      "offset": 3110,
       "length": 17,
       "value": "\"frames4Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3246,
+      "offset": 3153,
       "length": 17,
       "value": "\"frames6Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3289,
+      "offset": 3196,
       "length": 17,
       "value": "\"frames9Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3337,
+      "offset": 3244,
       "length": 22,
       "value": "\"threeFrameWBFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3301,
       "length": 26,
       "value": "\"threeLayerMirrorFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3354,
       "length": 18,
       "value": "\"pendulumFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3491,
+      "offset": 3398,
       "length": 17,
       "value": "\"revers2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3535,
+      "offset": 3442,
       "length": 18,
       "value": "\"coloringFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3587,
+      "offset": 3494,
       "length": 25,
       "value": "\"fadingFromWhiteFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3639,
+      "offset": 3546,
       "length": 18,
       "value": "\"fromDarkFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3684,
+      "offset": 3591,
       "length": 18,
       "value": "\"intoDarkFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3737,
+      "offset": 3644,
       "length": 26,
       "value": "\"randomMonochromeFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3791,
+      "offset": 3698,
       "length": 19,
       "value": "\"firefliesFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3838,
+      "offset": 3745,
       "length": 19,
       "value": "\"fromDark4Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3885,
+      "offset": 3792,
       "length": 19,
       "value": "\"greySpin4Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3938,
+      "offset": 3845,
       "length": 25,
       "value": "\"blackWhiteFlashFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 3895,
       "length": 16,
       "value": "\"mirrorFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4027,
+      "offset": 3934,
       "length": 14,
       "value": "\"filmFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4071,
+      "offset": 3978,
       "length": 21,
       "value": "\"glitch3RankFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4128,
+      "offset": 4035,
       "length": 27,
       "value": "\"glitch3BrightnessFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4088,
       "length": 17,
       "value": "\"glitch3Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4222,
+      "offset": 4129,
       "length": 15,
       "value": "\"blinkFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4267,
+      "offset": 4174,
       "length": 21,
       "value": "\"stretching2Fragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4319,
+      "offset": 4226,
       "length": 22,
       "value": "\"infinityPlusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4373,
+      "offset": 4280,
       "length": 23,
       "value": "\"infinityMinusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4429,
+      "offset": 4336,
       "length": 24,
       "value": "\"retractionPlusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4487,
+      "offset": 4394,
       "length": 25,
       "value": "\"retractionMinusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4542,
+      "offset": 4449,
       "length": 21,
       "value": "\"stretchLeftFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4594,
+      "offset": 4501,
       "length": 22,
       "value": "\"stretchRightFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4647,
+      "offset": 4554,
       "length": 22,
       "value": "\"rotationPlusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4701,
+      "offset": 4608,
       "length": 23,
       "value": "\"rotationMinusFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4761,
+      "offset": 4668,
       "length": 28,
       "value": "\"scrollMirroredDownFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4824,
+      "offset": 4731,
       "length": 26,
       "value": "\"scrollMirroredUpFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4888,
+      "offset": 4795,
       "length": 29,
       "value": "\"scrollMirroredRightFragment\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/BanubaVideoEditorEffectsSDK\/VEEffectsSDK\/Entities\/EffectsRenders\/EffectMetalShaderNames.swift",
       "kind": "StringLiteral",
-      "offset": 4954,
+      "offset": 4861,
       "length": 28,
       "value": "\"scrollMirroredLeftFragment\""
     },

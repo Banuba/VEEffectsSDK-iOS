@@ -17,14 +17,12 @@ import VideoEditor
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class VideoCompositionRenderQueue {
-  public static let queue: Dispatch.DispatchQueue
-  @objc deinit
-}
-public class ShapeDrawer : VideoEditor.CompositionRenderering {
-  public var shapeTexture: (any Metal.MTLTexture)?
+import simd
+@_hasMissingDesignatedInitializers public class BlurShapeDrawer : VideoEditor.CompositionRenderering {
+  public var blurFrame: CoreFoundation.CGRect
+  public var blurShape: BanubaUtilities.DrawableFigure
+  public var videoSize: CoreFoundation.CGSize?
   required public init()
-  public init(renderer: any VEEffectsSDK.EffectRenderer)
   public func render(in pixelBuffer: CoreVideo.CVPixelBuffer, source allSources: CoreVideo.CVPixelBuffer, sampleTime: CoreMedia.CMTime, effect: any VideoEditor.EditorCompositionEffectProtocol, additionalParameters: [Swift.String : Any]?)
   @objc deinit
 }
@@ -42,25 +40,20 @@ public class VideoEditorEffectDrawer : VideoEditor.CompositionRenderering {
   @objc deinit
 }
 public protocol EffectsApplicatorServicing : AnyObject {
-  var blurApplicatorService: any VEEffectsSDK.BlurApplicatorServicing { get }
   init(editor: any VideoEditor.VideoEditorServicing, effectConfigHolder: any VEEffectsSDK.EffectsHolderServicing)
   func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
-  func applyAutoCutVisualEffect(applicatorType: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, effectId: Swift.UInt)
   func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
   func applyOverlayEffectType(_ type: VEEffectsSDK.OverlayEffectApplicatorType, effectInfo: VEEffectsSDK.VideoEditorEffectInfo)
   func addTransformEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, rotation: VideoEditor.AssetRotation, isVideoFitsAspect: Swift.Bool)
   func addCropEffect(atStartTime start: CoreMedia.CMTime, end: CoreMedia.CMTime, cropFrame: CoreFoundation.CGRect, videoSize: CoreFoundation.CGSize)
   func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
-  func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
 public class EffectApplicator : VEEffectsSDK.EffectsApplicatorServicing {
-  final public let blurApplicatorService: any VEEffectsSDK.BlurApplicatorServicing
   required public init(editor: any VideoEditor.VideoEditorServicing, effectConfigHolder: any VEEffectsSDK.EffectsHolderServicing)
   @objc deinit
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyVisualEffectApplicatorType(_ type: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
-  public func applyAutoCutVisualEffect(applicatorType: VEEffectsSDK.VisualEffectApplicatorType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, effectId: Swift.UInt)
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applySpeedEffectType(_ type: VEEffectsSDK.SpeedEffectType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime, removeSameType: Swift.Bool, effectId: Swift.UInt)
@@ -79,7 +72,6 @@ extension VEEffectsSDK.EffectApplicator {
 }
 extension VEEffectsSDK.EffectApplicator {
   public func applyTransitionEffect(type: BanubaUtilities.TransitionType, effectInfo: VEEffectsSDK.TransitionEffectInfo)
-  public func applyAutoCutTransitionEffect(type: BanubaUtilities.TransitionType, startTime: CoreMedia.CMTime, endTime: CoreMedia.CMTime)
 }
 @_inheritsConvenienceInitializers public class ColorEffectDrawer : VEEffectsSDK.VideoEditorEffectDrawer {
   required public init()
@@ -106,7 +98,7 @@ public class EditorEffectModelBuilder {
   public init()
   public func gifModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?) -> VideoEditor.VideoEditorFilterModel
   public func textModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?) -> VideoEditor.VideoEditorFilterModel
-  public func blurModel(id: Swift.UInt, rendererInstance: (any VideoEditor.CompositionRenderering)?, rendererTexture: (any Metal.MTLTexture)?) -> VideoEditor.VideoEditorFilterModel
+  public func blurModel(id: Swift.UInt, rendererInstance: any VideoEditor.CompositionRenderering, blurFrame: CoreFoundation.CGRect, blurShape: BanubaUtilities.DrawableFigure, videoSize: CoreFoundation.CGSize) -> VideoEditor.VideoEditorFilterModel
   public func makeModels(configs: [[VEEffectsSDK.EditorEffectKey : Any]], startId: Swift.UInt) -> [VideoEditor.VideoEditorFilterModel]
   public func makeModel(config: [VEEffectsSDK.EditorEffectKey : Any], id: Swift.UInt) -> VideoEditor.VideoEditorFilterModel
   public func makeModel(visualEffect: VEEffectsSDK.VisualEffectApplicatorType, id: Swift.UInt) -> VideoEditor.VideoEditorFilterModel
@@ -228,13 +220,6 @@ public struct VideoEditorEffectInfo {
   public let start: CoreMedia.CMTime
   public let end: CoreMedia.CMTime
   public init(uuid: Swift.String, image: UIKit.UIImage? = nil, imageProvider: (any VEEffectsSDK.VideoEditorEffectImageProvider)? = nil, relativeScreenPoints: VEEffectsSDK.ImagePoints? = nil, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
-}
-public protocol BlurApplicatorServicing : AnyObject {
-  func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)
-}
-@_hasMissingDesignatedInitializers public class BlurApplicator : VEEffectsSDK.BlurApplicatorServicing {
-  public func changeTextureLocation(drawableFigure: BanubaUtilities.DrawableFigure, shapeRenderer: VEEffectsSDK.ShapeDrawer, coordinates: BanubaUtilities.BlurCoordinateParams, completion: (() -> Swift.Void)?)
-  @objc deinit
 }
 public enum EditorEffectKey : Swift.String {
   case name
